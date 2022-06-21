@@ -1,6 +1,6 @@
-<p align="center">
+<b align="center">
     ETAB: A Benchmark Suite for Visual Representation Learning in Echocardiography
-</p>
+</b>
 
 This repository 
 
