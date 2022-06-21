@@ -1,5 +1,5 @@
-<p align="center" style="font-size:50px">
-    ETAB: A Benchmark Suite for Visual Representation Learning in Echocardiography
+<p align="center">
+    <b> ETAB: A Benchmark Suite for Visual Representation Learning in Echocardiography </b>
 </p>
 
 This repository 
