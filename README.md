@@ -11,12 +11,11 @@ This repository contains code for a suite of benchmarks that can be used to eval
 
 ---------------
 
-#### Installation 
+#### [Data sets and accessibility](documentation/data_access.md)
 
-#### [Data sets and accessibility](instructions/data_access.md)
+#### [Benchmark tasks](documentation/benchmark_tasks.md)
 
-#### Benchmark tasks
+#### [Implementing your own baselines](documentation/implementing_baselines.md)
 
-#### Implementing your own baselines
+#### [Leaderboard and benchmark results](documentation/leaderboard.md)
 
-#### Leaderboard and benchmark results
