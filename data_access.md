@@ -1,5 +1,5 @@
 <h3 align="center">
-    <b> ETAB: A Benchmark Suite for Visual Representation Learning in Echocardiography </b>
+    <b> Instructions for data access </b>
 </h3>
 
 ---------------
