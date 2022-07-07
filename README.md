@@ -16,8 +16,7 @@ This repository contains code for a suite of benchmarks that can be used to eval
   Some text.
   </div>
   <div class="col-md-4" markdown="1">
-  <!-- ![Alt Text](../img/folder/blah.jpg) -->
-  <img height="600px" class="center-block" src="/assets/echo_movie.gif">
+  <img height="60px" class="center-block" src="/assets/echo_movie.gif">
   </div>
 </div>
 
