@@ -15,7 +15,7 @@ The echocardiographic task adaptation benchmark (ETAB) library contains a suite 
 
 ---------------
 
-#### [Data sets and accessibility](documentation/data_access.md)
+#### [Datasets, accessibility and dataset tools](documentation/data_access.md)
 
 #### [Benchmark tasks](documentation/benchmark_tasks.md)
 
