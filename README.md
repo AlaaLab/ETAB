@@ -9,6 +9,17 @@
 
 This repository contains code for a suite of benchmarks that can be used to evaluate visual representations of cardiac ultrasound (echocardiogram) data with respect to various clinically-relevant tasks using publicly accessible data sets. In addition, the repo contains a unified evaluation protocol, which we call the echocardiographic task adaptation benchmark (ETAB), that measures how well a visual representation of echocardiograms generalizes to common downstream tasks of interest.
 
+<table border="0">
+ <tr>
+    <td><b style="font-size:30px">Title</b></td>
+    <td><b style="font-size:30px">Title 2</b></td>
+ </tr>
+ <tr>
+    <td>Lorem ipsum ...</td>
+    <td>Lorem ipsum ...</td>
+ </tr>
+</table>
+
 | This repository | ![Flowers](/assets/echo_movie.gif) |
 
 ---------------
