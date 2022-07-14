@@ -7,7 +7,7 @@ from torch.utils.data import Subset, DataLoader
 import pickle
 
 import config
-from utils.echonet_loader import *
+from etab.utils.echonet_loader import *
 
 def prepare_image(index, dataset, segment_index=1, IMG_SIZE=224, img_type="4CH_ED", normalize=True):
 

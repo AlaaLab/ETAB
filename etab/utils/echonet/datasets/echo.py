@@ -1,30 +1,18 @@
 """EchoNet-Dynamic Dataset."""
-# Code is adapted from: https://github.com/echonet/dynamic
 
 import os
 import collections
 import pandas
-import torch
+
 import numpy as np
 import skimage.draw
 import torchvision
-import echonet
-from skimage.color import rgb2gray, gray2rgb
-import torchvision.transforms as T
-from PIL import Image
-import matplotlib.image as mpimg
-
-from os import listdir
-from os.path import isfile, join
-import numpy as np
-from os import listdir
-from os.path import isfile, join
-import cv2
-import xml.etree.ElementTree as ET
+import etab.utils.echonet
 
 
 class Echo(torchvision.datasets.VisionDataset):
     """EchoNet-Dynamic Dataset.
+
     Args:
         root (string): Root directory of dataset (defaults to `echonet.config.DATA_DIR`)
         split (string): One of {``train'', ``val'', ``test'', ``all'', or ``external_test''}
@@ -286,88 +274,9 @@ class Echo(torchvision.datasets.VisionDataset):
 
 def _defaultdict_of_lists():
     """Returns a defaultdict of lists.
+
     This is used to avoid issues with Windows (if this function is anonymous,
     the Echo dataset cannot be used in a dataloader).
     """
 
     return collections.defaultdict(list)
-
-
-
-
-def load_segmented_data(data_dir, n_train=None, concatenate=True, rgb=False, IMG_SIZE=224):
-    
-    transform    = T.ToPILImage()
-    pil_2_tensor = T.ToTensor()
-    
-    dataset      = Echo(root=data_dir + "/data/", target_type="SmallTrace")
-
-    n_train      = len(dataset) if n_train is None else n_train
-    
-    videos       = []
-    segments     = []
-
-    for _ in range(n_train):
-  
-        current_video, current_trace = dataset.__getitem__(_) 
-    
-        if rgb:
-            
-            current_video, current_trace = torch.einsum('cnhw->nhwc', torch.tensor(current_video)/255)[0, :, :, :], torch.tensor(gray2rgb(current_trace))
-        
-        else:
-            
-            current_video = torch.einsum('cnhw->nhwc', torch.tensor(current_video)/255)[0, :, :, :]
-            current_trace = torch.tensor(current_trace)
-
-            current_video = pil_2_tensor(transform(torch.einsum('hwc->chw', current_video)).resize((IMG_SIZE, IMG_SIZE)))
-            current_trace = pil_2_tensor(transform(current_trace).resize((IMG_SIZE, IMG_SIZE))).squeeze(0)
-
-        videos.append(current_video.unsqueeze(0))
-        segments.append(current_trace.unsqueeze(0))  
-    
-    if concatenate:
-        
-        videos       = torch.cat(videos)
-        segments     = torch.cat(segments) 
-        all_data_set = torch.cat([videos, segments], dim=1)
-        
-    else:
-        
-        all_data_set = [(videos[k].squeeze(0), segments[k].squeeze(0).type(torch.LongTensor)) for k in range(len(videos))]
-    
-    return all_data_set
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
