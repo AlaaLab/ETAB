@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="70" height="40" src="assets/etab_logo.png" />
+  <img width="420" height="240" src="assets/etab_logo.png" />
 </p>
 
 <h3 align="center">
