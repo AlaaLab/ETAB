@@ -14,6 +14,11 @@ The echocardiographic task adaptation benchmark (ETAB) library contains a suite 
 
 ![Echo clip](/assets/echo_movie.gif)
 ![Echo clip](/assets/echo_movie.gif)
+![Echo clip](/assets/echo_movie.gif)
+![Echo clip](/assets/echo_movie.gif)
+![Echo clip](/assets/echo_movie.gif)
+![Echo clip](/assets/echo_movie.gif)
+![Echo clip](/assets/echo_movie.gif)
 
 ---------------
 #### Overview
