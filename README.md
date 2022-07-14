@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="420" height="240" src="assets/etab_logo.png" />
+  <img width="280" height="160" src="assets/etab_logo.png" />
 </p>
 <h3 align="center">
     <b> ETAB: A Benchmark Suite for Visual Representation Learning in Echocardiography </b>
