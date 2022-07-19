@@ -313,11 +313,11 @@ def load_segmented_data(data_dir, n_train=None, concatenate=True, rgb=False, IMG
     
         if rgb:
             
-            current_video, current_trace = torch.einsum('cnhw->nhwc', torch.tensor(current_video)/255)[0, :, :, :], torch.tensor(gray2rgb(current_trace))
+            current_video, current_trace = torch.einsum('cnhw->nhwc', torch.tensor(current_video)/255)[0, :, :, :], torch.tensor(gray2rgb(current_trace))[0, :, :, :]
         
         else:
             
-            current_video = torch.einsum('cnhw->nhwc', torch.tensor(current_video)/255)[0, :, :, :]
+            current_video = torch.einsum('cnhw->nhwc', torch.tensor(current_video)/255)[0, :, :, :]                
             current_trace = torch.tensor(current_trace)
 
             current_video = pil_2_tensor(transform(torch.einsum('hwc->chw', current_video)).resize((IMG_SIZE, IMG_SIZE)))
@@ -337,37 +337,4 @@ def load_segmented_data(data_dir, n_train=None, concatenate=True, rgb=False, IMG
         all_data_set = [(videos[k].squeeze(0), segments[k].squeeze(0).type(torch.LongTensor)) for k in range(len(videos))]
     
     return all_data_set
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

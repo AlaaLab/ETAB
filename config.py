@@ -3,9 +3,8 @@
 
 import torchvision.models as models
 
-echonet_dir        = "/data/echonet" 
-camus_dir          = "/data/camus" 
-tmed_dir           = "/data/tmed" 
+echonet_dir        = "/home/jupyter/visual-prompting" 
+camus_dir          = "/home/jupyter/visual-prompting/data/camus_data_set.pickle"
 
 ETAB_backbone_dict = dict({"resnet18": models.resnet18,
                            "resnet50": models.resnet50,
@@ -28,9 +27,14 @@ ETAB_backbone_dict = dict({"resnet18": models.resnet18,
                            "convnext_base": models.convnext_base,
                            "convnext_large": models.convnext_large})
 
+
 dataset_names      = dict({"echonet": "E", 
                            "camus": "C",
                            "tmed": "T"})
+
+
+
+
         
 task_targets       = dict({"EF": "3",
                            "LV_seg": "0",
@@ -38,3 +42,5 @@ task_targets       = dict({"EF": "3",
                            "LA_seg": "2",
                            "CM": "5",
                            "AS": "6"})
+
+
