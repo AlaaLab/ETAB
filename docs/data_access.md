@@ -8,7 +8,7 @@
 
 ---------------
 
-The ETAB benchmarks are based on 3 publicly accessible echocardiogram data sets that span different patient cohorts and involve different echo views and annotations. This Section provides a brief overview of each dataset.
+The ETAB benchmarks are based on 3 publicly accessible echocardiogram data sets that span different patient cohorts and involve different echo views and annotations. This Section provides a detailed description of the datasets, instructions on how to access each data set, and the data processing tools implemented within the ETAM library.
 
 
 | Dataset |  Sample size |  Echo views |  Annotations  | 
