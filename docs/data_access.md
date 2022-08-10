@@ -14,7 +14,7 @@ This repository contains code for a suite of benchmarks that can be used to eval
 
 | Dataset |  Sample size |  Echo views |  Annotations  | 
 | :---         |     :---:      |      :---:      |  :--- |
-| **EchoNet**   | 10,036 | AP4CH | Left ventricle (LV) traces, LV ejection fraction, End-systolic (ES) and End-diastole (ED) frames   |
-| **CAMUS**     | 500  | AP4CH and AP2CH | LV ejection fraction, ES and ED frames, LV epicardium, endocardium and left atrium segments    |
-| **TMED**      | 2,341 | PLAX, PSAX, Other | Aortic Stenosis diagnoses, view annotations  |
+| **EchoNet**   | 10,036 | *AP4CH* | Left ventricle (LV) traces, LV ejection fraction, End-systolic (ES) and End-diastole (ED) frames   |
+| **CAMUS**     | 500  | *AP4CH* and *AP2CH* | LV ejection fraction, ES and ED frames, LV epicardium, endocardium and left atrium segments    |
+| **TMED**      | 2,341 | *PLAX*, *PSAX*, Other | Aortic Stenosis diagnoses, view annotations  |
 
