@@ -14,6 +14,7 @@ This repository contains code for a suite of benchmarks that can be used to eval
 
 | Dataset |  Sample size |  Echo views |  Annotations  | 
 | :---         |     :---:      |      :---:      |  ---: |
-| git status   | git status     | git status    | git status    |
-| git diff     | git diff       | git diff      | git status    |
+| EchoNet   | 10,036 | AP4CH | Left ventricle (LV) traces and LV ejection fraction    |
+| CAMUS     | 500  | AP4CH and AP2CH | LV ejection fraction, ES/ED frames, LV epicardium, endocardium and left atrium segments    |
+| TMED      | 2,341 | PLAX, PSAX, Other | Aortic Stenosis diagnoses, view annotations  |
 
