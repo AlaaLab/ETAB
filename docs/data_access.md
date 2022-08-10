@@ -12,8 +12,8 @@ This repository contains code for a suite of benchmarks that can be used to eval
 
 
 
-| Dataset |  Sample size |  Echo views |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
+| Dataset |  Sample size |  Echo views |  Annotations  | 
+| :---         |     :---:      |      :---:      |  ---: |
+| git status   | git status     | git status    | git status    |
+| git diff     | git diff       | git diff      | git status    |
 
