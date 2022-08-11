@@ -66,9 +66,9 @@ To download the datasets, please follow the instructions and external links belo
 
 **EchoNet data** 
 
-*License:*  
+*License:* [STANFORD UNIVERSITY SCHOOL OF MEDICINE ECHONET-DYNAMIC DATASET RESEARCH USE AGREEMENT](https://stanfordaimi.azurewebsites.net/datasets/834e1cd1-92f7-4268-9daa-d359198b310a) 
 
-To access the EchoNet-Dynamic dataset, please visit this [link](https://echonet.github.io/dynamic/) and click on the "Accessing Dataset" button in the main menu. The data resides in the Stanford Artificial Intelligence in Medicine and Imaging (AIMI) Center Shared Datasets Portal (https://stanfordaimi.azurewebsites.net/datasets/834e1cd1-92f7-4268-9daa-d359198b310a). 
+To access the EchoNet-Dynamic dataset, please visit this [link](https://echonet.github.io/dynamic/) and click on the "Accessing Dataset" button in the main menu. The data resides in the Stanford Artificial Intelligence in Medicine and Imaging (AIMI) Center Shared Datasets [Portal] (https://stanfordaimi.azurewebsites.net/datasets/834e1cd1-92f7-4268-9daa-d359198b310a). 
 
 **CAMUS data** 
 
