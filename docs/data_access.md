@@ -94,7 +94,7 @@ The CAMUS dataset is publicly accessible, and is held and maintained within the 
 
 *License:* [The TMED Health Data License](https://tmed.cs.tufts.edu/data_license.html)
 
-To access the Tufts Medical Echocardiogram Dataset (TMED) dataset, please visit the official TMED [website](https://tmed.cs.tufts.edu/), click on the [Data Access](https://tmed.cs.tufts.edu/data_access.html) button in the main menu, and follow the instructions therein. The downloaded folders should be located in the "tmed" folder according to the directory layout above (or a customized directory specified in config.py). The contents of the "tmed" folder should follow the layout below.
+To access the Tufts Medical Echocardiogram Dataset (TMED) dataset, please visit the official TMED [website](https://tmed.cs.tufts.edu/), click on the [Data Access](https://tmed.cs.tufts.edu/data_access.html) button in the main menu, and follow the instructions therein. The downloaded folders should be located in the "tmed" folder according to the directory layout above (or a customized directory specified in config.py). The contents of "tmed" folder should follow the layout below:
 
     .
     └── tmed
