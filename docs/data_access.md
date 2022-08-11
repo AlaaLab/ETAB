@@ -49,3 +49,16 @@ The Tufts Medical Echocardiogram Dataset (TMED) contains still echocardiogram im
   year={2019}
 }
 ```
+
+```
+@article{leclerc2019deep,
+  title={Deep learning for segmentation using an open large-scale dataset in 2D echocardiography},
+  author={Leclerc, Sarah and Smistad, Erik and Pedrosa, Joao and {\O}stvik, Andreas and Cervenansky, Frederic and Espinosa, Florian and Espeland, Torvald and Berg, Erik Andreas Rye and Jodoin, Pierre-Marc and Grenier, Thomas and others},
+  journal={IEEE transactions on medical imaging},
+  volume={38},
+  number={9},
+  pages={2198--2210},
+  year={2019},
+  publisher={IEEE}
+}
+```
