@@ -62,7 +62,7 @@ To set the directories for the EchoNet, CAMUS and TMED data, you can change the 
 
 ### Downloading the datasets
 
-To download the datasets, please follow the instructions and external links below. Please note that the ETAB library provides a standardized API for loading and processing all datasets for the sake of model development and training, but it does not alter, distribute or directly share the datasets. Please make sure to follow the terms of the Research Use Agreements for all datasets upon access.  
+To download the datasets, please follow the instructions and external links below. Please note that the ETAB library provides a standardized API for loading and processing all datasets for the sake of model development and training, but it does not alter, distribute or directly share the datasets. Please make sure to follow the terms of the respective *Research Use Agreements* for all datasets upon access.  
 
 **EchoNet data** 
 
@@ -78,6 +78,17 @@ To access the EchoNet-Dynamic dataset, please visit this [Link](https://echonet.
 
 
 **CAMUS data** 
+
+*License:* Please refer to the CAMUS [online platform](https://www.creatis.insa-lyon.fr/Challenge/camus/).
+
+The CAMUS dataset is publicly accessible, and is held and maintained within the CAMUS [online platform](https://www.creatis.insa-lyon.fr/Challenge/camus/). The data can be directly downloaded through the online platform upon registering. The "camus" data folder should be structured in a similar manner to the original data folder on the online platform; the directoty should follow the layout below: 
+
+    .
+    └── camus
+           ├── training          # Folder containing data for training echo clips
+           └── testing           # DFolder containing data for testing echo clips
+
+
 
 **TMED data**
 
