@@ -2,9 +2,9 @@
   <img width="280" height="160" src="assets/etab_logo.png" />
 </p>
 
-<h2 align="center">
+<h1 align="center">
     <b> Datasets, Accessibility and Data Processing Tools </b>
-</h2>
+</h1>
 
 ---------------
 
