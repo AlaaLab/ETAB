@@ -39,10 +39,12 @@ The Tufts Medical Echocardiogram Dataset (TMED) contains still echocardiogram im
 
     .
     └── etab
-    └── config.py
-    ├── echonet                 
-    ├── camus                   
-    └── tmed                          # Directory for the TMED dataset
+    ├── docs
+    ├── checkpoints
+    ├── assets
+    ├── **config.py**               # Directory for the TMED dataset
+    ├── setup.py                 
+    └── run_benchmark.py                                             
 
 
     .
