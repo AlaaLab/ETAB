@@ -58,6 +58,7 @@ In each data folder, our scripts expect the content (subfolders and files) to ma
     ├── setup.py                 
     └── run_benchmark.py                                             
 
+To set the directories for EchoNet, CAMUS and TMED, you can change the values of the **echonet_dir**, **camus_dir** and **tmed_dir** variables in config.py.
 
 ### Downloading the datasets
 
