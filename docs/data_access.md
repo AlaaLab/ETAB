@@ -42,7 +42,7 @@ The Tufts Medical Echocardiogram Dataset (TMED) contains still echocardiogram im
     ├── docs
     ├── checkpoints
     ├── assets
-    ├── **config.py**               # Directory for the TMED dataset
+    ├── config.py                           # Customize your data directories here
     ├── setup.py                 
     └── run_benchmark.py                                             
 
