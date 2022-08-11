@@ -18,7 +18,7 @@ Below is a high-level description and meta-data for the data sets involved in ET
 | Dataset |  Sample size |  Echo views |  Annotations  | 
 | :---         |     :---:      |      :---:      |  :--- |
 | **EchoNet**   | 10,036 | *AP4CH* | Left ventricle (LV) traces, LV ejection fraction, End-systolic (ES) and End-diastole (ED) frames   |
-| **CAMUS**     | 500  | *AP4CH*, *AP2CH* | LV ejection fraction, ES and ED frames, LV epicardium, endocardium and left atrium segments    |
+| **CAMUS**     | 500  | *AP4CH*, *AP2CH* | LV ejection fraction, ES and ED frames, LV epicardium, endocardium and left atrium traces  |
 | **TMED**      | 2,341 | *PLAX*, *PSAX* | Aortic Stenosis diagnoses, view annotations  |
 
 **EchoNet data** 
