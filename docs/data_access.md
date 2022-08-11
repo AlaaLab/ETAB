@@ -31,7 +31,7 @@ The Cardiac Acquisitions for Multi-structure Ultrasound Segmentation (CAMUS) is 
 
 **TMED data** 
 
-The Tufts Medical Echocardiogram Dataset (TMED) contains still echocardiogram imagery acquired in the course of routine care from 2015 to 2020 [3]. This data set contains both labeled and unlabeled images—labels include a categorization of views into parasternal long and short axis views (PLAX and PSAX), and diagnostic severity ratings for aortic stenosis (AS). Unlike EchoNet and CA83 MUS, this data set contains only still images rather than sequences of frames.
+The Tufts Medical Echocardiogram Dataset (TMED) contains still echocardiogram imagery acquired in the course of routine care from 2015 to 2020 [3]. This data set contains both labeled and unlabeled images—labels include a categorization of views into parasternal long and short axis views (PLAX and PSAX), and diagnostic severity ratings for aortic stenosis (AS). Unlike EchoNet and CAMUS, this data set contains only still images rather than sequences of frames.
 
 ## Instructions for dataset access
 
