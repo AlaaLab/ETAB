@@ -40,3 +40,12 @@ The Tufts Medical Echocardiogram Dataset (TMED) contains still echocardiogram im
 
 
 ### References and acknowledgments
+
+```sh
+@inproceedings{ouyang2019echonet,
+  title={Echonet-dynamic: a large new cardiac motion video data resource for medical machine learning},
+  author={Ouyang, David and He, Bryan and Ghorbani, Amirata and Lungren, Matt P and Ashley, Euan A and Liang, David H and Zou, James Y},
+  booktitle={NeurIPS ML4H Workshop: Vancouver, BC, Canada},
+  year={2019}
+}
+```
