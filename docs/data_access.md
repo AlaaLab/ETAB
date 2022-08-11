@@ -36,15 +36,13 @@ The Tufts Medical Echocardiogram Dataset (TMED) contains still echocardiogram im
 ## Instructions for dataset access
 
 ### A typical top-level directory layout
-
     .
-    ├── build                   # Compiled files (alternatively `dist`)
-    ├── docs                    # Documentation files (alternatively `doc`)
-    ├── src                     # Source files (alternatively `lib` or `app`)
-    ├── test                    # Automated tests (alternatively `spec` or `tests`)
-    ├── tools                   # Tools and utilities
-    ├── LICENSE
-    └── README.md
+    |
+   etab 
+    └── data
+          ├── echonet                 # Directory for the EchoNet-Dynamic dataset
+          ├── camus                   # Directory for the CAMUS dataset
+          └── tmed                    # Directory for the TMED dataset
 
 ***EchoNet data*** 
 
