@@ -21,9 +21,7 @@ Below is a high-level description and meta-data for the data sets involved in ET
 | **CAMUS**     | 500  | *AP4CH*, *AP2CH* | LV ejection fraction, ES and ED frames, LV epicardium, endocardium and left atrium segments    |
 | **TMED**      | 2,341 | *PLAX*, *PSAX* | Aortic Stenosis diagnoses, view annotations  |
 
-**EchoNet.** In this data set, introduced in [1], one apical-4 chamber (AP4CH) 2D gray-scale video is extracted from each echo study. A total of 10,036 videos are collected from 10,036 distinct individuals who underwent echocardiography between 2006 and 2018 as part of routine care at a University Hospital. Individuals in the data set were selected at random from hospital records. Along with each video,
-
-
+**EchoNet.** In this data set, introduced in [1], one apical-4 chamber (AP4CH) 2D gray-scale video is extracted from each echo study. A total of 10,036 videos are collected from 10,036 distinct individuals who underwent echocardiography between 2006 and 2018 as part of routine care at a University Hospital. Individuals in the data set were selected at random from hospital records. Along with each video, cardiac function assessments and calculations obtained by a registered sonographer and verified by a level-3 echocardiographer are provided.
 
 ## Instructions for dataset access
 
