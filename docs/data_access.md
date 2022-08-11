@@ -36,12 +36,22 @@ The Tufts Medical Echocardiogram Dataset (TMED) contains still echocardiogram im
 ## Instructions for dataset access
 
 ### A typical top-level directory layout
+
+    .
+    └── etab
+    └── config.py
+    ├── echonet                 
+    ├── camus                   
+    └── tmed                          # Directory for the TMED dataset
+
+
     .
     └── etab
           └── data
                 ├── echonet                 # Directory for the EchoNet-Dynamic dataset
                 ├── camus                   # Directory for the CAMUS dataset
                 └── tmed                    # Directory for the TMED dataset
+
 
 ***EchoNet data*** 
 
