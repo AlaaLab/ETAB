@@ -47,8 +47,7 @@ All datasets involved in ETAB are open- or public-access. To run a benchmark exp
                 └── tmed                    # Directory for the TMED dataset
 
 
-
-
+In each data folder, our scripts expect the content (subfolders and files) to match those of the original data sources. You can customize the data directories by changing the directory variables in the configuration file in the main repo directory as highlighted below:
 
     .
     └── etab
