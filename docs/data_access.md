@@ -92,6 +92,20 @@ The CAMUS dataset is publicly accessible, and is held and maintained within the 
 
 **TMED data**
 
+*License:* [The TMED Health Data License](https://tmed.cs.tufts.edu/data_license.html)
+
+To access the Tufts Medical Echocardiogram Dataset (TMED) dataset, please visit the official TMED [website](https://tmed.cs.tufts.edu/), click on the [Data Access](https://tmed.cs.tufts.edu/data_access.html) button in the main menu, and follow the instructions therein. The downloaded folders should be located in the "tmed" folder according to the directory layout above (or a customized directory specified in config.py). The contents of the "tmed" folder should follow the layout below.
+
+    .
+    └── tmed
+          ├── labels_per_image.csv
+          ├── TMED2_fold0_labeledpart.csv
+          ├── TMED2_fold1_labeledpart.csv
+          └── TMED2_fold2_labeledpart.csv
+
+Please note that ETAB operates on the labeled samples of TMED only. You do not need to include the unlabeled data in the tmed folder to run the ETAB benchmarks.
+
+
 ## Data loaders and processing tools
 
 
