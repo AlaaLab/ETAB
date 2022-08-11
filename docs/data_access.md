@@ -97,7 +97,7 @@ The CAMUS dataset is publicly accessible, and is held and maintained within the 
 
 ### References and acknowledgments
 
-If you use ETAB in your research, please acknowledge the authors who contributed by sharing the publicly accessible echocardiography datasets involved in ETAB by citing the following references. 
+If you use ETAB in your research, please acknowledge the authors who contributed by sharing the publicly accessible echocardiography datasets. You can credit the datasets' authors by citing the following references. 
 
 ***EchoNet data*** 
 
