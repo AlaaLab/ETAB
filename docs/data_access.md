@@ -13,6 +13,8 @@ The ETAB benchmarks are based on 3 publicly accessible echocardiogram data sets 
 
 ## Datasets
 
+Below is a high-level description and meta-data for the data sets involved in ETAB.
+
 | Dataset |  Sample size |  Echo views |  Annotations  | 
 | :---         |     :---:      |      :---:      |  :--- |
 | **EchoNet**   | 10,036 | *AP4CH* | Left ventricle (LV) traces, LV ejection fraction, End-systolic (ES) and End-diastole (ED) frames   |
