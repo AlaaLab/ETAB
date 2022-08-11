@@ -62,6 +62,8 @@ To set the directories for the EchoNet, CAMUS and TMED data, you can change the 
 
 ### Downloading the datasets
 
+To download the datasets, please follow the instructions and external links below. 
+
 **EchoNet data** 
 
 **CAMUS data** 
