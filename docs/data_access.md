@@ -66,6 +66,8 @@ To download the datasets, please follow the instructions and external links belo
 
 **EchoNet data** 
 
+To access the EchoNet-Dynamic dataset, please use this link: https://echonet.github.io/dynamic/
+
 **CAMUS data** 
 
 **TMED data**
