@@ -35,7 +35,18 @@ The Tufts Medical Echocardiogram Dataset (TMED) contains still echocardiogram im
 
 ## Instructions for dataset access
 
-### A typical top-level directory layout
+All datasets involved in ETAB are open- or public-access. To run a benchmark experiment, evaluate a pre-trained visual representation using the ETAB score, or implement your own baseline, you need to download the datasets from their original sources. The default data directories in ETAB follow the layout below:
+
+    .
+    └── etab
+          └── data
+                ├── echonet                 # Directory for the EchoNet-Dynamic dataset
+                ├── camus                   # Directory for the CAMUS dataset
+                └── tmed                    # Directory for the TMED dataset
+
+
+
+### The ETAB top-level directory layout
 
     .
     └── etab
@@ -46,14 +57,6 @@ The Tufts Medical Echocardiogram Dataset (TMED) contains still echocardiogram im
     ├── setup.py                 
     └── run_benchmark.py                                             
 
-The default data directories in ETAB follow the layout below:
-
-    .
-    └── etab
-          └── data
-                ├── echonet                 # Directory for the EchoNet-Dynamic dataset
-                ├── camus                   # Directory for the CAMUS dataset
-                └── tmed                    # Directory for the TMED dataset
 
 
 ***EchoNet data*** 
