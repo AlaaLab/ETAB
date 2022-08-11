@@ -70,7 +70,13 @@ To download the datasets, please follow the instructions and external links belo
 
 To access the EchoNet-Dynamic dataset, please visit this [Link](https://echonet.github.io/dynamic/), click on the "Accessing Dataset" button in the main menu, and follow the instructions therein. The data resides in the Stanford Artificial Intelligence in Medicine and Imaging (AIMI) Center Shared Datasets [Portal](https://stanfordaimi.azurewebsites.net/datasets/834e1cd1-92f7-4268-9daa-d359198b310a). The data folder size is 7.04 GB. The downloaded folders should be located in the "echonet" folder according to the directory layout above (or a customized directory specified in config.py). The contents of the "echonet" folder should follow the layout below.
 
- 
+    .
+    └── echonet
+           ├── Videos                 # Directory for the echocardiography clips
+           ├── VolumeTracings.csv     # Directory for the left ventricle tracings
+           └── FileList.csv           # Directory for the meta-data
+
+
 **CAMUS data** 
 
 **TMED data**
