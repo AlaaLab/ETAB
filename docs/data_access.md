@@ -86,7 +86,7 @@ The CAMUS dataset is publicly accessible, and is held and maintained within the 
     .
     └── camus
            ├── training          # Folder containing data for training echo clips
-           └── testing           # DFolder containing data for testing echo clips
+           └── testing           # Folder containing data for testing echo clips
 
 
 
