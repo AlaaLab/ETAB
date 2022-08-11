@@ -41,6 +41,8 @@ The Tufts Medical Echocardiogram Dataset (TMED) contains still echocardiogram im
 
 ### References and acknowledgments
 
+If you use ETAB, please acknowledge the  
+
 **EchoNet data** 
 
 ```sh
