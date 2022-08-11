@@ -62,3 +62,14 @@ The Tufts Medical Echocardiogram Dataset (TMED) contains still echocardiogram im
   publisher={IEEE}
 }
 ```
+
+```
+@inproceedings{huang2021new,
+  title={A new semi-supervised learning benchmark for classifying view and diagnosing aortic stenosis from echocardiograms},
+  author={Huang, Zhe and Long, Gary and Wessler, Benjamin and Hughes, Michael C},
+  booktitle={Machine Learning for Healthcare Conference},
+  pages={614--647},
+  year={2021},
+  organization={PMLR}
+}
+```
