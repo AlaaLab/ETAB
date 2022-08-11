@@ -19,3 +19,8 @@ The ETAB benchmarks are based on 3 publicly accessible echocardiogram data sets 
 | **CAMUS**     | 500  | *AP4CH*, *AP2CH* | LV ejection fraction, ES and ED frames, LV epicardium, endocardium and left atrium segments    |
 | **TMED**      | 2,341 | *PLAX*, *PSAX* | Aortic Stenosis diagnoses, view annotations  |
 
+
+## Instructions for dataset access
+
+
+## Data loaders and processing tools
