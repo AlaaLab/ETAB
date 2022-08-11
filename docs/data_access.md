@@ -35,6 +35,11 @@ The Tufts Medical Echocardiogram Dataset (TMED) contains still echocardiogram im
 
 ## Instructions for dataset access
 
+***EchoNet data*** 
+
+***CAMUS data*** 
+
+***TMED data***
 
 ## Data loaders and processing tools
 
