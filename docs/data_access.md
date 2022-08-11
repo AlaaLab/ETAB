@@ -46,6 +46,7 @@ The Tufts Medical Echocardiogram Dataset (TMED) contains still echocardiogram im
     ├── setup.py                 
     └── run_benchmark.py                                             
 
+The default data directories in ETAB follow the layout below:
 
     .
     └── etab
