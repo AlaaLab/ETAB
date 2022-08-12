@@ -129,6 +129,16 @@ data = etab.ETAB_dataset(name="echonet",
 
 ### Training and testing data loaders
 
+```
+
+from etab.utils.data_tools import train_test_split
+
+
+train_data, val_data, test_data = train_test_split(data, train_frac=0.5, val_frac=0.1)
+
+```
+
+
 ### Data tools and functionalities
 
 
