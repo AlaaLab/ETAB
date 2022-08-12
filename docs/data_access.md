@@ -110,7 +110,22 @@ Please note that ETAB operates on the labeled samples of TMED only. You do not n
 
 The ETAB library provides a unified API for loading echocardiography datasets and pre-processing the data for model development. Below is an overview of the ETAB data structures and functionalities. Detailed examples and code snippets for loading and processing echocardiography datasets are provided in this **demo notebook**.
 
-### The *echo_dataset* class
+### The *ETAB_dataset* class
+
+```
+import etab
+
+data = etab.ETAB_dataset(name="echonet",
+                         target="EF",
+                         view="A4CH",
+                         video=False,
+                         normalize=True,
+                         length=16, 
+                         period=2,
+                         max_length=250,
+                         padding=None)
+```
+
 
 ### Training and testing data loaders
 
