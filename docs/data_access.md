@@ -108,6 +108,8 @@ Please note that ETAB operates on the labeled samples of TMED only. You do not n
 
 ## Data loaders and processing tools
 
+The ETAB library provides a unified API for loading echocardiography datasets and pre-processing the data for model development. 
+
 
 ### References and acknowledgments
 
