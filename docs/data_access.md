@@ -112,6 +112,10 @@ The ETAB library provides a unified API for loading echocardiography datasets an
 
 ### The *echo_dataset* class
 
+### Training and testing data loaders
+
+### Data tools and functionalities
+
 
 ## References and acknowledgments
 
