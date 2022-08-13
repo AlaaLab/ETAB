@@ -125,15 +125,20 @@ dataset = etab.ETAB_dataset(name="echonet",
                             frame_l=224,
                             frame_w=224,
                             clip_l=16, 
-                            period=2,
+                            sampling_period=2,
                             padding=None)
 ```
 
 You can craft a dataset that suits the modeling problem of interest by customizing the values for the *ETAB_dataset* class attributes. The meaning of all class attributes are listed below.
 
-- name: 
-
-
+- **name:** The source of the data to be loaded. Current options include "echonet", "camus" and "tmed".
+- **target:** The labels associated with each patient. Options include "EF", "LVtrace", "LAtrace", "MYtrace", "ES/ED", "view", "CM", "AS".
+- **view:** The echocardiographic views for the loaded data. Options include "AP4CH", "AP2CH", "PLAX" and "PSAX".
+- **video:** A boolean indicating whether data should be loaded as a sequence of frames for each patient. Setting this to "False" means that data will include only the first frame in each clip.
+- **normalize:** A boolean indicating whether pixel values should be normalized in the range [0, 1].
+- **frame_l, frame_w and clip_l:** Frame length and width (in terms of the number of pixels), and the clip length in terms of the number of frames.
+- **sampling_period:** Load video data by sampling every other *sampling_period* frame. 
+- **padding:** Add zeros to clips that are shorter than *clip_l*.
 
 ### Training and testing data loaders
 
