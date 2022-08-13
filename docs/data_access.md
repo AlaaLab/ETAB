@@ -122,9 +122,10 @@ data = etab.ETAB_dataset(name="echonet",
                          view="A4CH",
                          video=False,
                          normalize=True,
-                         length=16, 
+                         frame_l=224,
+                         frame_w=224,
+                         clip_l=16, 
                          period=2,
-                         max_length=250,
                          padding=None)
 ```
 
