@@ -153,7 +153,7 @@ train_data, val_data, test_data = train_test_split(dataset, train_frac=0.5, val_
 
 ```
 
-In the above, the variables *train_data*, *val_data*, and *test_data* are iterables that contain the training/validation/testing splits. Each data point is a tuple where the first element (e.g., train_data[0]) conrains a *frame_l x frame_w* image (or a list of images of length *clip_l* if *video* is True), and the second element (e.g., train_data[1]) conrains the label. The label can be an image (for segmentation tasks), a real-valued target or a binary label. 
+In the above, the variables *train_data*, *val_data*, and *test_data* are iterables that contain the training/validation/testing splits. Each data point is a tuple where the first element (e.g., train_data[0]) conrains a *frame_l x frame_w* image (or a list of images of length *clip_l* if *video* is True), and the second element (e.g., train_data[1]) conrains the label. The label can be an image (for segmentation tasks), a real-valued target (for regression tasks) or a binary/discrete label (for classification tasks). 
 
 
 ### Data tools and functionalities
