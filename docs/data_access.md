@@ -117,17 +117,22 @@ Each dataset is an instantiation of the *ETAB_dataset* class, which contains com
 ```
 import etab
 
-data = etab.ETAB_dataset(name="echonet",
-                         target="EF",
-                         view="A4CH",
-                         video=False,
-                         normalize=True,
-                         frame_l=224,
-                         frame_w=224,
-                         clip_l=16, 
-                         period=2,
-                         padding=None)
+dataset = etab.ETAB_dataset(name="echonet",
+                            target="EF",
+                            view="A4CH",
+                            video=False,
+                            normalize=True,
+                            frame_l=224,
+                            frame_w=224,
+                            clip_l=16, 
+                            period=2,
+                            padding=None)
 ```
+
+You can craft a dataset that suits the modeling problem of interest by customizing the values for the *ETAB_dataset* class attributes. The meaning of all class attributes are listed below.
+
+- name: 
+
 
 
 ### Training and testing data loaders
