@@ -125,7 +125,7 @@ dataset = etab.ETAB_dataset(name="echonet",
                             frame_l=224,
                             frame_w=224,
                             clip_l=16, 
-                            sampling_period=2,
+                            fps=50,
                             padding=None)
 ```
 
@@ -137,7 +137,7 @@ You can craft a dataset that suits the modeling problem of interest by customizi
 - **video:** A boolean indicating whether data should be loaded as a sequence of frames for each patient. Setting this to "False" means that data will include only the first frame in each clip.
 - **normalize:** A boolean indicating whether pixel values should be normalized in the range [0, 1].
 - **frame_l, frame_w and clip_l:** Frame length and width (in terms of the number of pixels), and clip length in terms of number of frames.
-- **sampling_period:** Load video data by sampling every other *sampling_period* frame. 
+- **fps:** Sampling rate for the loaded video. 
 - **padding:** Add zeros to clips that are shorter than *clip_l*.
 
 ### Training and testing data loaders
