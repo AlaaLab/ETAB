@@ -136,7 +136,7 @@ You can craft a dataset that suits the modeling problem of interest by customizi
 - **view:** The echocardiographic views for the loaded data. Options include "AP4CH", "AP2CH", "PLAX" and "PSAX".
 - **video:** A boolean indicating whether data should be loaded as a sequence of frames for each patient. Setting this to "False" means that data will include only the first frame in each clip.
 - **normalize:** A boolean indicating whether pixel values should be normalized in the range [0, 1].
-- **frame_l, frame_w and clip_l:** Frame length and width (in terms of the number of pixels), and the clip length in terms of the number of frames.
+- **frame_l, frame_w and clip_l:** Frame length and width (in terms of the number of pixels), and clip length in terms of number of frames.
 - **sampling_period:** Load video data by sampling every other *sampling_period* frame. 
 - **padding:** Add zeros to clips that are shorter than *clip_l*.
 
