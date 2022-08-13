@@ -8,7 +8,7 @@
     <b> Datasets, Accessibility and Data Processing Tools </b>
 </h1>
 
-The ETAB benchmarks are based on 3 publicly accessible echocardiogram data sets that span different patient cohorts and involve different echo views and annotations. This Section provides a detailed description of the datasets, instructions on how to access each data set, and the data processing tools implemented within the ETAB library.
+Currently, the ETAB library is based on three publicly accessible echocardiogram data sets that span different patient cohorts and involve different echocardiographic views and annotations. ETAB is an evolving project that will include more data resources in the future as more datasets become publicly available. This Section provides a detailed description of the datasets, instructions on how to access each dataset, and the data processing tools implemented within the ETAB library.
 
 
 ## Datasets
