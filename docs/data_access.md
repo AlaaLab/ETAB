@@ -112,6 +112,8 @@ The ETAB library provides a unified API for loading echocardiography datasets an
 
 ### The *ETAB_dataset* class
 
+Each dataset is an instantiation of the *ETAB_dataset* class, which contains common attributes and a unified API for all data processing functionalities. A code snippet for creating an instance of the *ETAB_dataset* class is demonstrated below.
+
 ```
 import etab
 
