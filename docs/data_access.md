@@ -148,14 +148,18 @@ Having instantiated an *ETAB_dataset* class, we can craft an echocardiography da
 ```
 echonet.load_data(n_clips=100, random=False)
 ```
-This command will load 100 clips into the *.data* attribute of *echonet*. Each data point will be associated with the label specified in the class options used within the instantiating command above. We can visualize the data for patient number *index* using the *plot_segment* function as follows:
+This command will load 100 clips into the *.data* attribute of *echonet*. The data will be loaded from EchoNet in order if *random* is set to False, and will be randomly sampled otherwise. Each data point will be associated with the label specified in the class options used within the instantiating command above. We can visualize the data for patient number *index* using the *plot_segment* function as follows:
 
 ```
 echo_image = echonet.data[index][0]
 LV_segment = echonet.data[index][1][0]
 plot_segment(echo_image, LV_segment, overlay=True, color="r")
 ```
+This last command should display the following plot for *index=65*
 
+<p> 
+  <img width="160" height="160" src="assets/echonet_LV.png" /> 
+</p>
 
 
 Training and testing data can be loaded using the **train_test_split** function in **etab.utils.data_tools** as follows:
