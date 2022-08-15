@@ -132,7 +132,7 @@ dataset = etab.ETAB_dataset(name="echonet",
 You can craft a dataset that suits the modeling problem of interest by customizing the values for the *ETAB_dataset* class attributes. The meaning of all class attributes are listed below.
 
 - **name:** The source of the data to be loaded. Current options include "echonet", "camus" and "tmed".
-- **target:** The labels associated with each patient. Options include "EF", "LVtrace", "LAtrace", "MYtrace", "ES/ED", "view", "CM", "AS".
+- **target:** The labels associated with each patient. Options include "EF", "LV_seg", "LA_seg", "MY_seg", "ES/ED", "view", "CM", "AS".
 - **view:** The echocardiographic views for the loaded data. Options include "AP4CH", "AP2CH", "PLAX" and "PSAX".
 - **video:** A boolean indicating whether data should be loaded as a sequence of frames for each patient. Setting this to "False" means that data will include only the first frame in each clip.
 - **normalize:** A boolean indicating whether pixel values should be normalized using the ImageNet mean and variance.
