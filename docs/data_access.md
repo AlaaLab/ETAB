@@ -161,6 +161,14 @@ This last command should display the following plot for *index=65*
   <img width="160" height="160" src="assets/echonet_LV.png" /> 
 </p>
 
+Further example on data with traces of the left ventricle, left atrium and myocardial wall from the CAMUS dataset are shown below. The code for reproducing these plots is provided in the [**demo notebook**](https://github.com/ahmedmalaa/ETAB/blob/main/notebooks/Demo%201%20-%20ETAB%20Data%20Loading%20and%20Processing%20Tools.ipynb).
+
+<p> 
+  <img width="160" height="160" src="assets/camus_LV.png" /> 
+  <img width="160" height="160" src="assets/camus_LA.png" /> 
+  <img width="160" height="160" src="assets/camus_MY.png" /> 
+</p>
+
 
 Training and testing data can be loaded using the **train_test_split** function in **etab.utils.data_tools** as follows:
 
