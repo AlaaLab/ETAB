@@ -169,6 +169,33 @@ Further example on data with traces of the left ventricle, left atrium and myoca
   <img width="160" height="160" src="assets/camus_MY.png" /> 
 </p>
 
+Now let us create a new instance of EchoNet but with a different data structure. This time, we create a video dataset where the labels correspond to the LV ejection fraction. To create such an instance, we supply the class with the set of options and attributes below.
+
+```
+echonet = ETAB_dataset(name="echonet",
+                       target="EF", 
+                       view="A4",
+                       video=False,
+                       normalize=True,
+                       frame_l=224,
+                       frame_w=224,
+                       clip_l=16, 
+                       fps=50,
+                       padding=None)
+```
+
+To animate an echocardiographic video and save it as a gif, you can use the *create_echo_clip* function as follows
+
+```
+create_echo_clip(echonet.data[0][0], "demo_clip")
+```
+
+This will save the gif file below in a folder named "echo_clips" in the current directoty...
+
+<p> 
+  <img width="160" height="160" src="assets/demo_clip.gif" /> 
+</p>
+
 
 Training and testing data can be loaded using the **train_test_split** function in **etab.utils.data_tools** as follows:
 
