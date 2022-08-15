@@ -158,6 +158,12 @@ In the above, the variables *train_data*, *val_data*, and *test_data* are iterab
 
 ### Data tools and functionalities
 
+Having instantiated an *ETAB_dataset* class, we can craft an echocardiography data set with the options specified in the class instantiation by calling the *load_data* method as follows:
+
+```
+echonet.load_data(n_clips=100)
+```
+
 
 ## References and acknowledgments
 
