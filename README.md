@@ -16,6 +16,8 @@ The echocardiographic task adaptation benchmark (ETAB) library contains a suite 
   <img width="160" height="160" src="assets/echo_movie.gif" /> 
   <img width="160" height="160" src="assets/echo_movie.gif" />
   <img width="160" height="160" src="assets/echo_movie.gif" />
+  <img width="160" height="160" src="assets/echo_movie.gif" />
+  <img width="160" height="160" src="assets/echo_movie.gif" />
 </p>
 
 ---------------
