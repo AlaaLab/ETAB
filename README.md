@@ -27,11 +27,9 @@ The ETAB library comprises a comprehensive suite of visual task adaptation bench
 
 #### [Datasets, Accessibility and Data Processing Tools](docs/data_access.md)
 
-#### [Benchmark tasks](documentation/benchmark_tasks.md)
+#### [Benchmark Tasks](documentation/benchmark_tasks.md)
 
-#### [The ETAB evaluation protocol](documentation/benchmark_tasks.md)
+#### [The ETAB Evaluation Protocol](documentation/benchmark_tasks.md)
 
-#### [Implementing your own baselines](documentation/implementing_baselines.md)
-
-#### [Leaderboard and benchmark results](documentation/leaderboard.md)
+#### [Leaderboard and Benchmark Results](documentation/leaderboard.md)
 
