@@ -154,7 +154,6 @@ This command will load 100 clips into the *.data* attribute of *echonet*. Each d
 echo_image = echonet.data[index][0]
 LV_segment = echonet.data[index][1][0]
 plot_segment(echo_image, LV_segment, overlay=True, color="r")
-
 ```
 
 
@@ -162,12 +161,9 @@ plot_segment(echo_image, LV_segment, overlay=True, color="r")
 Training and testing data can be loaded using the **train_test_split** function in **etab.utils.data_tools** as follows:
 
 ```
-
 from etab.utils.data_tools import train_test_split
 
-
 train_data, val_data, test_data = train_test_split(echonet, train_frac=0.5, val_frac=0.1, random=True)
-
 ```
 
 In the above, the variables *train_data*, *val_data*, and *test_data* are iterables that contain the training/validation/testing splits. Each data point is a tuple where the first element (e.g., train_data[index][0]) conrains a *frame_l x frame_w* image (or a list of images of length *clip_l* if *video* is True), and the second element (e.g., train_data[index][1]) conrains the label. The label can be an image (for segmentation tasks), a real-valued target (for regression tasks) or a binary/discrete label (for classification tasks). 
