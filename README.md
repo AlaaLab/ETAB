@@ -37,6 +37,6 @@ The ETAB library comprises a comprehensive suite of visual task adaptation bench
 
 #### [Leaderboard and Benchmark Results](documentation/leaderboard.md)
 
-#### [Reproducibility](documentation/leaderboard.md)
+#### [Reproducibility Checklist](documentation/leaderboard.md)
 
 ---------------
