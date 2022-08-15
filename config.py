@@ -3,8 +3,8 @@
 
 import torchvision.models as models
 
-echonet_dir        = "/content/drive/My Drive/Colab Notebooks/dynamic/EchoNet-Dynamic" 
-camus_dir          = "/content/drive/My Drive/Colab Notebooks/camus_data_set.pickle"
+echonet_dir        = "/home/jupyter/visual-prompting" 
+camus_dir          = "/home/jupyter/visual-prompting/data/camus_data_set.pickle"
 clip_dir           = "echo_clips/"
 
 

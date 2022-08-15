@@ -4,55 +4,17 @@ from etab.utils.callbacks import *
 
 available_datasets = ["EchoNet", "CAMUS", "TMED"]
 
-class echocardiography_dataset:
+class ETAB_dataset:
     
     """
     Generic class with common functionalities for echo data sets 
     
     """
     
-    def __init__(self,
-                 name="echonet",
-                 target_type="EF",
-                 view="A4CH",
-                 video=False,
-                 normalize=True,
-                 length=16, 
-                 period=2,
-                 max_length=250,
-                 padding=None):
-        
-        self.name        = name
-        self.target_type = target_type
-        self.view        = view
-        self.video       = video
-        self.normalize   = normalize
-        self.length      = length
-        self.period      = period
-        self.max_length  = max_length
-        self.padding     = padding
-        
-        
-    def load_data(self, **kwargs):
-        
-        """
-        
-        ** Generic function for loading echo data sets **
-        
-        :param n_clips: Number of distinct echocardiography clips to be loaded 
-        
-        """    
-        
-        self.data          = load_ETAB_dataset(dataset_type=config.dataset_names[self.name], 
-                                               echo_view=self.view, 
-                                               label_type=config.task_targets[self.target_type])
-        
-
-        
-class echonet(echocardiography_dataset):
-    
-    
     """
+    
+    Option 1: "echonet"
+    
     The EchoNet dataset, introduced in [1, 2], comprises one apical-4 chamber (AP4CH) 2D gray-scale video is extracted from each echo study. 
     A total of 10,036 videos are collected from 10,036 distinct individuals who underwent echocardiography between 2006 and 2018 as part of 
     routine care at a University Hospital. Individuals in the data set were selected at random from hospital records cardiac function assessments 
@@ -75,17 +37,48 @@ class echonet(echocardiography_dataset):
 
     """
     
-    def __init__(self, root=None, name="echonet", view="A4CH"):
+    def __init__(self,
+                 name="echonet",
+                 target="EF",
+                 view="A4CH",
+                 video=False,
+                 normalize=True,
+                 frame_l=224,
+                 frame_w=224,
+                 clip_l=16, 
+                 fps=50,
+                 padding=None):
+
+        self.name      = name
+        self.target    = target 
+        self.view      = view
+        self.video     = video
+        self.normalize = normalize
+        self.frame_l   = frame_l
+        self.frame_w   = frame_w
+        self.clip_l    = clip_l
+        self.fps       = fps
+        self.padding   = padding
         
-        self.name     = "echonet" 
+        
+    def load_data(self, n_clips=None, **kwargs):
+        
+        """
+        
+        ** Generic function for loading echo data sets **
+        
+        :param n_clips: Number of distinct echocardiography clips to be loaded 
+        
+        """    
+        
+        self.data      = load_ETAB_dataset(dataset_type=config.dataset_names[self.name], 
+                                           echo_view=self.view, 
+                                           label_type=config.task_targets[self.target],
+                                           n_clips=n_clips,
+                                           clip_l=self.clip_l,
+                                           normalize=self.normalize)
+        
+        
+        
 
-        super().__init__()
-
-        if root is None:
-            
-            self.root = config.echonet_dir
-            
-        else:
-            
-            self.root = root
-                       
+        

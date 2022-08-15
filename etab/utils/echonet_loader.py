@@ -21,6 +21,10 @@ from os import listdir
 from os.path import isfile, join
 import cv2
 import xml.etree.ElementTree as ET
+import config
+
+imagenet_mean  = np.array([0.485, 0.456, 0.406])
+imagenet_std   = np.array([0.229, 0.224, 0.225])
 
 
 class Echo(torchvision.datasets.VisionDataset):
@@ -294,7 +298,7 @@ def _defaultdict_of_lists():
 
 
 
-
+"""
 def load_segmented_data(data_dir, n_train=None, concatenate=True, rgb=False, IMG_SIZE=224):
     
     transform    = T.ToPILImage()
@@ -337,4 +341,130 @@ def load_segmented_data(data_dir, n_train=None, concatenate=True, rgb=False, IMG
         all_data_set = [(videos[k].squeeze(0), segments[k].squeeze(0).type(torch.LongTensor)) for k in range(len(videos))]
     
     return all_data_set
+
+"""
+
+transform    = T.ToPILImage()
+pil_2_tensor = T.ToTensor()
+
+def flip_channels(video, IMG_SIZE):
+  
+    if video.shape[0]==1:
+        
+        video = video.squeeze(0)
+        video = pil_2_tensor(transform(torch.einsum('hwc->chw', video)).resize((IMG_SIZE, IMG_SIZE)))
+            
+    else:
+        
+        # loop over frames
+        video = [pil_2_tensor(transform(torch.einsum('hwc->chw', video[kk, :, :, :])).resize((IMG_SIZE, IMG_SIZE))).unsqueeze(0) for kk in range(video.shape[0])]
+        video = torch.cat(video, dim=0)
+
+    return video   
+
+
+def load_segmented_data(data_dir, 
+                        n_clips=None, 
+                        IMG_SIZE=224, 
+                        n_frames=1, 
+                        normalize=True,
+                        targets=["LargeFrame", "LargeTrace"]):
+
+    
+    dataset       = Echo(root=data_dir + "/data/", target_type=targets)
+    
+    n_clips       = len(dataset) if n_clips is None else n_clips
+    
+    videos        = []
+    label         = []
+
+    for _ in range(n_clips):
+        
+        current_trace  = [] 
+  
+        _video, _trace = dataset.__getitem__(_) 
+        current_video  = torch.einsum('cnhw->nhwc', torch.tensor(_video)/255)[:n_frames, :, :, :] 
+        
+        if type(_trace) is not tuple:
+            
+            _trace = [_trace]
+        
+        for u in range(len(_trace)):
+            
+            if targets[u] in ["SmallFrame", "LargeFrame"]:
+                
+                _video         = torch.tensor(_trace[u])/255 #_trace[u]
+                current_video  = torch.einsum('chw->hwc', _video)
+            
+            else:
+            
+                curr_trace = pil_2_tensor(transform(torch.tensor(_trace[u])).resize((IMG_SIZE, IMG_SIZE))).squeeze(0) if type(_trace[u]) != float else _trace[u]
+
+                current_trace.append(curr_trace)
+        
+
+        current_video = flip_channels(current_video.unsqueeze(0), IMG_SIZE)
+        
+        if normalize:
+            
+            current_video   = torch.einsum('chw->hwc', current_video)
+            current_video   = current_video - imagenet_mean
+            current_video   = current_video / imagenet_std
+            current_video   = torch.einsum('hwc->chw', current_video)
+        
+        videos.append(current_video)
+        label.append(current_trace)
+    
+    #all_data_set = [(videos[k].squeeze(0), (label[k][0], label[k][1].type(torch.LongTensor))) for k in range(len(videos))]
+    all_data_set = [(videos[k], label[k]) for k in range(len(videos))]    
+
+    return all_data_set
+
+
+
+def load_EF_data(data_dir, 
+                 n_clips=None, 
+                 IMG_SIZE=224, 
+                 n_frames=1, 
+                 normalize=True,
+                 targets=["EF", "SmallIndex", "LargeIndex"]):
+    
+    dataset       = Echo(root=data_dir + "/data/", target_type=targets)
+    
+    n_clips       = len(dataset) if n_clips is None else n_clips
+    
+    videos        = []
+    label         = []
+
+    for _ in range(n_clips):
+        
+        _video, _trace = dataset.__getitem__(_) 
+        current_video  = torch.einsum('cnhw->nhwc', torch.tensor(_video)/255)[:n_frames, :, :, :] 
+        current_video  = flip_channels(current_video, IMG_SIZE)
+        
+        videos.append(current_video.unsqueeze(0))
+        label.append(_trace)
+    
+    all_data_set = [(videos[k].squeeze(0), label[k]) for k in range(len(videos))]   
+
+    return all_data_set
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

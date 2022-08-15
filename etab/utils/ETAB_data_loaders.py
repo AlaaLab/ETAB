@@ -32,15 +32,19 @@ def prepare_image(index, dataset, segment_index=1, IMG_SIZE=224, img_type="4CH_E
     test_img       = torch.einsum("hwc->chw", test_img)
     test_seg       = torch.einsum("hwc->chw", test_seg)
     
-    return test_img.float(), test_seg.view((IMG_SIZE, IMG_SIZE)).long()
+    return test_img.float(), [test_seg.view((IMG_SIZE, IMG_SIZE)).long()]
 
 
-def load_ETAB_dataset(dataset_type="C", echo_view="A4", label_type="0"):
+def load_ETAB_dataset(dataset_type="C", echo_view="A4", label_type="0", n_clips=None, clip_l=1, normalize=True):
+    
+    # "LargeFrame", "LargeTrace"
+    # ``EF'', ``EDV'', ``ESV'', ``LargeIndex'',
+    # ``SmallIndex'', ``LargeFrame'', ``SmallFrame'', ``LargeTrace'',
     
     if dataset_type=="C":
         
         segment_names   = dict({"A4": "4CH_", "A2": "2CH_"})
-        anatomic_ID     = dict({"0": 1, "1": 3, "2": 2,
+        anatomic_ID     = dict({"0": 1, "1": 2, "2": 3,
                                 "3": 1, "4": 1, "5": 1, "6": 1}) # 0: LV, 1: LA, 2: MY
         
         with open(config.camus_dir, "rb") as f:
@@ -52,7 +56,7 @@ def load_ETAB_dataset(dataset_type="C", echo_view="A4", label_type="0"):
                                   segment_index=anatomic_ID[label_type], 
                                   IMG_SIZE=224, 
                                   img_type=segment_names[echo_view] + "ED", 
-                                  normalize=True) for k in range(len(raw_dataset))]    
+                                  normalize=normalize) for k in range(len(raw_dataset))]    
         
         if label_type=="5":
         
@@ -60,13 +64,25 @@ def load_ETAB_dataset(dataset_type="C", echo_view="A4", label_type="0"):
             dataset  = [(dataset[k][0], LVef[k]) for k in range(len(dataset))]
             
             
-    elif dataset_type=="E":       
+    elif dataset_type=="E":
         
-        dataset  = load_segmented_data(data_dir=config.echonet_dir, 
-                                       n_train=None, 
-                                       concatenate=False, 
-                                       rgb=False, 
-                                       IMG_SIZE=224)
+        if label_type == "0":
+        
+            dataset  = load_segmented_data(data_dir=config.echonet_dir, 
+                                           n_clips=n_clips, 
+                                           IMG_SIZE=224,
+                                           normalize=normalize,
+                                           targets=["LargeFrame", "LargeTrace"])
+        
+        elif label_type == "3":
+        
+            dataset  = load_EF_data(data_dir=config.echonet_dir,  
+                                    n_clips=n_clips, 
+                                    IMG_SIZE=224, 
+                                    n_frames=clip_l,
+                                    normalize=normalize,
+                                    targets=["EF", "SmallIndex", "LargeIndex"])
+        
     return dataset    
 
 def prepare_benchmark_data(source_task="EA40", target_task="CA45"):
