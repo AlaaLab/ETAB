@@ -117,7 +117,7 @@ Each dataset is an instantiation of the *ETAB_dataset* class, which contains com
 ```
 import etab
 
-dataset = etab.ETAB_dataset(name="echonet",
+echonet = etab.ETAB_dataset(name="echonet",
                             target="EF",
                             view="A4CH",
                             video=False,
@@ -140,7 +140,24 @@ You can craft a dataset that suits the modeling problem of interest by customizi
 - **fps:** Sampling rate for the loaded video. 
 - **padding:** Add zeros to clips that are shorter than *clip_l*.
 
-### Training and testing data loaders
+
+### Data tools and functionalities
+
+Having instantiated an *ETAB_dataset* class, we can craft an echocardiography data set with the options specified in the class instantiation by calling the *load_data* method as follows:
+
+```
+echonet.load_data(n_clips=100, random=False)
+```
+This command will load 100 clips into the *.data* attribute of *echonet*. Each data point will be associated with the label specified in the class options used within the instantiating command above. We can visualize the data for patient number *index* using the *plot_segment* function as follows:
+
+```
+echo_image = echonet.data[index][0]
+LV_segment = echonet.data[index][1][0]
+plot_segment(echo_image, LV_segment, overlay=True, color="r")
+
+```
+
+
 
 Training and testing data can be loaded using the **train_test_split** function in **etab.utils.data_tools** as follows:
 
@@ -149,20 +166,11 @@ Training and testing data can be loaded using the **train_test_split** function 
 from etab.utils.data_tools import train_test_split
 
 
-train_data, val_data, test_data = train_test_split(dataset, train_frac=0.5, val_frac=0.1, random=True)
+train_data, val_data, test_data = train_test_split(echonet, train_frac=0.5, val_frac=0.1, random=True)
 
 ```
 
 In the above, the variables *train_data*, *val_data*, and *test_data* are iterables that contain the training/validation/testing splits. Each data point is a tuple where the first element (e.g., train_data[index][0]) conrains a *frame_l x frame_w* image (or a list of images of length *clip_l* if *video* is True), and the second element (e.g., train_data[index][1]) conrains the label. The label can be an image (for segmentation tasks), a real-valued target (for regression tasks) or a binary/discrete label (for classification tasks). 
-
-
-### Data tools and functionalities
-
-Having instantiated an *ETAB_dataset* class, we can craft an echocardiography data set with the options specified in the class instantiation by calling the *load_data* method as follows:
-
-```
-echonet.load_data(n_clips=100)
-```
 
 
 ## References and acknowledgments
