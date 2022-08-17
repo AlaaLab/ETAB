@@ -42,6 +42,8 @@ The ETAB library comprises a comprehensive suite of visual task adaptation bench
     <li>Instructions for Dataset Access</li>
     &nbsp;
     <li>Data Loaders and Processing Tools</li>
+    &nbsp;
+    <li>Demo Notebook</li>
   </ul>
 
 </details>
@@ -59,6 +61,8 @@ The ETAB library comprises a comprehensive suite of visual task adaptation bench
     <li>Running a Benchmark Experiment Out of the Box</li>
     &nbsp;
     <li>Implementing a Customized Model</li>
+    &nbsp;
+    <li>Demo Notebooks</li>
   </ul>
 
 </details>
