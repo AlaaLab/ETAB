@@ -31,6 +31,23 @@ The ETAB library comprises a comprehensive suite of visual task adaptation bench
 
 #### [Datasets, Accessibility and Data Processing Tools](docs/data_access.md)
 
+<details>
+  <summary>Click me</summary>
+  
+  ### Heading
+  1. Foo
+  2. Bar
+     * Baz
+     * Qux
+
+  ### Some Code
+  ```js
+  function logSomething(something) {
+    console.log('Something', something);
+  }
+  ```
+</details>
+
 #### [Benchmark Tasks](documentation/benchmark_tasks.md)
 
 #### [The ETAB Evaluation Protocol](documentation/benchmark_tasks.md)
