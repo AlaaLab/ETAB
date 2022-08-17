@@ -29,6 +29,8 @@ The ETAB library comprises a comprehensive suite of visual task adaptation bench
 
 ---------------
 
+## Documentation
+
 #### [Section 1: Datasets, Accessibility and Data Processing Tools](docs/data_access.md)
 
 <details>
