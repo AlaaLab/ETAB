@@ -29,7 +29,7 @@ The ETAB library comprises a comprehensive suite of visual task adaptation bench
 
 ---------------
 
-#### [Section I: Datasets, Accessibility and Data Processing Tools](docs/data_access.md)
+#### [Section I   - Datasets, Accessibility and Data Processing Tools](docs/data_access.md)
 
 <details>
   <summary><b>Explore Content</b> (click to expand)</summary>
@@ -40,12 +40,12 @@ The ETAB library comprises a comprehensive suite of visual task adaptation bench
   
 </details>
 
-#### [Section II: ETAB Benchmark Tasks and Model Zoo](documentation/benchmark_tasks.md)
+#### [Section II  - ETAB Benchmark Tasks and Model Zoo](documentation/benchmark_tasks.md)
 
-#### [Section III: The ETAB Evaluation Protocol](documentation/benchmark_tasks.md)
+#### [Section III - The ETAB Evaluation Protocol](documentation/benchmark_tasks.md)
 
-#### [Section IV: Leaderboard and Benchmark Results](documentation/leaderboard.md)
+#### [Section IV  - Leaderboard and Benchmark Results](documentation/leaderboard.md)
 
-#### [Section V: Reproducibility Checklist](documentation/leaderboard.md)
+#### [Section V   - Reproducibility Checklist](documentation/leaderboard.md)
 
 ---------------
