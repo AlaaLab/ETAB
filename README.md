@@ -32,7 +32,7 @@ The ETAB library comprises a comprehensive suite of visual task adaptation bench
 #### [Datasets, Accessibility and Data Processing Tools](docs/data_access.md)
 
 <details>
-  <summary><b>Explore Content</b></summary>
+  <summary><b>Explore Content</b> (click to expand)</summary>
   
   1. Overview of Supported Datasets
   2. Instructions for Dataset Access
