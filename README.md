@@ -48,6 +48,22 @@ The ETAB library comprises a comprehensive suite of visual task adaptation bench
 
 #### [Section 2: ETAB Benchmark Tasks and Model Zoo](documentation/benchmark_tasks.md)
 
+
+<details>
+  <summary><b>Explore Content</b> (click to expand)</summary>
+  &nbsp;
+  <ul>
+    <li>Benchmark Task Categorization and Encoding</li>
+    &nbsp;
+    <li>ETAB Model Zoo</li>
+    &nbsp;
+    <li>Running a Benchmark Experiment Out of the Box</li>
+    &nbsp;
+    <li>Implementing a Customized Model</li>
+  </ul>
+
+</details>
+
 #### [Section 3: The ETAB Evaluation Protocol](documentation/benchmark_tasks.md)
 
 #### [Section 4: Leaderboard and Benchmark Results](documentation/leaderboard.md)
