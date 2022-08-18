@@ -15,29 +15,21 @@ Currently, the ETAB library is based on three publicly accessible echocardiogram
 
 
 <table border="1">
-  <center>
-    <tr>
-      <th class="verticalTableHeader">First</th>
-      <th class="verticalTableHeader">Second</th>
-      <th class="verticalTableHeader">Third</th>
-    </tr>
-    <tr>
-      <td>foo</td>
-      <td>foo</td>
-      <td>foo</td>
-    </tr>
-    <tr>
-      <td>foo</td>
-      <td>foo</td>
-      <td>foo</td>
-    </tr>
-    <tr>
-      <td>foo</td>
-      <td>foo</td>
-      <td>foo</td>
-    </tr>
-  </center>
+ <tr>
+  <td colspan="3"><b>Cardiac Structure Identification</b></td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
 </table>
+
 
 ## ETAB model zoo
 
