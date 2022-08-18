@@ -74,27 +74,3 @@ The ETAB library comprises a comprehensive suite of visual task adaptation bench
 #### [Section 5: Reproducibility Checklist](documentation/leaderboard.md)
 
 ---------------
-
-
-<table border="1">
-    <tr>
-      <th class="verticalTableHeader">First</th>
-      <th class="verticalTableHeader">Second</th>
-      <th class="verticalTableHeader">Third</th>
-    </tr>
-    <tr>
-      <td>foo</td>
-      <td>foo</td>
-      <td>foo</td>
-    </tr>
-    <tr>
-      <td>foo</td>
-      <td>foo</td>
-      <td>foo</td>
-    </tr>
-    <tr>
-      <td>foo</td>
-      <td>foo</td>
-      <td>foo</td>
-    </tr>
-</table>
