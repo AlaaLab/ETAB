@@ -28,6 +28,16 @@ Currently, the ETAB library is based on three publicly accessible echocardiogram
   <td>&nbsp;</td>
  </tr>
  <tr>
+ <td>&nbsp;</td>
+  <td>Segmenting the left atrium (LA)</td>
+  <td>&nbsp;</td>
+ </tr> 
+ <tr>
+ <td>&nbsp;</td>
+  <td>Segmenting the myocardial wall (MY)</td>
+  <td>&nbsp;</td>
+ </tr>  
+ <tr>
  <td colspan="3"> 🔵 &nbsp; <i> Cardiac Function Estimation Tasks </i> </td>
  </tr>
  <tr>
