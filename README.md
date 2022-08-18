@@ -58,7 +58,7 @@ The ETAB library comprises a comprehensive suite of visual task adaptation bench
     &nbsp;
     <li>ETAB Model Zoo</li>
     &nbsp;
-    <li>Running a Benchmark Experiment Out of the Box</li>
+    <li>Running a Benchmark Experiment Out-of-the-Box</li>
     &nbsp;
     <li>Implementing a Customized Model</li>
     &nbsp;
