@@ -15,20 +15,12 @@ Currently, the ETAB library is based on three publicly accessible echocardiogram
 
 <table border="1">
  <tr>
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
+  <td>&nbsp; <b> Task code </b>   &nbsp;</td>
+  <td>&nbsp; <b> Description </b> &nbsp;</td>
+  <td>&nbsp; <b> Datasets </b> &nbsp;</td>
  </tr>
  <tr>
-  <td colspan="3"><b> 🔴 &nbsp; Cardiac Structure Identification Tasks</b></td>
- </tr>
- <tr>
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
- </tr>
- <tr>
- <td colspan="3"><b> 🔵 &nbsp; Cardiac Function Estimation Tasks</b></td>
+  <td colspan="3"> 🔴 &nbsp; Cardiac Structure Identification Tasks </td>
  </tr>
  <tr>
   <td>&nbsp;</td>
@@ -36,7 +28,7 @@ Currently, the ETAB library is based on three publicly accessible echocardiogram
   <td>&nbsp;</td>
  </tr>
  <tr>
- <td colspan="3"><b> 🟢 &nbsp; View Recognition Tasks</b></td>
+ <td colspan="3"> 🔵 &nbsp; Cardiac Function Estimation Tasks </td>
  </tr>
  <tr>
   <td>&nbsp;</td>
@@ -44,7 +36,15 @@ Currently, the ETAB library is based on three publicly accessible echocardiogram
   <td>&nbsp;</td>
  </tr>
  <tr>
- <td colspan="3"><b> 🟡 &nbsp; Clinical Prediction Tasks</b></td>
+ <td colspan="3"> 🟢 &nbsp; View Recognition Tasks </td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+ <td colspan="3"> 🟡 &nbsp; Clinical Prediction Tasks </td>
  </tr>
  <tr>
   <td>&nbsp;</td>
