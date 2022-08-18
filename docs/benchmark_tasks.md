@@ -28,13 +28,33 @@ Currently, the ETAB library is based on three publicly accessible echocardiogram
   <td>&nbsp;</td>
  </tr>
  <tr>
+ <td colspan="3"><b> 🔵 &nbsp; Cardiac Function Estimation Tasks</b></td>
+ </tr>
+ <tr>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
  </tr>
+ <tr>
+ <td colspan="3"><b> 🟢 &nbsp; View Recognition Tasks</b></td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+ <td colspan="3"><b> 🟡 &nbsp; Clinical Prediction Tasks</b></td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr> 
 </table>
 
-<font color='red'> * </font>
+  
+
 
 ## ETAB model zoo
 
