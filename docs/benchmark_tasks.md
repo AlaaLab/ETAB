@@ -13,8 +13,9 @@ Currently, the ETAB library is based on three publicly accessible echocardiogram
 
 ## Benchmark task categorization and encoding
 
-<center>
+
 <table border="1">
+  <center>
     <tr>
       <th class="verticalTableHeader">First</th>
       <th class="verticalTableHeader">Second</th>
@@ -35,8 +36,8 @@ Currently, the ETAB library is based on three publicly accessible echocardiogram
       <td>foo</td>
       <td>foo</td>
     </tr>
+  </center>
 </table>
-</center>
 
 ## ETAB model zoo
 
