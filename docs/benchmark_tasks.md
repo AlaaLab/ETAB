@@ -42,9 +42,14 @@ Currently, the ETAB library is based on three publicly accessible echocardiogram
  </tr>
  <tr>
   <td>&nbsp;</td>
-  <td>&nbsp;</td>
+  <td>Estimating LV ejection fraction</td>
   <td>&nbsp;</td>
  </tr>
+  <tr>
+  <td>&nbsp;</td>
+  <td>Classify end-systole and end-diastole frames</td>
+  <td>&nbsp;</td>
+ </tr> 
  <tr>
  <td colspan="3"> 🟢 &nbsp; <i> View Recognition Tasks </i> </td>
  </tr>
