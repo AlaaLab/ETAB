@@ -16,6 +16,11 @@ Currently, the ETAB library is based on three publicly accessible echocardiogram
 
 <table border="1">
  <tr>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
   <td colspan="3"><b>Cardiac Structure Identification</b></td>
  </tr>
  <tr>
