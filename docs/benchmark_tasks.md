@@ -13,11 +13,12 @@ Currently, the ETAB library is based on three publicly accessible echocardiogram
 
 ## Benchmark task categorization and encoding
 
+<div align="center">
 <table border="1">
  <tr>
-  <td>&nbsp; <b> Task code </b>   &nbsp;</td>
-  <td>&nbsp; <b> Description </b> &nbsp;</td>
-  <td>&nbsp; <b> Datasets </b> &nbsp;</td>
+  <td>&nbsp; <b> <div align="center"> Task code   </div> </b> &nbsp;</td>
+  <td>&nbsp; <b> <div align="center"> Description </div> </b> &nbsp;</td>
+  <td>&nbsp; <b> <div align="center"> Datasets    </div> </b> &nbsp;</td>
  </tr>
  <tr>
   <td colspan="3"> 🔴 &nbsp; <i> Cardiac Structure Identification Tasks </i> </td>
@@ -77,7 +78,7 @@ Currently, the ETAB library is based on three publicly accessible echocardiogram
   <td>&nbsp;</td>
  </tr> 
 </table>
-
+</div>
   
 
 
