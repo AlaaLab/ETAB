@@ -68,7 +68,12 @@ Currently, the ETAB library is based on three publicly accessible echocardiogram
  </tr>
  <tr>
   <td>&nbsp;</td>
+  <td>Diagnose cardiomyopathy</td>
   <td>&nbsp;</td>
+ </tr>
+  <tr>
+  <td>&nbsp;</td>
+  <td>Aortic stenosis</td>
   <td>&nbsp;</td>
  </tr> 
 </table>
