@@ -24,7 +24,7 @@ Currently, the ETAB library is based on three publicly accessible echocardiogram
  </tr>
  <tr>
   <td>&nbsp;</td>
-  <td>&nbsp;</td>
+  <td>Segmenting the left ventricle (LV)</td>
   <td>&nbsp;</td>
  </tr>
  <tr>
