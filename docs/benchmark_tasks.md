@@ -47,7 +47,7 @@ Currently, the ETAB library is based on three publicly accessible echocardiogram
  </tr>
   <tr>
   <td>&nbsp;</td>
-  <td>Classify end-systole and end-diastole frames</td>
+  <td>Classifying end-systole and end-diastole frames</td>
   <td>&nbsp;</td>
  </tr> 
  <tr>
