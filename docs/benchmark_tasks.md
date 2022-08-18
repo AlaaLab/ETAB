@@ -1,19 +1,48 @@
-<h3 align="center">
-    <b> Instructions for data access </b>
-</h3>
-
 ---------------
 
-This repository contains code for a suite of benchmarks that can be used to evaluate visual representations of cardiac ultrasound (echocardiogram) data with respect to various clinically-relevant tasks using publicly accessible data sets. In addition, the repo contains a unified evaluation protocol, which we call the echocardiographic task adaptation benchmark (ETAB), that measures how well a visual representation of echocardiograms generalizes to common downstream tasks of interest.
+<p align="center">
+  <img width="280" height="160" src="assets/etab_logo.png" />
+</p>
 
----------------
+<h1 align="center">
+    <b> ETAB Benchmark Tasks and Model Zoo </b>
+</h1>
 
-#### Installation 
+Currently, the ETAB library is based on three publicly accessible echocardiogram data sets that span different patient cohorts and involve different echocardiographic views and annotations. ETAB is an evolving project that will include more data resources in the future as more datasets become publicly available. This Section provides a detailed description of the datasets, instructions on how to access each dataset, and the data processing tools implemented within the ETAB library.
 
-#### Data sets and accessibility
 
-#### Benchmark tasks
+## Benchmark Task Categorization and Encoding
 
-#### Implementing your own baselines
+<table border="1">
+    <tr>
+      <th class="verticalTableHeader">First</th>
+      <th class="verticalTableHeader">Second</th>
+      <th class="verticalTableHeader">Third</th>
+    </tr>
+    <tr>
+      <td>foo</td>
+      <td>foo</td>
+      <td>foo</td>
+    </tr>
+    <tr>
+      <td>foo</td>
+      <td>foo</td>
+      <td>foo</td>
+    </tr>
+    <tr>
+      <td>foo</td>
+      <td>foo</td>
+      <td>foo</td>
+    </tr>
+</table>
 
-#### Leaderboard and benchmark results
+## ETAB Model Zoo
+
+
+## Running a Benchmark Experiment Out of the Box
+
+
+## Implementing a Customized Model
+
+
+
