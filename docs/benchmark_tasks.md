@@ -11,8 +11,9 @@
 Currently, the ETAB library is based on three publicly accessible echocardiogram data sets that span different patient cohorts and involve different echocardiographic views and annotations. ETAB is an evolving project that will include more data resources in the future as more datasets become publicly available. This Section provides a detailed description of the datasets, instructions on how to access each dataset, and the data processing tools implemented within the ETAB library.
 
 
-## Benchmark Task Categorization and Encoding
+## Benchmark task categorization and encoding
 
+<center>
 <table border="1">
     <tr>
       <th class="verticalTableHeader">First</th>
@@ -35,14 +36,17 @@ Currently, the ETAB library is based on three publicly accessible echocardiogram
       <td>foo</td>
     </tr>
 </table>
+</center>
 
-## ETAB Model Zoo
-
-
-## Running a Benchmark Experiment Out of the Box
+## ETAB model zoo
 
 
-## Implementing a Customized Model
+## Running a benchmark experiment out-of-the-box
+
+
+## Implementing a customized model
+
+## References and acknowledgments
 
 
 
