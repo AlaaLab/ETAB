@@ -26,17 +26,17 @@ Currently, the ETAB library is based on three publicly accessible echocardiogram
  <tr>
   <td>&nbsp;</td>
   <td>Segmenting the left ventricle (LV)</td>
-  <td>&nbsp;</td>
+  <td>EchoNet, CAMUS</td>
  </tr>
  <tr>
  <td>&nbsp;</td>
   <td>Segmenting the left atrium (LA)</td>
-  <td>&nbsp;</td>
+  <td>CAMUS</td>
  </tr> 
  <tr>
  <td>&nbsp;</td>
   <td>Segmenting the myocardial wall (MY)</td>
-  <td>&nbsp;</td>
+  <td>CAMUS</td>
  </tr>  
  <tr>
  <td colspan="3"> 🔵 &nbsp; <i> Cardiac Function Estimation Tasks </i> </td>
@@ -44,12 +44,12 @@ Currently, the ETAB library is based on three publicly accessible echocardiogram
  <tr>
   <td>&nbsp;</td>
   <td>Estimating LV ejection fraction</td>
-  <td>&nbsp;</td>
+  <td>EchoNet, CAMUS</td>
  </tr>
   <tr>
   <td>&nbsp;</td>
   <td>Classifying end-systole and end-diastole frames</td>
-  <td>&nbsp;</td>
+  <td>EchoNet, CAMUS</td>
  </tr> 
  <tr>
  <td colspan="3"> 🟢 &nbsp; <i> View Recognition Tasks </i> </td>
@@ -57,12 +57,12 @@ Currently, the ETAB library is based on three publicly accessible echocardiogram
  <tr>
   <td>&nbsp;</td>
   <td>Classifying apical 2- and 4-chamber (AP2CH vs. AP4CH) views</td>
-  <td>&nbsp;</td>
+  <td>CAMUS</td>
  </tr>
   <tr>
   <td>&nbsp;</td>
   <td>Classifying parasternal short and long axis (PLAX vs. PSAX) views</td>
-  <td>&nbsp;</td>
+  <td>TMED</td>
  </tr> 
  <tr>
  <td colspan="3"> 🟡 &nbsp; <i> Clinical Prediction Tasks </i> </td>
@@ -70,12 +70,12 @@ Currently, the ETAB library is based on three publicly accessible echocardiogram
  <tr>
   <td>&nbsp;</td>
   <td>Diagnose cardiomyopathy</td>
-  <td>&nbsp;</td>
+  <td>EchoNet, CAMUS</td>
  </tr>
   <tr>
   <td>&nbsp;</td>
   <td>Diagnose aortic stenosis</td>
-  <td>&nbsp;</td>
+  <td>TMED</td>
  </tr> 
 </table>
 </div>
