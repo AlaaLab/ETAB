@@ -20,6 +20,16 @@ The ETAB benchmark suite encapsulates a diverse set of tasks that are meant to t
   <td>&nbsp; <b> <div align="center"> Description      </div> </b> &nbsp;</td>
   <td>&nbsp; <b> <div align="center"> Datasets (Views) </div> </b> &nbsp;</td>
  </tr>
+</table>
+</div>
+   
+<div align="center">
+<table border="1">
+ <tr>
+  <td>&nbsp; <b> <div align="center"> Task code        </div> </b> &nbsp;</td>
+  <td>&nbsp; <b> <div align="center"> Description      </div> </b> &nbsp;</td>
+  <td>&nbsp; <b> <div align="center"> Datasets (Views) </div> </b> &nbsp;</td>
+ </tr>
  <tr>
   <td colspan="3"> 🔴 &nbsp; <i> Cardiac Structure Identification Tasks </i> <b> (Category: a) </b> </td>
  </tr>
