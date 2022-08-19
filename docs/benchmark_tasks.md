@@ -81,8 +81,8 @@ The ETAB benchmark suite encapsulates a diverse set of tasks that are meant to t
  </tr> 
  <tr>
   <td>&nbsp;</td>
-  <td>Classifying apical and parasternal views</td>
-  <td>TMED (AP2CH vs. AP3CH vs. AP4CH vs. AP5CH vs. PLAX vs. PSAX)</td>
+  <td><s>Classifying apical and parasternal views</s></td>
+  <td><s>Unity</s> (AP2CH vs. AP3CH vs. AP4CH vs. AP5CH vs. PLAX vs. PSAX)</td>
  </tr>  
  <tr>
  <td colspan="3"> 🟡 &nbsp; <i> Clinical Prediction Tasks </i> </td>
