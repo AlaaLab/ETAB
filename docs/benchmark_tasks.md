@@ -13,19 +13,21 @@ The ETAB benchmark suite encapsulates a diverse set of tasks that are meant to t
 
 ## Benchmark task categorization and encoding
 
+Each benchmark is encoded with a 5-character code that designates the source dataset, the echocardiography view and the downstream task. The structure of the benchmark code follows the layout below:
 <div align="center">
 <table border="1">
   <tr>
-  <td colspan="3"> <div align="center"> <b> Benchmark code </b> </div> </td>
+  <td colspan="3"> <div align="center"> <b> Benchmark code </b> <i>(5 characters)</i> </div> </td>
  </tr>
  <tr>
-  <td> <i> <div align="center"> Dataset code  </div> </i> </td>
-  <td> <i> <div align="center"> View code     </div> </i> </td>
-  <td> <i> <div align="center"> Task code     </div> </i> </td>
+  <td> <i> <div align="center"> Dataset code (1 character)  </div> </i> </td>
+  <td> <i> <div align="center"> View code (2 characters)    </div> </i> </td>
+  <td> <i> <div align="center"> Task code (2 characters)    </div> </i> </td>
  </tr>
 </table>
 </div>
 
+The 1-character dataset code can be interpreted using the following table:
 <div align="center">
 <table border="1">
   <tr>
@@ -45,29 +47,29 @@ The ETAB benchmark suite encapsulates a diverse set of tasks that are meant to t
  </tr> 
 </table>
 </div>
-
+The echocardiographic views are encoded as follows:
 <div align="center">
 <table border="1">
   <tr>
   <td colspan="4"> <div align="center"> <b> View code </b> </div> </td>
  </tr>
  <tr>
-  <td> <i> <div align="center"> APnCH  </div> </i> </td>
+  <td> <i> <div align="center"> An  </div> </i> </td>
   <td>     <div align="center"> Apical n-chamber  </i> </td>
  </tr>
  <tr>
-  <td> <i> <div align="center"> PLAX  </div>          </i> </td>
+  <td> <i> <div align="center"> PL  </div>          </i> </td>
   <td>     <div align="center"> Parasternal long axis </i> </td>
  </tr>
  <tr>
-  <td> <i> <div align="center"> PSAX  </div>          </i> </td>
+  <td> <i> <div align="center"> PS  </div>          </i> </td>
   <td>     <div align="center"> Parasternal short axi </i> </td>
  </tr> 
 
 </table>
 </div>
 
-   
+Currently, ETAB includes 9 core tasks across the 4 task categories. The list of all tasks and their corresponding 2-character codes are summarized in the table below. Tasks with strikethrough marks are still under implementation and will be included in the next release. 
 <div align="center">
 <table border="1">
  <tr>
