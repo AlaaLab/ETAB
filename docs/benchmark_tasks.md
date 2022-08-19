@@ -70,30 +70,30 @@ The ETAB benchmark suite encapsulates a diverse set of tasks that are meant to t
  <td colspan="3"> 🟢 &nbsp; <i> View Recognition Tasks </i> </td>
  </tr>
  <tr>
-  <td>&nbsp;</td>
+  <td>0</td>
   <td>Classifying apical 2- and 4-chamber views</td>
   <td>CAMUS (AP2CH vs. AP4CH)</td>
  </tr>
   <tr>
-  <td>&nbsp;</td>
+  <td>1</td>
   <td>Classifying parasternal short and long axis views</td>
   <td>TMED (PLAX vs. PSAX)</td>
  </tr> 
  <tr>
-  <td>&nbsp;</td>
-  <td><s>Classifying apical and parasternal views</s></td>
+  <td>2</td>
+  <td><s>Classifying all apical and parasternal views</s></td>
   <td><s>Unity</s> (AP2CH vs. AP3CH vs. AP4CH vs. AP5CH vs. PLAX vs. PSAX)</td>
  </tr>  
  <tr>
  <td colspan="3"> 🟡 &nbsp; <i> Clinical Prediction Tasks </i> </td>
  </tr>
  <tr>
-  <td>&nbsp;</td>
+  <td>0</td>
   <td>Diagnose cardiomyopathy</td>
   <td>EchoNet (AP4CH), CAMUS (AP2CH and AP4CH)</td>
  </tr>
   <tr>
-  <td>&nbsp;</td>
+  <td>1</td>
   <td>Diagnose aortic stenosis</td>
   <td>TMED (PSAX and PLAX)</td>
  </tr> 
