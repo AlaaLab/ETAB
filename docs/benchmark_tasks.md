@@ -171,7 +171,6 @@ This code designates the benchmark task of segmenting the LV using apical 4-cham
 ## Running a benchmark experiment out-of-the-box
 
 
-## Implementing a customized model
 
 ## References and acknowledgments
 
