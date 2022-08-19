@@ -53,7 +53,7 @@ Currently, the ETAB library is based on three publicly accessible echocardiogram
  </tr> 
   <tr>
   <td>&nbsp;</td>
-  <td>Longitudinal strain estimations</td>
+  <td>Longitudinal strain estimation</td>
   <td>Unity (AP4CH)</td>
  </tr>   
  <tr>
