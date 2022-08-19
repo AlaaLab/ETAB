@@ -56,12 +56,12 @@ The ETAB benchmark suite encapsulates a diverse set of tasks that are meant to t
   <td>     <div align="center"> Apical n-chamber  </i> </td>
  </tr>
  <tr>
-  <td> <i> <div align="center"> PLAX  </div> </i> </td>
-  <td>     <div align="center"> E               </i> </td>
+  <td> <i> <div align="center"> PLAX  </div>          </i> </td>
+  <td>     <div align="center"> Parasternal long axis </i> </td>
  </tr>
  <tr>
-  <td> <i> <div align="center"> PSAX  </div> </i> </td>
-  <td>     <div align="center"> E               </i> </td>
+  <td> <i> <div align="center"> PSAX  </div>          </i> </td>
+  <td>     <div align="center"> Parasternal short axi </i> </td>
  </tr> 
 
 </table>
