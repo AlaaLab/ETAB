@@ -80,6 +80,11 @@ In this Section, we provide an overview of the ETAB benchmark suite and the supp
   <td>TMED (PLAX vs. PSAX)</td>
  </tr> 
  <tr>
+  <td>&nbsp;</td>
+  <td>Classifying apical and parasternal views</td>
+  <td>TMED (AP2CH vs. AP3CH vs. AP4CH vs. AP5CH vs. PLAX vs. PSAX)</td>
+ </tr>  
+ <tr>
  <td colspan="3"> 🟡 &nbsp; <i> Clinical Prediction Tasks </i> </td>
  </tr>
  <tr>
