@@ -8,7 +8,7 @@
     <b> ETAB Benchmark Suite and Model Zoo </b>
 </h1>
 
-Our benchmark setup is designed to evaluate general task adaptation approaches. Our notion of "task adaptation" is very general—it includes full representation learning pipelines (i.e., a selection of a model architecture, pre-training task and transfer learning algorithm), or a readily available pre-trained feature representation that is adapted to an echocardiographic task by attaching a task-specific head. This broad notion encapsulates virtually all pre-training approaches, including self-supervised, semi-supervised and supervised learning. 
+In this Section, we provide an overview of the ETAB benchmark suite and the supported vision models. The benchmark suite encapsulates a diverse set of tasks that are meant to test the quality of visual representations of echocardiograms with respect to different downstream setups of interest across different datasets. The benchmark tasks fall in four different catgeories: 🔴 *cardiac structure identification* tasks where the goal is to automatically identify anatomical regions of interest, 🔵 *cardiac function estimation* tasks where the goal is to evaluate cardiac hemodynamics and left ventricle measurements, 🟢 *view recognition tasks* where the goal is to automate view annotations for echocardiography clips, and 🟡 *clinical prediction tasks* where the goal is to predict clinical outcomes or issue diagnoses based on observed echocardiograms. Combinations of these tasks constitute adaptation benchmarks that can be used to evaluate transferrability of features across views, data sets and annotations.
 
 
 ## Benchmark suite and task categorization
