@@ -24,17 +24,17 @@ The ETAB benchmark suite encapsulates a diverse set of tasks that are meant to t
   <td colspan="3"> 🔴 &nbsp; <i> Cardiac Structure Identification Tasks </i> </td>
  </tr>
  <tr>
-  <td>&nbsp;</td>
+  <td>0</td>
   <td>Segmenting the left ventricle (LV)</td>
   <td>EchoNet (AP4CH), CAMUS (AP2CH and AP4CH)</td>
  </tr>
  <tr>
- <td>&nbsp;</td>
+ <td>1</td>
   <td>Segmenting the left atrium (LA)</td>
   <td>CAMUS (AP2CH and AP4CH)</td>
  </tr> 
  <tr>
- <td>&nbsp;</td>
+ <td>2</td>
   <td>Segmenting the myocardial wall (MY)</td>
   <td>CAMUS (AP2CH and AP4CH)</td>
  </tr>  
@@ -42,27 +42,27 @@ The ETAB benchmark suite encapsulates a diverse set of tasks that are meant to t
  <td colspan="3"> 🔵 &nbsp; <i> Cardiac Function Estimation Tasks </i> </td>
  </tr>
  <tr>
-  <td>&nbsp;</td>
+  <td>0</td>
   <td>Estimating LV ejection fraction</td>
   <td>EchoNet (AP4CH), CAMUS (AP2CH and AP4CH)</td>
  </tr>
   <tr>
-  <td>&nbsp;</td>
+  <td>1</td>
   <td>Classifying end-systole and end-diastole frames</td>
   <td>EchoNet (AP4CH), CAMUS (AP2CH and AP4CH)</td>
  </tr> 
   <tr>
-  <td>&nbsp;</td>
+  <td>2</td>
   <td><s>Longitudinal strain estimation</s></td>
     <td><s>Unity</s> (AP4CH)</td>
  </tr>
  <tr>
-  <td>&nbsp;</td>
+  <td>3</td>
   <td><s>Interventricular septum thickness estimation</s></td>
     <td><s>Unity</s> (PLAX)</td>
  </tr> 
  <tr>
-  <td>&nbsp;</td>
+  <td>4</td>
   <td><s>Posterior wall thickness estimation</s></td>
     <td><s>Unity</s> (PLAX)</td>
  </tr>  
