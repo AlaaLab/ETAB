@@ -156,11 +156,13 @@ Currently, ETAB includes 9 core tasks across the 4 task categories. The list of 
  </tr> 
 </table>
 </div>
-The benchmark codes are represented as strings with characters encoding the dataset, view and task as described above. For example, the string-valued variable:
+The benchmark codes are represented as strings with characters encoding the dataset, view and task as described above. To provide an example on how to interpret the benchmark code, consider the following string-valued variable:
+
 ```
 benchmark_code = "E-A4-a0"
 ```
 
+This code designates the benchmark task of segmenting the left ventricle using apical 4-chamber echoes sampled from the EchoNet dataset.
 
 ## ETAB model zoo
 
