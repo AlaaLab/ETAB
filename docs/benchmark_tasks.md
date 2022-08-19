@@ -159,7 +159,6 @@ Currently, ETAB includes 9 core tasks across the 4 task categories. The list of 
 The benchmark codes are represented as strings with characters encoding the dataset, view and task as described above. To provide an example on how to interpret the benchmark code, consider the following string-valued variable:
 
 &nbsp;
-
 ```
 benchmark_code = "a0-A4-E"
 ```
