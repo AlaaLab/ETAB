@@ -5,13 +5,13 @@
 </p>
 
 <h1 align="center">
-    <b> ETAB Benchmark Tasks and Model Zoo </b>
+    <b> ETAB Benchmark Suite and Model Zoo </b>
 </h1>
 
-Currently, the ETAB library is based on three publicly accessible echocardiogram data sets that span different patient cohorts and involve different echocardiographic views and annotations. ETAB is an evolving project that will include more data resources in the future as more datasets become publicly available. This Section provides a detailed description of the datasets, instructions on how to access each dataset, and the data processing tools implemented within the ETAB library.
+Our benchmark setup is designed to evaluate general task adaptation approaches. Our notion of "task adaptation" is very general—it includes full representation learning pipelines (i.e., a selection of a model architecture, pre-training task and transfer learning algorithm), or a readily available pre-trained feature representation that is adapted to an echocardiographic task by attaching a task-specific head. This broad notion encapsulates virtually all pre-training approaches, including self-supervised, semi-supervised and supervised learning. 
 
 
-## Benchmark task categorization and encoding
+## Benchmark suite and task categorization
 
 <div align="center">
 <table border="1">
