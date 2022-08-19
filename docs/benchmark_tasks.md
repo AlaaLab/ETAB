@@ -16,9 +16,9 @@ Currently, the ETAB library is based on three publicly accessible echocardiogram
 <div align="center">
 <table border="1">
  <tr>
-  <td>&nbsp; <b> <div align="center"> Task code   </div> </b> &nbsp;</td>
-  <td>&nbsp; <b> <div align="center"> Description </div> </b> &nbsp;</td>
-  <td>&nbsp; <b> <div align="center"> Datasets    </div> </b> &nbsp;</td>
+  <td>&nbsp; <b> <div align="center"> Task code        </div> </b> &nbsp;</td>
+  <td>&nbsp; <b> <div align="center"> Description      </div> </b> &nbsp;</td>
+  <td>&nbsp; <b> <div align="center"> Datasets (Views) </div> </b> &nbsp;</td>
  </tr>
  <tr>
   <td colspan="3"> 🔴 &nbsp; <i> Cardiac Structure Identification Tasks </i> </td>
