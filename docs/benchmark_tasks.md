@@ -51,6 +51,11 @@ Currently, the ETAB library is based on three publicly accessible echocardiogram
   <td>Classifying end-systole and end-diastole frames</td>
   <td>EchoNet (AP4CH), CAMUS (AP2CH and AP4CH)</td>
  </tr> 
+  <tr>
+  <td>&nbsp;</td>
+  <td>Longitudinal strain estimations</td>
+  <td>Unity (AP4CH)</td>
+ </tr>   
  <tr>
  <td colspan="3"> 🟢 &nbsp; <i> View Recognition Tasks </i> </td>
  </tr>
