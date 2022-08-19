@@ -20,9 +20,9 @@ Each benchmark is encoded with a 5-character code that designates the source dat
   <td colspan="3"> <div align="center"> <b> Benchmark code </b> <i>(5 characters)</i> </div> </td>
  </tr>
  <tr>
-  <td> <i> <div align="center"> Dataset code (1 character)  </div> </i> </td>
-  <td> <i> <div align="center"> View code (2 characters)    </div> </i> </td>
   <td> <i> <div align="center"> Task code (2 characters)    </div> </i> </td>
+  <td> <i> <div align="center"> View code (2 characters)    </div> </i> </td>
+  <td> <i> <div align="center"> Dataset code (1 character)  </div> </i> </td>
  </tr>
 </table>
 </div>
@@ -159,7 +159,7 @@ Currently, ETAB includes 9 core tasks across the 4 task categories. The list of 
 The benchmark codes are represented as strings with characters encoding the dataset, view and task as described above. To provide an example on how to interpret the benchmark code, consider the following string-valued variable:
 
 ```
-benchmark_code = "E-A4-a0"
+benchmark_code = "a0-A4-E"
 ```
 
 This code designates the benchmark task of segmenting the LV using apical 4-chamber echoes sampled from the EchoNet dataset.
