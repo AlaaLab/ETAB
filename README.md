@@ -12,13 +12,13 @@
 
 The echocardiographic task adaptation benchmark (ETAB) library contains a suite of standardized benchmarks that can be used to evaluate visual representations of cardiac ultrasound (echocardiogram) data with respect to various clinically-relevant tasks using publicly accessible data sets. The ETAB library provides an easy-to-use API for loading various echocardiographic data sets and implementing new algorithms, a unified evaluation protocol for echocardiographic representations and a set of pre-trained models for echocardiograms.
 
-<div class="center">
+<p align="center">
     <img width="160" height="160" src="assets/echo_movie.gif" /> 
     <img width="160" height="160" src="assets/echo_movie.gif" />
     <img width="160" height="160" src="assets/echo_movie.gif" />
     <img width="160" height="160" src="assets/echo_movie.gif" />
     <img width="160" height="160" src="assets/echo_movie.gif" />
-</div>
+</p>
 
 ---------------
 #### Overview
