@@ -162,7 +162,7 @@ The benchmark codes are represented as strings with characters encoding the data
 benchmark_code = "E-A4-a0"
 ```
 
-This code designates the benchmark task of segmenting the left ventricle using apical 4-chamber echoes sampled from the EchoNet dataset.
+This code designates the benchmark task of segmenting the LV using apical 4-chamber echoes sampled from the EchoNet dataset.
 
 ## ETAB model zoo
 
