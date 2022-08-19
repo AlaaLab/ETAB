@@ -55,7 +55,17 @@ Currently, the ETAB library is based on three publicly accessible echocardiogram
   <td>&nbsp;</td>
   <td><s>Longitudinal strain estimation</s></td>
     <td><s>Unity</s> (AP4CH)</td>
- </tr>   
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td><s>Interventricular septum thickness estimation</s></td>
+    <td><s>Unity</s> (PLAX)</td>
+ </tr> 
+ <tr>
+  <td>&nbsp;</td>
+  <td><s>Posterior wall thickness estimation</s></td>
+    <td><s>Unity</s> (PLAX)</td>
+ </tr>  
  <tr>
  <td colspan="3"> 🟢 &nbsp; <i> View Recognition Tasks </i> </td>
  </tr>
