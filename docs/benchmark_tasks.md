@@ -53,8 +53,8 @@ Currently, the ETAB library is based on three publicly accessible echocardiogram
  </tr> 
   <tr>
   <td>&nbsp;</td>
-  <td>Longitudinal strain estimation</td>
-  <td>Unity (AP4CH)</td>
+  <td><s>Longitudinal strain estimation</s></td>
+    <td><s>Unity</s> (AP4CH)</td>
  </tr>   
  <tr>
  <td colspan="3"> 🟢 &nbsp; <i> View Recognition Tasks </i> </td>
