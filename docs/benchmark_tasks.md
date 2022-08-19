@@ -21,7 +21,7 @@ The ETAB benchmark suite encapsulates a diverse set of tasks that are meant to t
   <td>&nbsp; <b> <div align="center"> Datasets (Views) </div> </b> &nbsp;</td>
  </tr>
  <tr>
-  <td colspan="3"> 🔴 &nbsp; <i> Cardiac Structure Identification Tasks </i> <b> (Code: a) </b> </td>
+  <td colspan="3"> 🔴 &nbsp; <i> Cardiac Structure Identification Tasks </i> <b> (Category: a) </b> </td>
  </tr>
  <tr>
   <td><b> 0 </b></td>
@@ -39,7 +39,7 @@ The ETAB benchmark suite encapsulates a diverse set of tasks that are meant to t
   <td>CAMUS (AP2CH and AP4CH)</td>
  </tr>  
  <tr>
- <td colspan="3"> 🔵 &nbsp; <i> Cardiac Function Estimation Tasks </i> <b> (Code: b) </b> </td>
+ <td colspan="3"> 🔵 &nbsp; <i> Cardiac Function Estimation Tasks </i> <b> (Category: b) </b> </td>
  </tr>
  <tr>
   <td><b> 0 </b></td>
@@ -67,7 +67,7 @@ The ETAB benchmark suite encapsulates a diverse set of tasks that are meant to t
     <td><s>Unity</s> (PLAX)</td>
  </tr>  
  <tr>
- <td colspan="3"> 🟢 &nbsp; <i> View Recognition Tasks </i> <b> (Code: c) </b> </td>
+ <td colspan="3"> 🟢 &nbsp; <i> View Recognition Tasks </i> <b> (Category: c) </b> </td>
  </tr>
  <tr>
   <td><b> 0 </b></td>
@@ -85,7 +85,7 @@ The ETAB benchmark suite encapsulates a diverse set of tasks that are meant to t
   <td><s>Unity</s> (AP2CH vs. AP3CH vs. AP4CH vs. AP5CH vs. PLAX vs. PSAX)</td>
  </tr>  
  <tr>
- <td colspan="3"> 🟡 &nbsp; <i> Clinical Prediction Tasks </i> <b> (Code: d) </b> </td>
+ <td colspan="3"> 🟡 &nbsp; <i> Clinical Prediction Tasks </i> <b> (Category: d) </b> </td>
  </tr>
  <tr>
   <td><b> 0 </b></td>
