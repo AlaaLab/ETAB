@@ -71,13 +71,13 @@ Currently, the ETAB library is based on three publicly accessible echocardiogram
  </tr>
  <tr>
   <td>&nbsp;</td>
-  <td>Classifying apical 2- and 4-chamber (AP2CH vs. AP4CH) views</td>
-  <td>CAMUS</td>
+  <td>Classifying apical 2- and 4-chamber views</td>
+  <td>CAMUS (AP2CH vs. AP4CH)</td>
  </tr>
   <tr>
   <td>&nbsp;</td>
-  <td>Classifying parasternal short and long axis (PLAX vs. PSAX) views</td>
-  <td>TMED</td>
+  <td>Classifying parasternal short and long axis views</td>
+  <td>TMED (PLAX vs. PSAX)</td>
  </tr> 
  <tr>
  <td colspan="3"> 🟡 &nbsp; <i> Clinical Prediction Tasks </i> </td>
