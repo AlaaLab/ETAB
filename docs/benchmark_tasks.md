@@ -303,7 +303,7 @@ print(available_heads())
 
 ### Video data vs. Still images
 
-Note that some benchmark tasks (e.g., estimation of LV ejection fraction) are defined with respect to video clips rather than still images, whereas other tasks and datasets are limited to 2D images. In the current release of ETAB, we restrict the backbone representations to frame embeddings and use these representations repeatedly over sequences of images and defer the modeling of the temporal correlations between these embeddings to the head through variants of RNNs. 
+Note that some benchmark tasks (e.g., estimation of LV ejection fraction) are defined with respect to video clips rather than still images, whereas other tasks and datasets are limited to 2D images. In the current release of ETAB, we restrict the backbone representations to frame embeddings and use these representations repeatedly over sequences of images and defer the modeling of the temporal correlations between these embeddings to the head through variants of RNNs. By limiting the backbone representations to frame embeddings, we can evaluate the quality of a backbone representation by tuning the attached task-specific heads across all benchmark tasks above to obtain the ETAB score as we discuss in the next Section.
 
 ## Running a benchmark experiment out-of-the-box
 
