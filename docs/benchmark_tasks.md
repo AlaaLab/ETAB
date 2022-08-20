@@ -226,6 +226,31 @@ This code designates the benchmark task of segmenting the LV using apical 4-cham
 </div>
 
  
+<div align="center">
+<table border="1">
+ <tr>
+  <td colspan="2"> <div align="center"> <i> Available task-specific heads </i> </div> </td>
+  <td> <div> <i> Reference </i> </div> </td>
+ </tr> 
+ <tr>
+  <td rowspan="1"><b> Classification and regression heads (still image) </b></td>
+  <td>Standard linear probe </td>
+  <td> --- </div> </td>
+ </tr>
+ <tr>
+  <td rowspan="2"><b> Classification and regression heads (video clips) </b></td>
+  <td>RNN + Output linear layer </td>
+  <td> <div align="center"> --- </div> </td>
+ </tr> 
+ <tr>
+  <td>LSTM + Output linear layer </td> 
+  <td> <div align="center"> --- </div> </td>
+ </tr>
+
+ 
+</table>
+</div>
+
 
 ### Video data vs. Still images
 
