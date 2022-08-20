@@ -173,7 +173,7 @@ This code designates the benchmark task of segmenting the LV using apical 4-cham
   <td> <div> <i> Reference </i> </div> </td>
  </tr> 
  <tr>
-  <td rowspan="6"><b> Convolutional Neural Networks (CNNs) </b></td>
+  <td rowspan="6"><b> Convolutional Neural Networks (CNN) </b></td>
   <td>ResNet </td>
   <td> <div align="center"> <a href="https://arxiv.org/abs/1512.03385">[1]</a> </div> </td>
  </tr>
@@ -195,7 +195,33 @@ This code designates the benchmark task of segmenting the LV using apical 4-cham
  </tr>  
  <td>ConvNeXt</td>
   <td> <div align="center"> <a href="https://arxiv.org/abs/2201.03545">[6]</a> </div> </td>
- </tr>    
+ </tr>
+ 
+  <tr>
+  <td rowspan="6"><b> Vision Transformers (ViT) </b></td>
+  <td>Mix Transformer encoders (MiT) </td> 
+  <td> <div align="center"> <a href="https://arxiv.org/pdf/2105.15203v2.pdf">[7]</a> </div> </td>
+ </tr>
+  <tr>
+  <td>Pyramid Vision Transformer (PVT)</td> 
+  <td> <div align="center"> <a href="https://arxiv.org/abs/2106.13797">[8]</a> </div> </td>
+ </tr>
+  <tr> 
+  <td>Multi-scale vision Transformer (ResT)</td>  
+  <td> <div align="center"> <a href="https://arxiv.org/abs/2105.13677v3">[9]</a> </div> </td>
+ </tr>  
+ <tr>
+  <td>PoolFormer</td>
+  <td> <div align="center"> <a href="https://arxiv.org/abs/2111.11418">[10]</a> </div> </td>
+ </tr>  
+ <tr>
+  <td>UniFormer</td>
+  <td> <div align="center"> <a href="https://arxiv.org/abs/2201.09450">[11]</a> </div> </td>
+ </tr>  
+ <td>Dual Attention Vision Transformers (DaViT)</td>
+  <td> <div align="center"> <a href="https://arxiv.org/abs/2204.03645">[12]</a> </div> </td>
+ </tr>
+ 
 </table>
 </div>
 
