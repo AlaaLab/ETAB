@@ -284,6 +284,7 @@ This code designates the benchmark task of segmenting the LV using apical 4-cham
 </div>
 
 
+
 ### Displaying all available baseline models
 
 ### Video data vs. Still images
@@ -293,6 +294,18 @@ This code designates the benchmark task of segmenting the LV using apical 4-cham
 ## Running a benchmark experiment out-of-the-box
 
 ### Composing a model
+
+
+```
+from etab.baselines.models import *
+
+model  = baseline(task="segmentation",
+                  backbone='ResNet-50',
+                  head="U-Net")
+
+```
+
+
 
 ### Downstream task
 
