@@ -166,6 +166,8 @@ This code designates the benchmark task of segmenting the LV using apical 4-cham
 
 ## ETAB model zoo
 
+< Insert schematic here >
+
 <div align="center">
 <table border="1">
  <tr>
@@ -359,6 +361,16 @@ plot_segment(torch.tensor(inputs[index, :, :, :]),
 <p> 
   <img width="160" height="160" src="assets/predicted_segment.png" /> 
 </p>
+
+### Evaluating a model on test data
+
+
+```
+from etab.utils.metrics import *
+
+dice_coeff = evaluate_model(model, test_loader, task="segmentation")
+
+```
 
 ### Freezing the backbone and tuning the head
 
