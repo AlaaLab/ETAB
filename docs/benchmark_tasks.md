@@ -292,7 +292,6 @@ from etab.baselines.models import *
 
 print(available_backbones())
 print(available_heads())
-
 ```
 
 ### Video data vs. Still images
@@ -330,8 +329,7 @@ echonet = ETAB_dataset(name="echonet",
 
 echonet.load_data(n_clips=7000)
 
-train_loader, valid_loader, test_loader = training_data_split(echonet.data, train_frac=0.6, val_frac=0.1)
-                       
+train_loader, valid_loader, test_loader = training_data_split(echonet.data, train_frac=0.6, val_frac=0.1)                
 ```
 
 ```
