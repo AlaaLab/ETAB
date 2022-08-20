@@ -341,6 +341,15 @@ model.train(train_loader,
             ckpt_dir=ckpt_dir)
 ```
 
+```
+inputs, ground_truths = next(iter(test_loader))
+preds                 = model(inputs.cuda()).argmax(1).detach().cpu().numpy() 
+
+plot_segment(torch.tensor(inputs[index, :, :, :]), 
+             torch.tensor(preds[index, :, :]), 
+             overlay=True, color="r")
+```
+
 
 
 ### Task adaptation
