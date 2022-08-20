@@ -350,6 +350,10 @@ plot_segment(torch.tensor(inputs[index, :, :, :]),
              overlay=True, color="r")
 ```
 
+<p> 
+  <img width="160" height="160" src="assets/predicted_segment.png" /> 
+</p>
+
 ### Freezing the backbone and tuning the head
 
 ### CLI for running a benchmark experiment from terminal
