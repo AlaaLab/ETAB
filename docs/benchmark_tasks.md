@@ -178,19 +178,19 @@ This code designates the benchmark task of segmenting the LV using apical 4-cham
   <td> <div align="center"> <a href="https://arxiv.org/abs/1512.03385">[1]</a> </div> </td>
  </tr>
   <tr>
-  <td>ResNet-D</td> 
-  <td> <div align="center"> <a href="https://arxiv.org/abs/1812.01187">[2]</a> </div> </td>
+  <td>ResNeXt</td> 
+  <td> <div align="center"> <a href="https://openaccess.thecvf.com/content_cvpr_2017/papers/Xie_Aggregated_Residual_Transformations_CVPR_2017_paper.pdf">[2]</a> </div> </td>
  </tr>
   <tr>
-  <td>ResNet+</td> 
-  <td> <div align="center"> <a href="https://arxiv.org/abs/2110.00476">[3]</a> </div> </td>
+  <td>DenseNet</td> 
+  <td> <div align="center"> <a href="https://arxiv.org/pdf/1404.1869.pdf">[3]</a> </div> </td>
  </tr>  
  <tr>
-  <td>MobileNetV2</td>
-  <td> <div align="center"> <a href="https://arxiv.org/abs/1801.04381">[4]</a> </div> </td>
+  <td>Inception</td>
+  <td> <div align="center"> <a href="https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Szegedy_Rethinking_the_Inception_CVPR_2016_paper.pdf">[4]</a> </div> </td>
  </tr>  
  <tr>
-  <td>MobileNetV3</td>
+  <td>MobileNet</td>
   <td> <div align="center"> <a href="https://arxiv.org/abs/1905.02244">[5]</a> </div> </td>
  </tr>  
  <td>ConvNeXt</td>
