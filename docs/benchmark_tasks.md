@@ -303,7 +303,7 @@ print(available_heads())
 
 ### Video data vs. Still images
 
-
+Note that some benchmark tasks (e.g., estimation of LV ejection fraction) are defined with respect to video clips rather than still images, whereas other tasks and datasets are limited to 2D images. In the current release of ETAB, we restrict the backbone representations to frame embeddings and use these representations repeatedly over sequences of images and defer the modeling of the temporal correlations between these embeddings to the head through variants of RNNs. 
 
 ## Running a benchmark experiment out-of-the-box
 
