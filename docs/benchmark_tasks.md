@@ -287,6 +287,14 @@ This code designates the benchmark task of segmenting the LV using apical 4-cham
 
 ### Displaying all available baseline models
 
+```
+from etab.baselines.models import *
+
+print(available_backbones())
+print(available_heads())
+
+```
+
 ### Video data vs. Still images
 
 
