@@ -248,7 +248,7 @@ This code designates the benchmark task of segmenting the LV using apical 4-cham
  </tr>
 
  <tr>
-  <td rowspan="2"><b> Segmentation heads </b></td>
+  <td rowspan="6"><b> Segmentation heads </b></td>
   <td>U-Net </td> 
   <td> <div align="center"> <a href="https://arxiv.org/abs/1505.04597">[13]</a> </div> </td>
  </tr> 
