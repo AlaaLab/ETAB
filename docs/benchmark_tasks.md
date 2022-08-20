@@ -173,7 +173,7 @@ This code designates the benchmark task of segmenting the LV using apical 4-cham
   <td> <div> <i> Reference </i> </div> </td>
  </tr> 
  <tr>
-  <td rowspan="4"><b> Convolutional Neural Networks (CNNs) </b></td>
+  <td rowspan="6"><b> Convolutional Neural Networks (CNNs) </b></td>
   <td>Deep Residual Learning for Image Recognition (ResNet) </td>
   <td> <div align="center"> [1] </div> </td>
  </tr>
@@ -192,6 +192,9 @@ This code designates the benchmark task of segmenting the LV using apical 4-cham
  <tr>
   <td>MobileNetV3</td>
   <td> <div align="center"> [5] </div> </td>
+ </tr>  
+ <td>ConvNeXt</td>
+  <td> <div align="center"> [6] </div> </td>
  </tr>    
 </table>
 </div>
