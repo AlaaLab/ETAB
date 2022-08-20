@@ -175,26 +175,26 @@ This code designates the benchmark task of segmenting the LV using apical 4-cham
  <tr>
   <td rowspan="6"><b> Convolutional Neural Networks (CNNs) </b></td>
   <td>ResNet </td>
-  <td> <div align="center"> [1] </div> </td>
+  <td> <div align="center"> <a href="https://arxiv.org/abs/1512.03385">[1]</a> </div> </td>
  </tr>
   <tr>
-  <td>ResNet-D</td>
-  <td> <div align="center"> [2] </div> </td>
+  <td>ResNet-D</td> 
+  <td> <div align="center"> <a href="https://arxiv.org/abs/1812.01187">[2]</a> </div> </td>
  </tr>
   <tr>
-  <td>ResNet+</td>
-  <td> <div align="center"> [3] </div> </td>
+  <td>ResNet+</td> 
+  <td> <div align="center"> <a href="https://arxiv.org/abs/2110.00476">[3]</a> </div> </td>
  </tr>  
  <tr>
   <td>MobileNetV2</td>
-  <td> <div align="center"> [4] </div> </td>
+  <td> <div align="center"> <a href="https://arxiv.org/abs/1801.04381">[4]</a> </div> </td>
  </tr>  
  <tr>
   <td>MobileNetV3</td>
-  <td> <div align="center"> [5] </div> </td>
+  <td> <div align="center"> <a href="https://arxiv.org/abs/1905.02244">[5]</a> </div> </td>
  </tr>  
  <td>ConvNeXt</td>
-  <td> <div align="center"> [6] </div> </td>
+  <td> <div align="center"> <a href="https://arxiv.org/abs/2201.03545">[6]</a> </div> </td>
  </tr>    
 </table>
 </div>
