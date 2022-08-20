@@ -166,10 +166,45 @@ This code designates the benchmark task of segmenting the LV using apical 4-cham
 
 ## ETAB model zoo
 
+<div align="center">
+<table border="1">
+ <tr>
+  <td colspan="2"> &nbsp; <div align="center"> <i> Available backbones </i> </div> </td>
+  <td> <div> <i> Reference </i> </div> </td>
+ </tr> 
+ <tr>
+  <td rowspan="4"><b> Convolutional Neural Networks (CNNs) </b></td>
+  <td>Deep Residual Learning for Image Recognition (ResNet) </td>
+  <td> <div align="center"> [1] </div> </td>
+ </tr>
+  <tr>
+  <td>ResNet-D</td>
+  <td> <div align="center"> [2] </div> </td>
+ </tr> 
+ <tr>
+  <td>MobileNetV2</td>
+  <td> <div align="center"> [3] </div> </td>
+ </tr>  
+ <tr>
+  <td>MobileNetV3</td>
+  <td> <div align="center"> [4] </div> </td>
+ </tr>    
+</table>
+</div>
+
+ 
+
+### Video data vs. Still images
+
+
 
 ## Running a benchmark experiment out-of-the-box
 
+### Downstream task
 
+### Task adaptation
+
+### Freezing the backbone and tuning the head
 
 ## References and acknowledgments
 
