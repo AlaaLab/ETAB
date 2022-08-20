@@ -272,18 +272,27 @@ This code designates the benchmark task of segmenting the LV using apical 4-cham
  <td>DeepLabV3 </td> 
   <td> <div align="center"> <a href="https://arxiv.org/abs/1706.05587">[18]</a> </div> </td>
  </tr> 
-  
+ <tr>
+ <td>SegFormer </td> 
+  <td> <div align="center"> <a href="https://arxiv.org/abs/2105.15203v2">[19]</a> </div> </td>
+ </tr>  
+ <tr>
+ <td>TopFormer </td> 
+  <td> <div align="center"> <a href="https://arxiv.org/abs/2204.05525">[20]</a> </div> </td>
+ </tr> 
 </table>
 </div>
 
 
-
+### Displaying all available baseline models
 
 ### Video data vs. Still images
 
 
 
 ## Running a benchmark experiment out-of-the-box
+
+### Composing a model
 
 ### Downstream task
 
