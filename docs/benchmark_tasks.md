@@ -180,14 +180,18 @@ This code designates the benchmark task of segmenting the LV using apical 4-cham
   <tr>
   <td>ResNet-D</td>
   <td> <div align="center"> [2] </div> </td>
- </tr> 
- <tr>
-  <td>MobileNetV2</td>
+ </tr>
+  <tr>
+  <td>ResNet+</td>
   <td> <div align="center"> [3] </div> </td>
  </tr>  
  <tr>
-  <td>MobileNetV3</td>
+  <td>MobileNetV2</td>
   <td> <div align="center"> [4] </div> </td>
+ </tr>  
+ <tr>
+  <td>MobileNetV3</td>
+  <td> <div align="center"> [5] </div> </td>
  </tr>    
 </table>
 </div>
