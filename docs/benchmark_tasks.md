@@ -300,7 +300,7 @@ This code designates the benchmark task of segmenting the LV using apical 4-cham
 from etab.baselines.models import *
 
 model  = baseline(task="segmentation",
-                  backbone='ResNet-50',
+                  backbone="ResNet-50",
                   head="U-Net")
 
 ```
