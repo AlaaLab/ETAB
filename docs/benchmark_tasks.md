@@ -356,8 +356,19 @@ plot_segment(torch.tensor(inputs[index, :, :, :]),
 
 ### Freezing the backbone and tuning the head
 
+```
+model  = ETABmodel(task="segmentation",
+                   backbone="ResNet-50",
+                   head="U-Net",
+                   freeze_backbone=True)
+```
+
+
 ### CLI for running a benchmark experiment from terminal
 
+```
+$ python run_benchmark 
+```
 
 ## References and acknowledgments
 
