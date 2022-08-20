@@ -169,7 +169,7 @@ This code designates the benchmark task of segmenting the LV using apical 4-cham
 <div align="center">
 <table border="1">
  <tr>
-  <td colspan="2"> &nbsp; <div align="center"> <i> Available backbones </i> </div> </td>
+  <td colspan="2"> <div align="center"> <i> Available backbones </i> </div> </td>
   <td> <div> <i> Reference </i> </div> </td>
  </tr> 
  <tr>
