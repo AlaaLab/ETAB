@@ -235,21 +235,48 @@ This code designates the benchmark task of segmenting the LV using apical 4-cham
  <tr>
   <td rowspan="1"><b> Classification and regression heads (still image) </b></td>
   <td>Standard linear probe </td>
-  <td> --- </div> </td>
+  <td> <div align="center"> --- </div> </td>
  </tr>
  <tr>
   <td rowspan="2"><b> Classification and regression heads (video clips) </b></td>
-  <td>RNN + Output linear layer </td>
+  <td>RNN + Linear output layer </td>
   <td> <div align="center"> --- </div> </td>
  </tr> 
  <tr>
-  <td>LSTM + Output linear layer </td> 
+  <td>LSTM + Linear output layer </td> 
   <td> <div align="center"> --- </div> </td>
  </tr>
 
- 
+ <tr>
+  <td rowspan="2"><b> Segmentation heads </b></td>
+  <td>U-Net </td> 
+  <td> <div align="center"> <a href="https://arxiv.org/abs/1505.04597">[13]</a> </div> </td>
+ </tr> 
+ <tr>
+  <td>U-Net++ </td> 
+  <td> <div align="center"> <a href="https://arxiv.org/pdf/1807.10165.pdf">[14]</a> </div> </td>
+ </tr> 
+ <tr>
+ <td>MAnet </td> 
+  <td> <div align="center"> <a href="https://ieeexplore.ieee.org/abstract/document/9201310">[15]</a> </div> </td>
+ </tr> 
+ <tr>
+ <td>Linknet </td> 
+  <td> <div align="center"> <a href="https://arxiv.org/abs/1707.03718">[16]</a> </div> </td>
+ </tr>   
+ <tr>
+ <td>PSPNet </td> 
+  <td> <div align="center"> <a href="https://arxiv.org/abs/1612.01105">[17]</a> </div> </td>
+ </tr> 
+ <tr>
+ <td>DeepLabV3 </td> 
+  <td> <div align="center"> <a href="https://arxiv.org/abs/1706.05587">[18]</a> </div> </td>
+ </tr> 
+  
 </table>
 </div>
+
+
 
 
 ### Video data vs. Still images
