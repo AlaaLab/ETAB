@@ -174,7 +174,7 @@ This code designates the benchmark task of segmenting the LV using apical 4-cham
  </tr> 
  <tr>
   <td rowspan="6"><b> Convolutional Neural Networks (CNNs) </b></td>
-  <td>Deep Residual Learning for Image Recognition (ResNet) </td>
+  <td>ResNet </td>
   <td> <div align="center"> [1] </div> </td>
  </tr>
   <tr>
