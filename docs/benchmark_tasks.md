@@ -350,11 +350,10 @@ plot_segment(torch.tensor(inputs[index, :, :, :]),
              overlay=True, color="r")
 ```
 
-
-
-### Task adaptation
-
 ### Freezing the backbone and tuning the head
+
+### CLI for running a benchmark experiment from terminal
+
 
 ## References and acknowledgments
 
