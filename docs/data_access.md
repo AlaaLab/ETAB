@@ -193,7 +193,7 @@ create_echo_clip(echonet.data[0][0], "demo_clip")
 This will save the gif file below in a folder named "echo_clips" in the current directoty...
 
 <p> 
-  <img width="160" height="160" src="assets/demo_clip.gif" /> 
+  <img width="160" height="160" src="assets/framed_demo_clip.gif" /> 
 </p>
 
 
