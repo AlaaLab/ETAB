@@ -166,9 +166,13 @@ This code designates the benchmark task of segmenting the LV using apical 4-cham
 
 ## ETAB model zoo
 
+The ETAB library provides a unified API for training a number of baseline models on all the benchmark tasks listed above. Each baseline model comprises a backbone representation and a task-specific head as illustrated below.
+
 <p align="center"> 
   <img width="640" height="355" src="assets/etab_pipeline.png" /> 
 </p>
+
+The backbone representation is a general-purpose representation of echocardiographic images (or clips) that is independent of the task, whereas the head changes based on the task. The backbone representations supported in ETAB fall into two categories: convolutional neural networks and vision transformers. The list of all backbone representations in ETAB are listed below.   
 
 <div align="center">
 <table border="1">
