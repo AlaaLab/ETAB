@@ -297,17 +297,51 @@ This code designates the benchmark task of segmenting the LV using apical 4-cham
 
 
 ```
-from etab.baselines.models import *
+from etab.baselines.models import ETABmodel
 
-model  = baseline(task="segmentation",
-                  backbone="ResNet-50",
-                  head="U-Net")
-
+model  = ETABmodel(task="segmentation",
+                   backbone="ResNet-50",
+                   head="U-Net")
 ```
 
 
 
 ### Downstream task
+
+```
+from etab.datasets import ETAB_dataset
+
+echonet = ETAB_dataset(name="echonet",
+                       target="LV_seg", 
+                       view="A4",
+                       video=False,
+                       normalize=True,
+                       frame_l=224,
+                       frame_w=224,
+                       clip_l=1)
+
+echonet.load_data(n_clips=7000)
+
+train_loader, valid_loader, test_loader = training_data_split(echonet.data, train_frac=0.6, val_frac=0.1)
+                       
+```
+
+```
+batch_size    = 32
+learning_rate = 0.001
+n_epoch       = 100
+ckpt_dir      = "/directory for saving the trained model"
+```
+
+```
+model.train(train_loader, 
+            valid_loader, 
+            n_epoch=n_epoch,
+            learning_rate=learning_rate,
+            ckpt_dir=ckpt_dir)
+```
+
+
 
 ### Task adaptation
 
