@@ -367,7 +367,8 @@ model  = ETABmodel(task="segmentation",
 ### CLI for running a benchmark experiment from terminal
 
 ```
-$ python run_benchmark 
+$ python run_benchmark --task "a0-A4-E" --backbone "ResNet-50" --head "U-Net" --freeze_backbone False \
+                       --train_frac 0.6 --val_frac 0.1 --lr 0.001 --epochs 100 --batch 32  
 ```
 
 ## References and acknowledgments
