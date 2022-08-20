@@ -155,7 +155,7 @@ echo_image = echonet.data[index][0]
 LV_segment = echonet.data[index][1][0]
 plot_segment(echo_image, LV_segment, overlay=True, color="r")
 ```
-This last command should display the following plot for *index=65*
+This last command should display the following plot for *index*
 
 <p> 
   <img width="160" height="160" src="assets/echonet_LV.png" /> 
