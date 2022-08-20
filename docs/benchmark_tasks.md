@@ -233,7 +233,8 @@ The backbone representation is a general-purpose representation of echocardiogra
 </table>
 </div>
 
- 
+The set of all available task-specific heads (for classification, regression and segmentation tasks) are listed below.
+
 <div align="center">
 <table border="1">
  <tr>
@@ -291,9 +292,7 @@ The backbone representation is a general-purpose representation of echocardiogra
 </table>
 </div>
 
-
-
-### Displaying all available baseline models
+To display all available baseline models, you can print the output of the *available_backbones()* and *available_heads()* functions in the *etab.baselines.models* modules as follows.  
 
 ```
 from etab.baselines.models import *
