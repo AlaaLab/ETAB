@@ -166,7 +166,9 @@ This code designates the benchmark task of segmenting the LV using apical 4-cham
 
 ## ETAB model zoo
 
-< Insert schematic here >
+<p align="center"> 
+  <img width="640" height="355" src="assets/etab_pipeline.png" /> 
+</p>
 
 <div align="center">
 <table border="1">
