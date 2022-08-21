@@ -39,7 +39,7 @@ The ETAB library comprises a comprehensive suite of visual task adaptation bench
   <ul>
     <li><a href="docs/data_access.md#Datasets">Overview of the Supported Echocardiography Datasets</a></li>
     &nbsp;
-    <li>Instructions for Dataset Access</li>
+    <li><a href="docs/data_access.md#Instructions for dataset access">Instructions for Dataset Access</a></li> 
     &nbsp;
     <li>Data Loaders and Processing Tools</li>
     &nbsp;
