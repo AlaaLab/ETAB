@@ -12,6 +12,6 @@ The ETAB benchmark suite encapsulates a diverse set of tasks that are meant to t
 
 
 <p align="center">
-  <img width="280" height="160" src="assets/ETABscore.png" />
+  <img width="244" height="160" src="assets/ETABscore.png" />
 </p>
 
