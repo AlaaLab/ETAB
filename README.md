@@ -65,7 +65,7 @@ The ETAB library comprises a comprehensive suite of visual task adaptation bench
 
 </details>
 
-#### [Section 3: The ETAB Evaluation Protocol](documentation/benchmark_tasks.md)
+#### [Section 3: The ETAB Evaluation Protocol](docs/etab_protocol.md)
 
 #### [Section 4: Leaderboard and Benchmark Results](documentation/leaderboard.md)
 
