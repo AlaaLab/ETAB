@@ -29,3 +29,27 @@ The score computation procedure is implemented by looping over all the benchmark
 
 
 ## Computing the ETAB score
+
+For a given backbone representation, the ETAB score can be computed using the *ETABscore()* function in the etab.scores module as follows:
+
+```python
+from etab.scores import ETABscore
+from torchvision.models import resnet50
+
+weights    = dict({"a": 0.5, "b": 0.3, 
+                   "c": 0.2, "d": 0.1})
+backbone   = resnet50(weights="IMAGENET1K_V1")
+
+etab_score = ETABscore(backbone=backbone, task_weights=weights)
+```
+Here, we evaluate the ETAB score for a ResNet-50 backbone pre-trained on the ImageNet-1K dataset. Currently, the ETAB score can be computed for the backbone representations listed in the previous Section. You can load any pre-trained weights into these representations prior to computing the score. 
+
+
+
+
+
+
+
+
+
+
