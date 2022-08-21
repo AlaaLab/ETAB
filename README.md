@@ -37,13 +37,13 @@ The ETAB library comprises a comprehensive suite of visual task adaptation bench
   <summary><b>Explore Content</b> (click to expand)</summary>
   &nbsp;
   <ul>
-    <li>Overview of the Supported Echocardiography Datasets</li>
+    <li><a href="docs/data_access.md#Datasets">Overview of the Supported Echocardiography Datasets</a></li>
     &nbsp;
-    <li>Instructions for Dataset Access</li>
+    <li><a href="docs/data_access.md#Instructions-for-dataset-access">Instructions for Dataset Access</a></li> 
     &nbsp;
-    <li>Data Loaders and Processing Tools</li>
+    <li><a href="docs/data_access.md#data-loaders-and-processing-tools-demo-notebook">Data Loaders and Processing Tools</a></li> 
     &nbsp;
-    <li>Demo Notebook</li>
+    <li><a href="https://github.com/ahmedmalaa/ETAB/blob/main/notebooks/Demo%201%20-%20ETAB%20Data%20Loading%20and%20Processing%20Tools.ipynb">Demo Notebook</a></li>
   </ul>
 
 </details>
@@ -54,11 +54,11 @@ The ETAB library comprises a comprehensive suite of visual task adaptation bench
   <summary><b>Explore Content</b> (click to expand)</summary>
   &nbsp;
   <ul>
-    <li>Benchmark Task Categorization and Encoding</li>
+    <li><a href="docs/benchmark_tasks.md#benchmark-task-categorization-and-encoding">Benchmark Task Categorization and Encoding</a></li> 
     &nbsp;
-    <li>ETAB Model Zoo</li>
+    <li><a href="docs/benchmark_tasks.md#etab-model-zoo">ETAB Model Zoo</a></li>
     &nbsp;
-    <li>Running a Benchmark Experiment Out-of-the-Box</li>
+    <li><a href="docs/benchmark_tasks.md#running-a-benchmark-experiment-out-of-the-box-demo-notebook">Running a Benchmark Experiment Out-of-the-Box</a></li>
     &nbsp;
     <li>Demo Notebooks</li>
   </ul>

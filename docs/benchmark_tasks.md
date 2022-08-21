@@ -166,9 +166,13 @@ This code designates the benchmark task of segmenting the LV using apical 4-cham
 
 ## ETAB model zoo
 
+The ETAB library provides a unified API for training a number of baseline models on all the benchmark tasks listed above. Each baseline model comprises a backbone representation and a task-specific head as illustrated below.
+
 <p align="center"> 
   <img width="640" height="355" src="assets/etab_pipeline.png" /> 
 </p>
+
+The backbone representation is a general-purpose representation of echocardiographic images (or clips) that is independent of the task, whereas the head changes based on the task. The backbone representations supported in ETAB fall into two categories: convolutional neural networks and vision transformers. The list of all backbone representations in ETAB are listed below.   
 
 <div align="center">
 <table border="1">
@@ -229,7 +233,8 @@ This code designates the benchmark task of segmenting the LV using apical 4-cham
 </table>
 </div>
 
- 
+The set of all available task-specific heads (for classification, regression and segmentation tasks) are listed below.
+
 <div align="center">
 <table border="1">
  <tr>
@@ -287,9 +292,7 @@ This code designates the benchmark task of segmenting the LV using apical 4-cham
 </table>
 </div>
 
-
-
-### Displaying all available baseline models
+To display all available baseline models, you can print the output of the *available_backbones()* and *available_heads()* functions in the *etab.baselines.models* modules as follows.  
 
 ```
 from etab.baselines.models import *
@@ -300,24 +303,15 @@ print(available_heads())
 
 ### Video data vs. Still images
 
+Note that some benchmark tasks (e.g., estimation of LV ejection fraction) are defined with respect to video clips rather than still images, whereas other tasks and datasets are limited to 2D images. In the current release of ETAB, we restrict the backbone representations to frame embeddings and use these representations repeatedly over sequences of images and defer the modeling of the temporal correlations between these embeddings to the head through variants of RNNs. By limiting the backbone representations to frame embeddings, we can evaluate the quality of a backbone representation by tuning the attached task-specific heads across all benchmark tasks above to obtain the ETAB score as we discuss in the next Section.
 
+## Running a benchmark experiment out-of-the-box (**[demo notebook](https://github.com/ahmedmalaa/ETAB/blob/main/notebooks/Demo%201%20-%20ETAB%20Data%20Loading%20and%20Processing%20Tools.ipynb)**)
 
-## Running a benchmark experiment out-of-the-box
+In what follows, we describe how users can run a benchmark experiments out-of-the-box using the ETAB API. Next, we will show how an experiment can be ran from the terminal using our built-in scripts.
 
-### Composing a model
+### Composing a model and training on a benchmark task
 
-
-```
-from etab.baselines.models import ETABmodel
-
-model  = ETABmodel(task="segmentation",
-                   backbone="ResNet-50",
-                   head="U-Net")
-```
-
-
-
-### Downstream task
+The first step in running a benchmark experiment is to load the relevant dataset. Consider again the benchmark task "a0-A4-E". This task involves segmenting the LV using apical 4-chamber views from the EchoNet dataset. The dataset can be loaded as follows: 
 
 ```
 from etab.datasets import ETAB_dataset
@@ -336,12 +330,25 @@ echonet.load_data(n_clips=7000)
 train_loader, valid_loader, test_loader = training_data_split(echonet.data, train_frac=0.6, val_frac=0.1)                
 ```
 
+We have covered the data loading and processing tools in the previous section. More details can be found in this **[demo notebook](https://github.com/ahmedmalaa/ETAB/blob/main/notebooks/Demo%201%20-%20ETAB%20Data%20Loading%20and%20Processing%20Tools.ipynb)**. The next step is to compose a baseline model by creating an instance of the *ETABmodel* class as follows.
+
+```
+from etab.baselines.models import ETABmodel
+
+model  = ETABmodel(task="segmentation",
+                   backbone="ResNet-50",
+                   head="U-Net")
+```
+
+The *model.backbone* and *model.head* are both torch model classes, the hyper-parameters of which can be altered by modifying the values of the attributes of *model.backbone* and *model.head* after instantiating the model. Here, we instantiate a standard segmentation model with a ResNet-50 backbone and a U-Net head, but the user can create alternative models using the options specified in the table above. Now, to start training the instantiated model on task "a0-A4-E", we need to set the optimizer and training parameters as follows:
+
 ```
 batch_size    = 32
 learning_rate = 0.001
 n_epoch       = 100
 ckpt_dir      = "/directory for saving the trained model"
 ```
+We can then train the model by invoking the *.train* method in the *ETABmodel* class after passing the training and validation loaders along with the optimization and training parameters.
 
 ```
 model.train(train_loader, 
@@ -351,9 +358,11 @@ model.train(train_loader,
             ckpt_dir=ckpt_dir)
 ```
 
+After the model is trained, we can inspect its predictions on samples from test data as follows: 
+
 ```
 inputs, ground_truths = next(iter(test_loader))
-preds                 = model(inputs.cuda()).argmax(1).detach().cpu().numpy() 
+preds                 = model.predict(inputs.cuda())
 
 plot_segment(torch.tensor(inputs[index, :, :, :]), 
              torch.tensor(preds[index, :, :]), 
@@ -366,15 +375,21 @@ plot_segment(torch.tensor(inputs[index, :, :, :]),
 
 ### Evaluating a model on test data
 
+To evaluate the performance of the model on the testing sample, you can use the *evaluate_model* function in *etab.utils.metrics* as follows:
 
 ```
 from etab.utils.metrics import *
 
-dice_coeff = evaluate_model(model, test_loader, task="segmentation")
+dice_coeff = evaluate_model(model, test_loader, task_code="a0")
 
 ```
 
+By passing the task code to this general-purpose evaluation function, it automatically selects the corresponding evaluation metric for the task. Because this is a segmentation task, the output is a Jaccard Index/Dice coefficient. The function computes the AUC-ROC for classification tasks and the mean square error for regression tasks.
+
+
 ### Freezing the backbone and tuning the head
+
+In the example above, we have trained a model by fully optimizing all its parameters for the task at hand. In many cases, we might be interested in only tuning the task-specific head and keeping the backbone representation frozen. We can do so by enabling the *freeze_backbone* flag in the model instantiation command as follows:
 
 ```
 model  = ETABmodel(task="segmentation",
@@ -383,15 +398,45 @@ model  = ETABmodel(task="segmentation",
                    freeze_backbone=True)
 ```
 
+As we will show in the next Section, when computing the ETAB score we are interested in evaluating a pre-trained representation, hence we freeze the backbone model for all benchmark tasks and only tune the head and evaluate the pefromance of the model on test data.
+
+To run the above experiments your self, please refer to the following **[demo notebook](https://github.com/ahmedmalaa/ETAB/blob/main/notebooks/Demo%201%20-%20ETAB%20Data%20Loading%20and%20Processing%20Tools.ipynb)**. 
 
 ### CLI for running a benchmark experiment from terminal
 
+You can also run any benchmark task directly from the terminal using the following command:
+
 ```
-$ python run_benchmark --task "a0-A4-E" --backbone "ResNet-50" --head "U-Net" --freeze_backbone False \
-                       --train_frac 0.6 --val_frac 0.1 --lr 0.001 --epochs 100 --batch 32  
+$ python run_benchmark.py --task "a0-A4-E" --backbone "ResNet-50" --head "U-Net" --freeze_backbone False \
+                          --train_frac 0.6 --val_frac 0.1 --lr 0.001 --epochs 100 --batch 32  
 ```
 
+To run a task adaptation benchmark, where the backbone representation is trained on a source task and then tuned on a target task, you can use the following command:
+
+```
+$ python run_benchmark.py --source_task "a0-A4-E" --target_task "a1-A2-C" --backbone "ResNet-50" --head "U-Net" \
+                          --freeze_backbone False --train_frac 0.6 --val_frac 0.1 --lr 0.001 --epochs 100 --batch 32  
+```
+
+In the example above, the experiment will proceed by training a model to segment the LV using AP4CH views in EchoNet data, and then tune the resulting model to segment the LA using A2CH views in CAMUS dataset. 
+
+
+
 ## References and acknowledgments
+
+Our model API builds on the implementations of following libraries: 
+
+[1] https://poutyne.org/ 
+
+[2] https://github.com/sithu31296/semantic-segmentation
+
+[3] https://github.com/qubvel/segmentation_models.pytorch 
+
+[4] https://github.com/rwightman/pytorch-image-models
+
+
+
+
 
 
 
