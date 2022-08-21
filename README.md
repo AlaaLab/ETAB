@@ -54,7 +54,7 @@ The ETAB library comprises a comprehensive suite of visual task adaptation bench
   <summary><b>Explore Content</b> (click to expand)</summary>
   &nbsp;
   <ul>
-    <li><a href="docs/benchmark_tasks.md#benchmark-task-categorization-and-encodings">Benchmark Task Categorization and Encoding</a></li> 
+    <li><a href="docs/benchmark_tasks.md#benchmark-task-categorization-and-encoding">Benchmark Task Categorization and Encoding</a></li> 
     &nbsp;
     <li><a href="docs/benchmark_tasks.md#etab-model-zoo">ETAB Model Zoo</a></li>
     &nbsp;
