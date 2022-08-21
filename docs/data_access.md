@@ -114,7 +114,7 @@ The ETAB library provides a unified API for loading echocardiography datasets an
 
 Each dataset is an instantiation of the *ETAB_dataset* class, which contains common attributes and a unified API for all data processing functionalities. A code snippet for creating an instance of the *ETAB_dataset* class is demonstrated below.
 
-```
+```python
 import etab
 
 echonet = etab.ETAB_dataset(name="echonet",
@@ -145,12 +145,12 @@ You can craft a dataset that suits the modeling problem of interest by customizi
 
 Having instantiated an *ETAB_dataset* class, we can craft an echocardiography data set with the options specified in the class instantiation by calling the *load_data* method as follows:
 
-```
+```python
 echonet.load_data(n_clips=100, random=False)
 ```
 This command will load 100 clips into the *.data* attribute of *echonet*. The data will be loaded from EchoNet in order if *random* is set to False, and will be randomly sampled otherwise. Each data point will be associated with the label specified in the class options used within the instantiating command above. We can visualize the data for patient number *index* using the *plot_segment* function as follows:
 
-```
+```python
 echo_image = echonet.data[index][0]
 LV_segment = echonet.data[index][1][0]
 plot_segment(echo_image, LV_segment, overlay=True, color="r")
@@ -171,7 +171,7 @@ Further example on data with traces of the left ventricle, left atrium and myoca
 
 Now let us create a new instance of EchoNet but with a different data structure. This time, we create a video dataset where the labels correspond to the LV ejection fraction. To create such an instance, we supply the class with the set of options and attributes below.
 
-```
+```python
 echonet = ETAB_dataset(name="echonet",
                        target="EF", 
                        view="A4",
@@ -186,7 +186,7 @@ echonet = ETAB_dataset(name="echonet",
 
 To animate an echocardiographic video and save it as a gif, you can use the *create_echo_clip* function as follows
 
-```
+```python
 create_echo_clip(echonet.data[0][0], "demo_clip")
 ```
 
@@ -199,7 +199,7 @@ This will save the gif file below in a folder named "echo_clips" in the current 
 
 Training and testing data can be loaded using the **train_test_split** function in **etab.utils.data_tools** as follows:
 
-```
+```python
 from etab.utils.data_tools import training_data_split
 
 train_data, val_data, test_data = training_data_split(echonet, train_frac=0.5, val_frac=0.1, random=True)
