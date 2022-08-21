@@ -41,9 +41,9 @@ The ETAB library comprises a comprehensive suite of visual task adaptation bench
     &nbsp;
     <li><a href="docs/data_access.md#Instructions-for-dataset-access">Instructions for Dataset Access</a></li> 
     &nbsp;
-    <li>Data Loaders and Processing Tools</li>
+    <li><a href="docs/data_access.md#data-loaders-and-processing-tools-demo-notebook">Data Loaders and Processing Tools</a></li> 
     &nbsp;
-    <li>Demo Notebook</li>
+    <li><a href="https://github.com/ahmedmalaa/ETAB/blob/main/notebooks/Demo%201%20-%20ETAB%20Data%20Loading%20and%20Processing%20Tools.ipynb">Demo Notebook</a></li>
   </ul>
 
 </details>
