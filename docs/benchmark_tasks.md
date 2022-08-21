@@ -407,15 +407,15 @@ To run the above experiments your self, please refer to the following *[demo not
 You can also run any benchmark task directly from the terminal using the following command:
 
 ```
-$ python run_benchmark --task "a0-A4-E" --backbone "ResNet-50" --head "U-Net" --freeze_backbone False \
-                       --train_frac 0.6 --val_frac 0.1 --lr 0.001 --epochs 100 --batch 32  
+$ python run_benchmark.py --task "a0-A4-E" --backbone "ResNet-50" --head "U-Net" --freeze_backbone False \
+                          --train_frac 0.6 --val_frac 0.1 --lr 0.001 --epochs 100 --batch 32  
 ```
 
 To run a task adaptation benchmark, where the backbone representation is trained on a source task and then tuned on a target task, you can use the following command:
 
 ```
-$ python run_benchmark --source_task "a0-A4-E" --target_task "a1-A2-C" --backbone "ResNet-50" --head "U-Net" \
-                       --freeze_backbone False --train_frac 0.6 --val_frac 0.1 --lr 0.001 --epochs 100 --batch 32  
+$ python run_benchmark.py --source_task "a0-A4-E" --target_task "a1-A2-C" --backbone "ResNet-50" --head "U-Net" \
+                          --freeze_backbone False --train_frac 0.6 --val_frac 0.1 --lr 0.001 --epochs 100 --batch 32  
 ```
 
 In the example above, the experiment will proceed by training a model to segment the LV using AP4CH views in EchoNet data, and then tune the resulting model to segment the LA using A2CH views in CAMUS dataset. 
