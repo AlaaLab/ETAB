@@ -158,7 +158,7 @@ Currently, ETAB includes 9 core tasks across the 4 task categories. The list of 
 </div>
 The benchmark codes are represented as strings with characters encoding the dataset, view and task as described above. To provide an example on how to interpret the benchmark code, consider the following string-valued variable:
 
-```
+```python
 benchmark_code = "a0-A4-E"
 ```
 
@@ -294,7 +294,7 @@ The set of all available task-specific heads (for classification, regression and
 
 To display all available baseline models, you can print the output of the *available_backbones()* and *available_heads()* functions in the *etab.baselines.models* modules as follows.  
 
-```
+```python
 from etab.baselines.models import *
 
 print(available_backbones())
@@ -313,7 +313,7 @@ In what follows, we describe how users can run a benchmark experiments out-of-th
 
 The first step in running a benchmark experiment is to load the relevant dataset. Consider again the benchmark task "a0-A4-E". This task involves segmenting the LV using apical 4-chamber views from the EchoNet dataset. The dataset can be loaded as follows: 
 
-```
+```python
 from etab.datasets import ETAB_dataset
 
 echonet = ETAB_dataset(name="echonet",
@@ -332,7 +332,7 @@ train_loader, valid_loader, test_loader = training_data_split(echonet.data, trai
 
 We have covered the data loading and processing tools in the previous section. More details can be found in this **[demo notebook](https://github.com/ahmedmalaa/ETAB/blob/main/notebooks/Demo%201%20-%20ETAB%20Data%20Loading%20and%20Processing%20Tools.ipynb)**. The next step is to compose a baseline model by creating an instance of the *ETABmodel* class as follows.
 
-```
+```python
 from etab.baselines.models import ETABmodel
 
 model  = ETABmodel(task="segmentation",
@@ -342,7 +342,7 @@ model  = ETABmodel(task="segmentation",
 
 The *model.backbone* and *model.head* are both torch model classes, the hyper-parameters of which can be altered by modifying the values of the attributes of *model.backbone* and *model.head* after instantiating the model. Here, we instantiate a standard segmentation model with a ResNet-50 backbone and a U-Net head, but the user can create alternative models using the options specified in the table above. Now, to start training the instantiated model on task "a0-A4-E", we need to set the optimizer and training parameters as follows:
 
-```
+```python
 batch_size    = 32
 learning_rate = 0.001
 n_epoch       = 100
@@ -350,7 +350,7 @@ ckpt_dir      = "/directory for saving the trained model"
 ```
 We can then train the model by invoking the *.train* method in the *ETABmodel* class after passing the training and validation loaders along with the optimization and training parameters.
 
-```
+```python
 model.train(train_loader, 
             valid_loader, 
             n_epoch=n_epoch,
@@ -360,7 +360,7 @@ model.train(train_loader,
 
 After the model is trained, we can inspect its predictions on samples from test data as follows: 
 
-```
+```python
 inputs, ground_truths = next(iter(test_loader))
 preds                 = model.predict(inputs.cuda())
 
@@ -377,7 +377,7 @@ plot_segment(torch.tensor(inputs[index, :, :, :]),
 
 To evaluate the performance of the model on the testing sample, you can use the *evaluate_model* function in *etab.utils.metrics* as follows:
 
-```
+```python
 from etab.utils.metrics import *
 
 dice_coeff = evaluate_model(model, test_loader, task_code="a0")
@@ -391,7 +391,7 @@ By passing the task code to this general-purpose evaluation function, it automat
 
 In the example above, we have trained a model by fully optimizing all its parameters for the task at hand. In many cases, we might be interested in only tuning the task-specific head and keeping the backbone representation frozen. We can do so by enabling the *freeze_backbone* flag in the model instantiation command as follows:
 
-```
+```python
 model  = ETABmodel(task="segmentation",
                    backbone="ResNet-50",
                    head="U-Net",
@@ -406,14 +406,14 @@ To run the above experiments your self, please refer to the following **[demo no
 
 You can also run any benchmark task directly from the terminal using the following command:
 
-```
+```python
 $ python run_benchmark.py --task "a0-A4-E" --backbone "ResNet-50" --head "U-Net" --freeze_backbone False \
                           --train_frac 0.6 --val_frac 0.1 --lr 0.001 --epochs 100 --batch 32  
 ```
 
 To run a task adaptation benchmark, where the backbone representation is trained on a source task and then tuned on a target task, you can use the following command:
 
-```
+```python
 $ python run_benchmark.py --source_task "a0-A4-E" --target_task "a1-A2-C" --backbone "ResNet-50" --head "U-Net" \
                           --freeze_backbone False --train_frac 0.6 --val_frac 0.1 --lr 0.001 --epochs 100 --batch 32  
 ```
