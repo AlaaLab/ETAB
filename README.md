@@ -37,7 +37,7 @@ The ETAB library comprises a comprehensive suite of visual task adaptation bench
   <summary><b>Explore Content</b> (click to expand)</summary>
   &nbsp;
   <ul>
-    <li>Overview of the Supported Echocardiography Datasets</li>
+    <li><a href="docs/data_access.md#Datasets">Overview of the Supported Echocardiography Datasets</a></li>
     &nbsp;
     <li>Instructions for Dataset Access</li>
     &nbsp;
@@ -54,7 +54,7 @@ The ETAB library comprises a comprehensive suite of visual task adaptation bench
   <summary><b>Explore Content</b> (click to expand)</summary>
   &nbsp;
   <ul>
-    <li>Benchmark Task Categorization and Encoding</li>
+    <li>Benchmark Task Categorization and Encoding</li> 
     &nbsp;
     <li>ETAB Model Zoo</li>
     &nbsp;
@@ -65,7 +65,7 @@ The ETAB library comprises a comprehensive suite of visual task adaptation bench
 
 </details>
 
-#### [Section 3: The ETAB Evaluation Protocol](documentation/benchmark_tasks.md#Datasets)
+#### [Section 3: The ETAB Evaluation Protocol](documentation/benchmark_tasks.md)
 
 #### [Section 4: Leaderboard and Benchmark Results](documentation/leaderboard.md)
 
