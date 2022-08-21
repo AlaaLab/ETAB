@@ -41,7 +41,7 @@ weight_dict = dict({"a": 0.5, "b": 0.3,
                    
 backbone    = resnet50(weights="IMAGENET1K_V1")
 
-etab_score = ETABscore(backbone=backbone, task_weights=weight_dict)
+etab_score  = ETABscore(backbone=backbone, task_weights=weight_dict)
 ```
 Here, we evaluate the ETAB score for a ResNet-50 backbone pre-trained on the ImageNet-1K dataset. The weight dictionary *weight_dict* dictates the relevant importance of the different task categories described in the previous section (Categories 🔴 a, 🔵 b, 🟢 c and 🟡 d). Currently, the ETAB score can be computed for the backbone representations listed in the previous Section. You can load any pre-trained weights into these representations prior to computing the score. 
 
@@ -49,7 +49,7 @@ The *ETABscore()* function also enables a customized weighting of prespecified s
 ```python
 weight_dict = dict({"a0-A4-E": 0.5, "a0-A4-C": 0.3, "a0-A2-C": 0.2})
                
-etab_score = ETABscore(backbone=backbone, task_weights=weight_dict)
+etab_score  = ETABscore(backbone=backbone, task_weights=weight_dict)
 ```
 The output of the *ETABscore()* function is a tuple of the form *etab_score = (Average ETAB score, 95\% confidence interval)*. The error bars are obtained by testing the backbone across each benchmark task through a number of different train/test splits. The number of training folds can be changed by setting the *n_fold* argument of *ETABscore()*, and the default value of *n_fold* is 5.
 
