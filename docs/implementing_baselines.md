@@ -1,22 +1,11 @@
-<h3 align="center">
-    <b> ETAB: A Benchmark Suite for Visual Representation Learning in Echocardiography </b>
-</h3>
-
 ---------------
 
-[![Python 3.6+](https://img.shields.io/badge/Platform-Python%203.6-blue.svg)](https://www.python.org/)
-[![PyTorch 1.1.0](https://img.shields.io/badge/Implementation-Pytorch-brightgreen.svg)](https://pytorch.org/)
+<p align="center">
+  <img width="280" height="160" src="assets/etab_logo.png" />
+</p>
 
-This repository contains code for a suite of benchmarks that can be used to evaluate visual representations of cardiac ultrasound (echocardiogram) data with respect to various clinically-relevant tasks using publicly accessible data sets. In addition, the repo contains a unified evaluation protocol, which we call the echocardiographic task adaptation benchmark (ETAB), that measures how well a visual representation of echocardiograms generalizes to common downstream tasks of interest.
+<h1 align="center">
+    <b> ETAB Benchmark Suite and Model Zoo </b>
+</h1>
 
----------------
-
-#### Installation 
-
-#### Data sets and accessibility
-
-#### Benchmark tasks
-
-#### Implementing your own baselines
-
-#### Leaderboard and benchmark results
+The ETAB benchmark suite encapsulates a diverse set of tasks that are meant to test the quality of visual representations of echocardiograms with respect to different downstream setups of interest across different datasets. The benchmark tasks fall in four different catgeories: 🔴 *cardiac structure identification* tasks where the goal is to automatically identify anatomical regions of interest, 🔵 *cardiac function estimation* tasks where the goal is to evaluate cardiac hemodynamics and left ventricle measurements, 🟢 *view recognition tasks* where the goal is to automate view annotations for echocardiography clips, and 🟡 *clinical prediction tasks* where the goal is to predict clinical outcomes or issue diagnoses based on observed echocardiograms. Combinations of these tasks constitute adaptation benchmarks that can be used to evaluate transferrability of features across views, data sets and annotations. In this Section, we provide an overview of the ETAB benchmark suite and the supported built-in vision models, along with code snippets and demo notebooks illustrating how users can run a benchmark experiment out-of-the-box. 
