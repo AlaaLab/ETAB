@@ -375,15 +375,21 @@ plot_segment(torch.tensor(inputs[index, :, :, :]),
 
 ### Evaluating a model on test data
 
+To evaluate the performance of the model on the testing sample, you can use the *evaluate_model* function in *etab.utils.metrics* as follows:
 
 ```
 from etab.utils.metrics import *
 
-dice_coeff = evaluate_model(model, test_loader, task="segmentation")
+dice_coeff = evaluate_model(model, test_loader, task_code="a0")
 
 ```
 
+By passing the task code to this general-purpose evaluation function, it automatically selects the corresponding evaluation metric for the task. Because this is a segmentation task, the output is a Jaccard Index/Dice coefficient. The function computes the AUC-ROC for classification tasks and the mean square error for regression tasks.
+
+
 ### Freezing the backbone and tuning the head
+
+In the example above, we have trained a model by fully optimizing all its parameters for the task at hand. In many cases, we might be interested in only tuning the task-specific head and keeping the backbone representation frozen. We can do so by enabling the *freeze_backbone* flag in the model instantiation command as follows:
 
 ```
 model  = ETABmodel(task="segmentation",
@@ -392,13 +398,25 @@ model  = ETABmodel(task="segmentation",
                    freeze_backbone=True)
 ```
 
+As we will show in the next Section, when computing the ETAB score we are interested in evaluating a pre-trained representation, hence we freeze the backbone model for all benchmark tasks and only tune the head and evaluate the pefromance of the resulting model on test data.
 
 ### CLI for running a benchmark experiment from terminal
+
+You can also run any benchmark task directly from the terminal using the following command:
 
 ```
 $ python run_benchmark --task "a0-A4-E" --backbone "ResNet-50" --head "U-Net" --freeze_backbone False \
                        --train_frac 0.6 --val_frac 0.1 --lr 0.001 --epochs 100 --batch 32  
 ```
+
+To run a task adaptation benchmark, where the backbone representation is trained on a source task and then tuned on a target task, you can use the following command:
+
+```
+$ python run_benchmark --source_task "a0-A4-E" --target_task "a1-A2-C" --backbone "ResNet-50" --head "U-Net" \
+                       --freeze_backbone False --train_frac 0.6 --val_frac 0.1 --lr 0.001 --epochs 100 --batch 32  
+```
+
+In the example above, the experiment will 
 
 ## References and acknowledgments
 
