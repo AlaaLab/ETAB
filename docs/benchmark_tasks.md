@@ -398,7 +398,7 @@ model  = ETABmodel(task="segmentation",
                    freeze_backbone=True)
 ```
 
-As we will show in the next Section, when computing the ETAB score we are interested in evaluating a pre-trained representation, hence we freeze the backbone model for all benchmark tasks and only tune the head and evaluate the pefromance of the resulting model on test data.
+As we will show in the next Section, when computing the ETAB score we are interested in evaluating a pre-trained representation, hence we freeze the backbone model for all benchmark tasks and only tune the head and evaluate the pefromance of the model on test data.
 
 ### CLI for running a benchmark experiment from terminal
 
@@ -419,6 +419,17 @@ $ python run_benchmark --source_task "a0-A4-E" --target_task "a1-A2-C" --backbon
 In the example above, the experiment will 
 
 ## References and acknowledgments
+
+Our model API builds on the implementations of following libraries: 
+
+[1] https://poutyne.org/ 
+[2] https://github.com/sithu31296/semantic-segmentation
+[3] https://github.com/qubvel/segmentation_models.pytorch 
+[4] https://github.com/rwightman/pytorch-image-models
+
+
+
+
 
 
 
