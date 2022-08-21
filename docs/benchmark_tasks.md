@@ -307,20 +307,11 @@ Note that some benchmark tasks (e.g., estimation of LV ejection fraction) are de
 
 ## Running a benchmark experiment out-of-the-box
 
-### Composing a model
+In what follows, we describe how users can run a benchmark experiments out-of-the-box using the ETAB API. Next, we will show how an experiment can be ran from the terminal using our built-in scripts.
 
+### Composing a model and training on a benchmark task
 
-```
-from etab.baselines.models import ETABmodel
-
-model  = ETABmodel(task="segmentation",
-                   backbone="ResNet-50",
-                   head="U-Net")
-```
-
-
-
-### Downstream task
+The first step in running a benchmark experiment is to load the relevant dataset. Consider again the benchmark task "a0-A4-E". This task involves segmenting the LV using apical 4-chamber views from the EchoNet dataset. The dataset can be loaded as follows: 
 
 ```
 from etab.datasets import ETAB_dataset
@@ -339,12 +330,25 @@ echonet.load_data(n_clips=7000)
 train_loader, valid_loader, test_loader = training_data_split(echonet.data, train_frac=0.6, val_frac=0.1)                
 ```
 
+We have covered the data loading and processing tools in the previous section. More details can be found in this *[demo notebook](https://github.com/ahmedmalaa/ETAB/blob/main/notebooks/Demo%201%20-%20ETAB%20Data%20Loading%20and%20Processing%20Tools.ipynb)*. The next step is to compose a baseline model by creating an instance of the *ETABmodel* class as follows.
+
+```
+from etab.baselines.models import ETABmodel
+
+model  = ETABmodel(task="segmentation",
+                   backbone="ResNet-50",
+                   head="U-Net")
+```
+
+The *model.backbone* and *model.head* are both torch model classes, the hyper-parameters of which can be altered by modifying the values of the attributes of *model.backbone* and *model.head* after instantiating the model. Now, to start training the instantiated model on task "a0-A4-E", we need to set the optimizer and training parameters as follows:
+
 ```
 batch_size    = 32
 learning_rate = 0.001
 n_epoch       = 100
 ckpt_dir      = "/directory for saving the trained model"
 ```
+We can then train the model by invoking the *.train* method in the *ETABmodel* class after passing the training and validation loaders along with the optimization and training parameters.
 
 ```
 model.train(train_loader, 
@@ -354,9 +358,11 @@ model.train(train_loader,
             ckpt_dir=ckpt_dir)
 ```
 
+After the model is trained, we can inspect its predictions on samples from test data as follows: 
+
 ```
 inputs, ground_truths = next(iter(test_loader))
-preds                 = model(inputs.cuda()).argmax(1).detach().cpu().numpy() 
+preds                 = model.predict(inputs.cuda())
 
 plot_segment(torch.tensor(inputs[index, :, :, :]), 
              torch.tensor(preds[index, :, :]), 
