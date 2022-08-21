@@ -340,7 +340,7 @@ model  = ETABmodel(task="segmentation",
                    head="U-Net")
 ```
 
-The *model.backbone* and *model.head* are both torch model classes, the hyper-parameters of which can be altered by modifying the values of the attributes of *model.backbone* and *model.head* after instantiating the model. Now, to start training the instantiated model on task "a0-A4-E", we need to set the optimizer and training parameters as follows:
+The *model.backbone* and *model.head* are both torch model classes, the hyper-parameters of which can be altered by modifying the values of the attributes of *model.backbone* and *model.head* after instantiating the model. Here, we instantiate a standard segmentation model with a ResNet-50 backbone and a U-Net head, but the user can create alternative models using the options specified in the table above. Now, to start training the instantiated model on task "a0-A4-E", we need to set the optimizer and training parameters as follows:
 
 ```
 batch_size    = 32
@@ -400,6 +400,8 @@ model  = ETABmodel(task="segmentation",
 
 As we will show in the next Section, when computing the ETAB score we are interested in evaluating a pre-trained representation, hence we freeze the backbone model for all benchmark tasks and only tune the head and evaluate the pefromance of the model on test data.
 
+To run the above experiments your self, please refer to the following *[demo notebook](https://github.com/ahmedmalaa/ETAB/blob/main/notebooks/Demo%201%20-%20ETAB%20Data%20Loading%20and%20Processing%20Tools.ipynb)*. 
+
 ### CLI for running a benchmark experiment from terminal
 
 You can also run any benchmark task directly from the terminal using the following command:
@@ -416,15 +418,20 @@ $ python run_benchmark --source_task "a0-A4-E" --target_task "a1-A2-C" --backbon
                        --freeze_backbone False --train_frac 0.6 --val_frac 0.1 --lr 0.001 --epochs 100 --batch 32  
 ```
 
-In the example above, the experiment will 
+In the example above, the experiment will proceed by training a model to segment the LV using AP4CH views in EchoNet data, and then tune the resulting model to segment the LA using A2CH views in CAMUS dataset. 
+
+
 
 ## References and acknowledgments
 
 Our model API builds on the implementations of following libraries: 
 
 [1] https://poutyne.org/ 
+
 [2] https://github.com/sithu31296/semantic-segmentation
+
 [3] https://github.com/qubvel/segmentation_models.pytorch 
+
 [4] https://github.com/rwightman/pytorch-image-models
 
 
