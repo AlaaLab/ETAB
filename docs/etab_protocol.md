@@ -25,5 +25,7 @@ $\mbox{ETAB}\_k^n(\mathcal{M}) \triangleq \mathbb{E}\_{t \sim P\_{\mathcal{T}\_k
 
 $\mbox{ETAB}^n(\mathcal{M}) \triangleq \mathbb{E}\_{k \sim P_\mathcal{K}} \mbox{ETAB}\_k^n(\mathcal{M}).$
 
+The score computation procedure is implemented by looping over all the benchmark tasks listed in the previous Section, and then computed a weighted average of the performance of a given backbone representation attached to the task-specific heads. 
+
 
 ## Computing the ETAB score
