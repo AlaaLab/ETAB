@@ -53,6 +53,8 @@ etab_score  = ETABscore(backbone=backbone, task_weights=weight_dict)
 ```
 The output of the *ETABscore()* function is a tuple of the form *etab_score = (Average ETAB score, 95\% confidence interval)*. The error bars are obtained by testing the backbone across each benchmark task through a number of different train/test splits. The number of training folds can be changed by setting the *n_fold* argument of *ETABscore()*, and the default value of *n_fold* is 5.
 
+A detailed example for how to compute the ETAB score is provided in this **[demo notebook](https://github.com/ahmedmalaa/ETAB/blob/main/notebooks/Demo%201%20-%20ETAB%20Data%20Loading%20and%20Processing%20Tools.ipynb)**.
+
 
 
 
