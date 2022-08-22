@@ -1,22 +1,11 @@
-<h3 align="center">
-    <b> ETAB: A Benchmark Suite for Visual Representation Learning in Echocardiography </b>
-</h3>
-
 ---------------
 
-[![Python 3.6+](https://img.shields.io/badge/Platform-Python%203.6-blue.svg)](https://www.python.org/)
-[![PyTorch 1.1.0](https://img.shields.io/badge/Implementation-Pytorch-brightgreen.svg)](https://pytorch.org/)
+<p align="center">
+  <img width="280" height="160" src="assets/etab_logo.png" />
+</p>
 
-This repository contains code for a suite of benchmarks that can be used to evaluate visual representations of cardiac ultrasound (echocardiogram) data with respect to various clinically-relevant tasks using publicly accessible data sets. In addition, the repo contains a unified evaluation protocol, which we call the echocardiographic task adaptation benchmark (ETAB), that measures how well a visual representation of echocardiograms generalizes to common downstream tasks of interest.
+<h1 align="center">
+    <b> Leaderboard and Benchmark Results </b>
+</h1>
 
----------------
-
-#### Installation 
-
-#### Data sets and accessibility
-
-#### Benchmark tasks
-
-#### Implementing your own baselines
-
-#### Leaderboard and benchmark results
+In many cases, we might be interested in evaluating a visual representation pre-trained on an external data set with respect to their ability to capture all relevant features in echocardiograms. These pre-trained representations might have been trained on private echocardiogram data, data for other cardiac imaging modalities, or even a general visual representation pre-trained on non-medical data such as ImageNet. The ETAB evaluation protocol uses the suite of benchmark tasks listed in the previous Section to evaluate the usefulness of any given (pre-trained) visual representation for a wide variety of common tasks in echocardiography. In this Section, we describe the ETAB evaluation protocol and provide code snippets illustrating how the user can compute the "ETAB score" for a pre-trained backbone representation.
