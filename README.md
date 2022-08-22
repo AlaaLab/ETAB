@@ -93,7 +93,7 @@ $pip install etab
 
 </details>
 
-#### [Section 4: Leaderboard and Benchmark Results](documentation/leaderboard.md)
+#### [Section 4: Leaderboard and Benchmark Results](docs/leaderboard.md)
 
 #### [Section 5: Reproducibility Checklist](documentation/leaderboard.md)
 
