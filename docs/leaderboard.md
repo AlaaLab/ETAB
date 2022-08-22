@@ -20,11 +20,11 @@
   <td> <b> <div align="center"> Pre-trained weights                  </div> </b> </td>
  </tr>
  <tr>
-  <td> ResNet-50 (ImageNet-1K weights) </td>
-  <td> 23M </td>
-  <td> 0.7 </td>
+  <td> <div align="center"> ResNet-50 (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> 23M </div> </td>
+  <td> <div align="center"> 0.7 </div> </td>
   <td> --- </td> 
-  <td> <a href="https://pytorch.org/vision/main/models/generated/torchvision.models.resnet50.html">Download</a> </td> 
+  <td> <div align="center"> <a href="https://pytorch.org/vision/main/models/generated/torchvision.models.resnet50.html">Download</a> </div> </td> 
  </tr> 
 </table>
 </div>
