@@ -13,6 +13,7 @@
 <div align="center">
 <table border="1">
  <tr>
+  <td> <b> <div align="center"> Ranking                              </div> </b> </td>
   <td> <b> <div align="center"> Backbone                             </div> </b> </td>
   <td> <b> <div align="center"> Number of parameters                 </div> </b> </td>
   <td> <b> <div align="center"> ETAB score                           </div> </b> </td>
@@ -20,6 +21,7 @@
   <td> <b> <div align="center"> Pre-trained weights                  </div> </b> </td>
  </tr>
  <tr>
+  <td> <b> <div align="center"> 1 </div> </b> </td>
   <td> <div align="center"> ResNet-50 (ImageNet-1K weights) </div> </td>
   <td> <div align="center"> 23M </div> </td>
   <td> <div align="center"> 0.7 </div> </td>
