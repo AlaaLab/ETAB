@@ -13,25 +13,18 @@
 <div align="center">
 <table border="1">
  <tr>
-  <td>&nbsp; <b> <div align="center"> Task code        </div> </b> &nbsp;</td>
-  <td>&nbsp; <b> <div align="center"> Description      </div> </b> &nbsp;</td>
-  <td>&nbsp; <b> <div align="center"> Datasets (Views) </div> </b> &nbsp;</td>
+  <td> <b> <div align="center"> Backbone                             </div> </b> </td>
+  <td> <b> <div align="center"> Number of parameters                 </div> </b> </td>
+  <td> <b> <div align="center"> ETAB score                           </div> </b> </td>
+  <td> <b> <div align="center"> Task-specific performance break down </div> </b> </td>
+  <td> <b> <div align="center"> Pre-trained weights                  </div> </b> </td>
  </tr>
  <tr>
-  <td><b> 0 </b></td>
-  <td>Segmenting the left ventricle (LV)</td>
-  <td>EchoNet (AP4CH), CAMUS (AP2CH and AP4CH)</td>
- </tr>
- <tr>
- <td><b> 1 </b></td>
-  <td>Segmenting the left atrium (LA)</td>
-  <td>CAMUS (AP2CH and AP4CH)</td>
+  <td> ResNet-50 (ImageNet-1K weights) </td>
+  <td> 23M </td>
+  <td> 0.7 </td>
+  <td> <a href="https://pytorch.org/vision/main/models/generated/torchvision.models.resnet50.html">Download</a> </td> 
  </tr> 
- <tr>
- <td><b> 2 </b></td>
-  <td>Segmenting the myocardial wall (MY)</td>
-  <td>CAMUS (AP2CH and AP4CH)</td>
- </tr>  
 </table>
 </div>
 
