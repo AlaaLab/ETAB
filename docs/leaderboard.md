@@ -23,6 +23,7 @@
   <td> ResNet-50 (ImageNet-1K weights) </td>
   <td> 23M </td>
   <td> 0.7 </td>
+  <td> --- </td> 
   <td> <a href="https://pytorch.org/vision/main/models/generated/torchvision.models.resnet50.html">Download</a> </td> 
  </tr> 
 </table>
