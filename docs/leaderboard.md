@@ -15,7 +15,7 @@
  <tr>
   <td> <b> <div align="center"> Ranking                              </div> </b> </td>
   <td> <b> <div align="center"> Backbone                             </div> </b> </td>
-  <td> <b> <div align="center"> Number of parameters                 </div> </b> </td>
+  <td> <b> <div align="center"> # Parameters                         </div> </b> </td>
   <td> <b> <div align="center"> ETAB score                           </div> </b> </td>
   <td> <b> <div align="center"> Task-specific performance break down </div> </b> </td>
   <td> <b> <div align="center"> Pre-trained weights                  </div> </b> </td>
