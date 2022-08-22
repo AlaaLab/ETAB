@@ -327,7 +327,8 @@ echonet = ETAB_dataset(name="echonet",
 
 echonet.load_data(n_clips=7000)
 
-train_loader, valid_loader, test_loader = training_data_split(echonet.data, train_frac=0.6, val_frac=0.1)                
+train_loader, valid_loader, test_loader = training_data_split(echonet.data, train_frac=0.6, val_frac=0.1, 
+                                                              batch_size=batch_size, return_loaders=True)
 ```
 
 We have covered the data loading and processing tools in the previous section. More details can be found in this **[demo notebook](https://github.com/ahmedmalaa/ETAB/blob/main/notebooks/Demo%201%20-%20ETAB%20Data%20Loading%20and%20Processing%20Tools.ipynb)**. The next step is to compose a baseline model by creating an instance of the *ETABmodel* class as follows.
@@ -348,14 +349,15 @@ learning_rate = 0.001
 n_epoch       = 100
 ckpt_dir      = "/directory for saving the trained model"
 ```
-We can then train the model by invoking the *.train* method in the *ETABmodel* class after passing the training and validation loaders along with the optimization and training parameters.
+We can then train the model by invoking the *.fit* method in the *ETABmodel* class after passing the training and validation loaders along with the optimization and training parameters.
 
 ```python
-model.train(train_loader, 
-            valid_loader, 
-            n_epoch=n_epoch,
-            learning_rate=learning_rate,
-            ckpt_dir=ckpt_dir)
+model.fit(train_loader, 
+          valid_loader, 
+          n_epoch=n_epoch,
+          task_code="EA40", 
+          learning_rate=learning_rate,
+          ckpt_dir=ckpt_dir)
 ```
 
 After the model is trained, we can inspect its predictions on samples from test data as follows: 
@@ -364,8 +366,10 @@ After the model is trained, we can inspect its predictions on samples from test 
 inputs, ground_truths = next(iter(test_loader))
 preds                 = model.predict(inputs.cuda())
 
-plot_segment(torch.tensor(inputs[index, :, :, :]), 
-             torch.tensor(preds[index, :, :]), 
+# set index to an integer number to select a test sample
+
+plot_segment(inputs[index, :, :, :], 
+             preds[index, :, :], 
              overlay=True, color="r")
 ```
 
