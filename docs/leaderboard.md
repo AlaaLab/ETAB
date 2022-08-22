@@ -22,7 +22,7 @@
  </tr>
  <tr>
   <td> <b> <div align="center"> 1 </div> </b> </td>
-  <td> <div align="center"> ResNet-50 (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> <pre> ResNet-50, (ImageNet-1K weights)</pre>  </div> </td>
   <td> <div align="center"> 23M </div> </td>
   <td> <div align="center"> 0.7 </div> </td>
   <td> --- </td> 
