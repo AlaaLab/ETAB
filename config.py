@@ -3,8 +3,9 @@
 
 import torchvision.models as models
 
-echonet_dir        = "/home/jupyter/visual-prompting" 
-camus_dir          = "/home/jupyter/visual-prompting/data/camus_data_set.pickle"
+echonet_dir        = "/data/echonet"
+camus_dir          = "/data/camus"
+tmed_dir           = "/data/tmed"
 clip_dir           = "echo_clips/"
 
 
