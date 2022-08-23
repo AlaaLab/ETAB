@@ -393,13 +393,14 @@ By passing the task code to this general-purpose evaluation function, it automat
 
 ### Freezing the backbone and tuning the head
 
-In the example above, we have trained a model by fully optimizing all its parameters for the task at hand. In many cases, we might be interested in only tuning the task-specific head and keeping the backbone representation frozen. We can do so by enabling the *freeze_backbone* flag in the model instantiation command as follows:
+In the example above, we have trained a model by fully optimizing all its parameters for the task at hand. In many cases, we might be interested in only tuning the task-specific head and keeping the backbone representation frozen. We can do so by calling the *freeze_backbone* method in *ETABmodel* after the model instantiation command as follows:
 
 ```python
 model  = ETABmodel(task="segmentation",
                    backbone="ResNet-50",
-                   head="U-Net",
-                   freeze_backbone=True)
+                   head="U-Net")
+                   
+model.freeze_backbone()                   
 ```
 
 As we will show in the next Section, when computing the ETAB score we are interested in evaluating a pre-trained representation, hence we freeze the backbone model for all benchmark tasks and only tune the head and evaluate the pefromance of the model on test data.
