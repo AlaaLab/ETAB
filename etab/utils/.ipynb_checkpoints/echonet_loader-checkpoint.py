@@ -399,6 +399,10 @@ def load_segmented_data(data_dir,
             else:
             
                 curr_trace = pil_2_tensor(transform(torch.tensor(_trace[u])).resize((IMG_SIZE, IMG_SIZE))).squeeze(0) if type(_trace[u]) != float else _trace[u]
+                
+                if targets[u] in ["SmallTrace", "LargeTrace"]:
+                    
+                    curr_trace = curr_trace.type(torch.LongTensor)
 
                 current_trace.append(curr_trace)
         
@@ -411,6 +415,9 @@ def load_segmented_data(data_dir,
             current_video   = current_video - imagenet_mean
             current_video   = current_video / imagenet_std
             current_video   = torch.einsum('hwc->chw', current_video)
+        
+        
+        current_video = current_video.float()
         
         videos.append(current_video)
         label.append(current_trace)

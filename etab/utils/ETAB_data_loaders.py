@@ -9,6 +9,7 @@ import pickle
 import config
 from etab.utils.echonet_loader import *
 
+
 def prepare_image(index, dataset, segment_index=1, IMG_SIZE=224, img_type="4CH_ED", normalize=True):
 
     imagenet_mean  = np.array([0.485, 0.456, 0.406])

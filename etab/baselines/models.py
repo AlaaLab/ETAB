@@ -8,9 +8,121 @@ from torchvision import transforms
 import config
 import segmentation_models_pytorch as smp
 import torchmetrics
+from torch import Tensor
+from torch.nn import functional as F
+from semseg.models.base import BaseModel
+from semseg.models.heads import * 
+
+from etab.utils.callbacks import *
 
 from poutyne import set_seeds, Model, ModelCheckpoint, CSVLogger, Experiment
 
+import warnings
+warnings.filterwarnings("ignore")
+
+
+if torch.cuda.is_available():
+    
+    print("GPU(s) available: ", torch.cuda.get_device_name())
+    
+else:
+    
+    print("No GPUs available")
+
+cuda_device      = 0
+device           = torch.device("cuda:%d" % cuda_device if torch.cuda.is_available() else "cpu")
+
+
+
+class ETABmodel(BaseModel):
+    
+    def __init__(self, 
+                 task: str = "segmentation", 
+                 backbone: str = 'ResNet-50', 
+                 head: str = "UPer", 
+                 num_classes: int = 2):
+        
+        super().__init__(backbone, num_classes)
+        
+        self.model       = None
+        self.decode_head = eval(head + "Head")(self.backbone.channels, 256, num_classes)
+        
+        self.apply(self._init_weights)
+
+    def forward(self, x: Tensor) -> Tensor:
+        
+        y = self.backbone(x)
+        y = self.decode_head(y)   # 4x reduction in image size
+        y = F.interpolate(y, size=x.shape[2:], mode='bilinear', align_corners=False)    # to original image shape
+        
+        return y
+    
+    
+    def fit(self, 
+            train_loader, 
+            valid_loader, 
+            task_code="EA40", 
+            n_epoch=50,
+            learning_rate=1e-2,
+            ckpt_dir=None,
+            device="cpu"):
+        
+        
+        callbacks   = init_callbacks(ckpt_dir)
+        self.device = device
+        
+        save_base_dir = 'checkpoints'
+        # Reload the pretrained network and freeze it except for its head.
+    
+        seg_tasks     = ["0", "1", "2"]
+        class_tasks   = ["3", "4", "5", "6"]
+    
+        optimizer    = optim.SGD(self.parameters(), lr=learning_rate, weight_decay=0.001)
+    
+    
+        if task_code[-1] in seg_tasks:
+        
+            epoch_metric = ['f1', torchmetrics.JaccardIndex(num_classes=2)]
+            #optimizer    = optim.SGD(model.parameters(), lr=learning_rate, weight_decay=0.001)
+    
+        else:
+        
+            epoch_metric = ['f1']
+            #optimizer    = optim.SGD(model.fc.parameters(), lr=learning_rate, weight_decay=0.001)
+    
+    
+        # Saves everything into ./saves/cub200_resnet18_experiment
+        #save_path     = os.path.join(save_base_dir, task_code + "_" + backbone_type + "_target")
+        save_path     = os.path.join(save_base_dir, ckpt_dir)
+    
+        loss_function = nn.CrossEntropyLoss()
+
+        self.model    = Model(self, 
+                              optimizer, 
+                              loss_function,
+                              batch_metrics=['accuracy'], 
+                              epoch_metrics=epoch_metric,
+                              device=device)
+    
+        self.model.fit_generator(train_loader, 
+                                 valid_loader, 
+                                 epochs=n_epoch, 
+                                 callbacks=callbacks)
+    
+    def predict(self, X):
+        
+        return self(X.to(self.device)).argmax(1).detach().cpu() #.numpy() 
+    
+    
+    def freeze_backbone(self):
+        
+        for param in self.backbone.parameters():
+            
+            param.requires_grad = False
+        
+        
+        
+#######        
 
 def freeze_weights(model):
     
