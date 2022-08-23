@@ -73,7 +73,7 @@ $pip install etab
     &nbsp;
     <li><a href="docs/benchmark_tasks.md#running-a-benchmark-experiment-out-of-the-box-demo-notebook">Running a Benchmark Experiment Out-of-the-Box</a></li>
     &nbsp;
-    <li>Demo Notebooks</li>
+    <li><a href="https://github.com/ahmedmalaa/ETAB/blob/main/notebooks/Demo%202%20-%20ETAB%20Benchmark%20Tasks.ipynb">Demo Notebooks</a></li>
   </ul>
 
 </details>
