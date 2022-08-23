@@ -429,7 +429,7 @@ In the example above, the experiment will proceed by training a model to segment
 
 ## References and acknowledgments
 
-Our model API builds on the implementations of following libraries: 
+Our model API builds on the implementations of the following libraries and resources: 
 
 [1] https://poutyne.org/ 
 
