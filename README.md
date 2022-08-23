@@ -11,6 +11,8 @@
   <a href="#Overview">What is ETAB?</a> •
   <a href="#Getting-Started">Getting Started</a> •
   <a href="#Documentation">Documentation</a> •
+  <a href="#Documentation">Community</a> •
+  <a href="#Documentation">Paper</a> 
 </p>
 
 ---------------
