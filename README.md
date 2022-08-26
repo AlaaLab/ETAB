@@ -12,7 +12,7 @@
   <a href="#Getting-Started">Getting Started</a> •
   <a href="#Documentation">Documentation</a> •
   <a href="#Documentation">Community</a> •
-  <a href="#Documentation">Paper</a> 
+  <a href="https://openreview.net/pdf?id=b0VDQiNLPy9">Paper</a> 
 </p>
 
 ---------------
