@@ -105,6 +105,17 @@ $pip install etab
 
 #### [Section 4: Leaderboard and Benchmark Results](docs/leaderboard.md)
 
+<details>
+  <summary><b>Explore Content</b> (click to expand)</summary>
+  &nbsp;
+  <ul>
+    <li><a href="docs/leaderboard.md#etab-leaderboard">ETAB Leaderboard</a></li> 
+    &nbsp;
+    <li><a href="docs/leaderboard.md#how-to-contribute">How to contribute?</a></li>
+  </ul>
+
+</details>
+
 #### [Section 5: Reproducibility Checklist](documentation/leaderboard.md)
 
 ---------------
