@@ -305,7 +305,7 @@ print(available_heads())
 
 Note that some benchmark tasks (e.g., estimation of LV ejection fraction) are defined with respect to video clips rather than still images, whereas other tasks and datasets are limited to 2D images. In the current release of ETAB, we restrict the backbone representations to frame embeddings and use these representations repeatedly over sequences of images and defer the modeling of the temporal correlations between these embeddings to the head through variants of RNNs. By limiting the backbone representations to frame embeddings, we can evaluate the quality of a backbone representation by tuning the attached task-specific heads across all benchmark tasks above to obtain the ETAB score as we discuss in the next Section.
 
-## Running a benchmark experiment out-of-the-box (**[demo notebook](https://github.com/ahmedmalaa/ETAB/blob/main/notebooks/Demo%201%20-%20ETAB%20Data%20Loading%20and%20Processing%20Tools.ipynb)**)
+## Running a benchmark experiment out-of-the-box (**[demo notebook](https://github.com/ahmedmalaa/ETAB/blob/main/notebooks/Demo%202%20-%20ETAB%20Benchmark%20Tasks.ipynb)**)
 
 In what follows, we describe how users can run a benchmark experiments out-of-the-box using the ETAB API. Next, we will show how an experiment can be ran from the terminal using our built-in scripts.
 
@@ -331,7 +331,7 @@ train_loader, valid_loader, test_loader = training_data_split(echonet.data, trai
                                                               batch_size=batch_size, return_loaders=True)
 ```
 
-We have covered the data loading and processing tools in the previous section. More details can be found in this **[demo notebook](https://github.com/ahmedmalaa/ETAB/blob/main/notebooks/Demo%201%20-%20ETAB%20Data%20Loading%20and%20Processing%20Tools.ipynb)**. The next step is to compose a baseline model by creating an instance of the *ETABmodel* class as follows.
+We have covered the data loading and processing tools in the previous section. More details can be found in this **[demo notebook](https://github.com/ahmedmalaa/ETAB/blob/main/notebooks/Demo%202%20-%20ETAB%20Benchmark%20Tasks.ipynb)**. The next step is to compose a baseline model by creating an instance of the *ETABmodel* class as follows.
 
 ```python
 from etab.baselines.models import ETABmodel
@@ -405,7 +405,7 @@ model.freeze_backbone()
 
 As we will show in the next Section, when computing the ETAB score we are interested in evaluating a pre-trained representation, hence we freeze the backbone model for all benchmark tasks and only tune the head and evaluate the pefromance of the model on test data.
 
-To run the above experiments your self, please refer to the following **[demo notebook](https://github.com/ahmedmalaa/ETAB/blob/main/notebooks/Demo%201%20-%20ETAB%20Data%20Loading%20and%20Processing%20Tools.ipynb)**. 
+To run the above experiments your self, please refer to the following **[demo notebook](https://github.com/ahmedmalaa/ETAB/blob/main/notebooks/Demo%202%20-%20ETAB%20Benchmark%20Tasks.ipynb)**. 
 
 ### CLI for running a benchmark experiment from terminal
 
