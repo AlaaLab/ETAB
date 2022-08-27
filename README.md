@@ -37,11 +37,10 @@ Echocardiography is one of the most commonly used non-invasive imaging technique
 The echocardiographic task adaptation benchmark (ETAB) is a software library that provides a unified and easy-to-use API for developing and testing visual representation learning algorithms for a diverse set of echocardiohraphic tasks of interest using publicly accessible datasets. ETAB offers:
 - A unified API for loading and processing various publicly-accessible echocardiography datasets.
 - An easy-to-use API for creating modeling pipelines for different types of downstream tasks.
-- A suite of standardized benchmark tasks tailored to echocardiography data.
+- A suite of standardized (transfer learning and downstream) benchmark tasks tailored to echocardiography data.
 - A unified evaluation protocol for pre-trained echocardiographic representations.
 
-
-The ETAB library comprises a comprehensive suite of visual task adaptation benchmarks tailored to echocardiography data. Each benchmark comprises a source task and a target task; the source-target pair within each benchmark are meant to assess the ability of different representation pre-training approaches to transfer information across data sets, echo views and annotations. These adaptation benchmarks are all conducted on publicly accessible data sets, hence they can be easily used to evaluate existing and future methods. Moreover, using our suite of target tasks we specify a unified evaluation protocol for readily available pre-trained representations which is meant to evaluate the extent by which a given representation generalizes to different tasks, views and patient cohorts. The ETAB benchmark enables researchers to share a unified and publicly-accessible evaluation protocol, even when the representations themselves are pre-trained on private hospital data.
+The ETAB library is meant to provide a self-sufficient framework for developing and evaluating visual representations of echocardiograms by creating a metadataset that encapsulates various publicly-accessible data sources. You can use ETAB in your research to develop new models for echocardiography or evaluate pre-trained representations derived from external data sources.
 
 ---------------
 
