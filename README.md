@@ -133,8 +133,8 @@ Learn more about the features and use cases of ETAB through step-by-step instruc
 
 ---------------
 
-## 📚 Community
+## 🤝 Community
 
-Join our community on [Slack](https://app.slack.com/client/T040005U9PV/C03VB46GYQM)!
+Connect with other researchers for questions or discussions by joining our community on [Slack](https://app.slack.com/client/T040005U9PV/C03VB46GYQM)!
 
 ---------------
