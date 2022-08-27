@@ -11,7 +11,7 @@
   <a href="#-Overview">What is ETAB?</a> •
   <a href="#-Getting-Started">Getting Started</a> •
   <a href="#-Documentation">Documentation</a> •
-  <a href="#Documentation">Community</a> •
+  <a href="#-Community">Community</a> •
   <a href="https://github.com/ahmedmalaa/ETAB/blob/main/docs/leaderboard.md#how-to-contribute">Contributing</a> •
   <a href="https://openreview.net/pdf?id=b0VDQiNLPy9">Paper</a> 
 </p>
