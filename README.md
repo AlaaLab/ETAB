@@ -7,8 +7,8 @@
 
 ---------------
 
-<p align="center">
-  <a href="#-What-is-ETAB?">What is ETAB?</a> •
+<p align="center"> 
+  <a href="#-what-is-etab">What is ETAB?</a> •
   <a href="#-Getting-Started">Getting Started</a> •
   <a href="#-Documentation">Documentation</a> •
   <a href="#-Community">Community</a> •
