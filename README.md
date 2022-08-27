@@ -36,7 +36,7 @@ Echocardiography is one of the most commonly used non-invasive imaging technique
 
 The echocardiographic task adaptation benchmark (ETAB) is a software library that provides a unified and easy-to-use API for developing and testing visual representation learning algorithms for a diverse set of echocardiohraphic tasks of interest using publicly accessible datasets. ETAB offers:
 - A unified API for loading and processing various publicly-accessible echocardiography datasets.
-- An easy-to-use API for creating modeling pipelines for different types of downstream tasks that supports a wide variety of backbone architectures.
+- An easy-to-use API for creating modeling pipelines that supports a wide variety of backbone architectures and covers different types of downstream tasks of interest.
 - A comprehensive suite of standardized (transfer learning and downstream) benchmark tasks tailored to echocardiography data.
 - A unified evaluation protocol for pre-trained echocardiographic representations.
 
