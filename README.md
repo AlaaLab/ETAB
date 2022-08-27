@@ -52,7 +52,7 @@ $pip install etab
 
 ---------------
 
-## Documentation
+## 📚 Documentation
 
 #### [Section 1: Datasets, Accessibility and Data Processing Tools](docs/data_access.md)
 
