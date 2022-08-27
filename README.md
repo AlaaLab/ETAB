@@ -72,7 +72,8 @@ You can run any benchmark task supported by ETAB using the following CLI
 
 ```python
 $ python run_benchmark.py --task <str: Task Code> --backbone <str: Backbone representation>\
-                          --head <str: Task-specific head> --freeze_backbone <bool: Fully finetune?> \
+                          --head <str: Task-specific head>\ 
+                          --freeze_backbone <bool: Fully finetune?> \
                           --train_frac <int: fraction of data used for training>\
                           --val_frac <int: fraction of data used for validation>\
                           --lr <float: learning rate> --epochs <int: number of epochs> --batch <int: batch size> 
