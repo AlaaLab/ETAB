@@ -135,6 +135,6 @@ Visit the documentation sections below to learn more about the different feature
 
 ## 🤝 Community
 
-Connect with other researchers for questions or discussions by joining our community on [Slack](https://app.slack.com/client/T040005U9PV/C03VB46GYQM)!
+Connect with other researchers for questions or discussions by joining the ETAB community on [Slack](https://app.slack.com/client/T040005U9PV/C03VB46GYQM)!
 
 ---------------
