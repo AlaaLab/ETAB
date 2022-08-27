@@ -57,6 +57,11 @@ $pip install etab
 
 #### Step 2: Download the datasets
 
+The current version of ETAB supports three echocardiography datasets. Details of all data sets can be found in [Section 1](
+https://github.com/ahmedmalaa/ETAB/blob/main/docs/data_access.md#datasets) of the documentation below. Please note that ETAB provides a standardized API for loading and processing all datasets, but it does not alter, redistribute or directly share the datasets. To download the datasets, please follow the [instructions](https://github.com/ahmedmalaa/ETAB/blob/main/docs/data_access.md#downloading-the-datasets) in [Section 1](
+https://github.com/ahmedmalaa/ETAB/blob/main/docs/data_access.md).
+
+
 
 ---------------
 
