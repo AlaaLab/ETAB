@@ -31,7 +31,7 @@ def prepare_image(index, dataset, segment_index=1, IMG_SIZE=224, img_type="4CH_E
         test_img   = test_img / imagenet_std
     
     test_img       = torch.einsum("hwc->chw", test_img)
-    test_seg       = torch.einsum("hwc->chw", test_seg)
+    test_seg       = (torch.einsum("hwc->chw", test_seg) > 0) * 1
     
     return test_img.float(), [test_seg.view((IMG_SIZE, IMG_SIZE)).long()]
 

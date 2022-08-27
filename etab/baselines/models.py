@@ -44,6 +44,8 @@ class ETABmodel(BaseModel):
         
         super().__init__(backbone, num_classes)
         
+        self.num_classes = num_classes
+        
         self.model       = None
         self.decode_head = eval(head + "Head")(self.backbone.channels, 256, num_classes)
         
@@ -61,7 +63,7 @@ class ETABmodel(BaseModel):
     def fit(self, 
             train_loader, 
             valid_loader, 
-            task_code="EA40", 
+            task_code="a0-A4-E", 
             n_epoch=50,
             learning_rate=1e-2,
             ckpt_dir=None,
@@ -74,14 +76,11 @@ class ETABmodel(BaseModel):
         save_base_dir = 'checkpoints'
         # Reload the pretrained network and freeze it except for its head.
     
-        seg_tasks     = ["0", "1", "2"]
-        class_tasks   = ["3", "4", "5", "6"]
-    
         optimizer    = optim.SGD(self.parameters(), lr=learning_rate, weight_decay=0.001)
     
     
-        if task_code[-1] in seg_tasks:
-        
+        if task_code[0] == "a":
+
             epoch_metric = ['f1', torchmetrics.JaccardIndex(num_classes=2)]
             #optimizer    = optim.SGD(model.parameters(), lr=learning_rate, weight_decay=0.001)
     
@@ -119,6 +118,10 @@ class ETABmodel(BaseModel):
         for param in self.backbone.parameters():
             
             param.requires_grad = False
+            
+    def switch_head(self, new_head):
+        
+        self.decode_head = eval(new_head + "Head")(self.backbone.channels, 256, self.num_classes)
         
         
         
