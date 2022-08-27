@@ -61,11 +61,11 @@ The current version of ETAB supports three echocardiography datasets. Details of
 https://github.com/ahmedmalaa/ETAB/blob/main/docs/data_access.md#datasets) of the documentation below. Please note that ETAB provides a standardized API for loading and processing data from different sources, but it does not alter, redistribute or directly share the datasets. To download the data, please follow the [instructions](https://github.com/ahmedmalaa/ETAB/blob/main/docs/data_access.md#downloading-the-datasets) in [Section 1](
 https://github.com/ahmedmalaa/ETAB/blob/main/docs/data_access.md) of the documentation below.
 
-
-
 ---------------
 
 ## 📚 Documentation
+
+Learn more about the features and use cases of ETAB through step-by-step instructions and demo notebooks.
 
 #### [Section 1: Datasets, Accessibility and Data Processing Tools](docs/data_access.md)
 
@@ -130,5 +130,10 @@ https://github.com/ahmedmalaa/ETAB/blob/main/docs/data_access.md) of the documen
 </details>
 
 #### [Section 5: Reproducibility Checklist](documentation/leaderboard.md)
+
+---------------
+
+## 📚 Community
+
 
 ---------------
