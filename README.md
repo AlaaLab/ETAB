@@ -40,6 +40,7 @@ The echocardiographic task adaptation benchmark (ETAB) is a software library tha
 - A suite of standardized benchmark tasks tailored to echocardiography data.
 - A unified evaluation protocol for pre-trained echocardiographic representations.
 
+
 The ETAB library comprises a comprehensive suite of visual task adaptation benchmarks tailored to echocardiography data. Each benchmark comprises a source task and a target task; the source-target pair within each benchmark are meant to assess the ability of different representation pre-training approaches to transfer information across data sets, echo views and annotations. These adaptation benchmarks are all conducted on publicly accessible data sets, hence they can be easily used to evaluate existing and future methods. Moreover, using our suite of target tasks we specify a unified evaluation protocol for readily available pre-trained representations which is meant to evaluate the extent by which a given representation generalizes to different tasks, views and patient cohorts. The ETAB benchmark enables researchers to share a unified and publicly-accessible evaluation protocol, even when the representations themselves are pre-trained on private hospital data.
 
 ---------------
@@ -49,9 +50,8 @@ The ETAB library comprises a comprehensive suite of visual task adaptation bench
 #### Step 1: Install the ETAB package
 Installation from source (recommended)
 ```python
-$git clone https://github.com/ahmedmalaa/ETAB.git
-$cd ETAB
-$pip install -r requirements.txt
+$git clone https://github.com/ahmedmalaa/ETAB.git 
+$pip install -r <path-to-repo>/ETAB/requirements.txt
 ```
 
 Simple installation from PyPI (experimental)
