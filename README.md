@@ -66,6 +66,10 @@ https://github.com/ahmedmalaa/ETAB/blob/main/docs/data_access.md) of the documen
 
 ---------------
 
+## 🛠️ Using ETAB
+
+---------------
+
 ## 📚 Documentation
 
 To start using the ETAB library in your research, visit the documentation sections below to learn more about its different features and use cases through step-by-step instructions and demo notebooks.
