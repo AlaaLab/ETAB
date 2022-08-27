@@ -43,14 +43,14 @@ The ETAB library comprises a comprehensive suite of visual task adaptation bench
 ## 🏃 Getting Started
 
 #### Step 1: Install the ETAB package
-You can install the ETAB library from source (recommended) by cloning this repo and then installing requirements:
+Installation from source by cloning the repo and then installing requirements (recommended)
 ```python
 $git clone https://github.com/ahmedmalaa/ETAB.git
 $cd ETAB
 $pip install -r requirements.txt
 ```
 
-You can also install ETAB through simple installation from PyPI (experimental) as follows
+Simple installation from PyPI (experimental)
 ```python
 $pip install etab
 ```
