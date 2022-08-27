@@ -71,13 +71,27 @@ https://github.com/ahmedmalaa/ETAB/blob/main/docs/data_access.md) of the documen
 You can run any benchmark task supported by ETAB using the following CLI
 
 ```python
-$ python run_benchmark.py --task <str: Task Code> --backbone <str: Backbone representation>\
-                          --head <str: Task-specific head>\ 
+$ python run_benchmark.py --task <str: Task Code> --backbone <str: Backbone representation> \
+                          --head <str: Task-specific head> \ 
                           --freeze_backbone <bool: Fully finetune?> \
-                          --train_frac <int: fraction of data used for training>\
-                          --val_frac <int: fraction of data used for validation>\
+                          --train_frac <int: fraction of data used for training> \
+                          --val_frac <int: fraction of data used for validation> \
                           --lr <float: learning rate> --epochs <int: number of epochs> --batch <int: batch size> 
 ```
+The task encoding convention and the ETAB model zoo are described in detail in [Section 2](https://github.com/ahmedmalaa/ETAB/blob/main/docs/benchmark_tasks.md) of the documentation.
+
+You can also write your own customized program using the ETAB API. A simple example for a customized program is one that evaluates the quality of a pre-trained representation with respect to the echocardiographic tasks by computing the ETAB score. In the following program, we compute the ETAB score for the ResNet-50 backbone pre-trained on ImageNet-1K.
+
+```python
+from etab.scores import ETABscore
+from torchvision.models import resnet50
+                   
+backbone    = resnet50(weights="IMAGENET1K_V1")
+
+etab_score  = ETABscore(backbone=backbone)
+```
+The ETAB library provides a common API for datasets, models, and benchmark tasks that enables writing more sophisticated programs 
+
 
 ---------------
 
