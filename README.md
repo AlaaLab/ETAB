@@ -65,7 +65,7 @@ https://github.com/ahmedmalaa/ETAB/blob/main/docs/data_access.md) of the documen
 
 ## 📚 Documentation
 
-Visit the documentation sections below to know more about the features of the ETAB library through step-by-step instructions and demo notebooks.
+Visit the documentation sections below to learn more about the different features of the ETAB library through step-by-step instructions and demo notebooks.
 
 #### [Section 1: Datasets, Accessibility and Data Processing Tools](docs/data_access.md)
 
