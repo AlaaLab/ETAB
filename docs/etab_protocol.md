@@ -21,9 +21,11 @@ The evaluation protocol is meant to assess how well does a given pre-trained bac
 
 Let $\mathcal{K} = \{1, \ldots, K\}$ be the target task categories, and let $\mathcal{T}\_k = \{t\_{1,k}, \ldots, t\_{T\_k,k}\}$ be the tasks within category $k \in \mathcal{K}$. Let $\mathcal{D}\_{t, k}$ be the target data set associated with the $t$-th task within the $k$-th category. A given adaptation model $\mathcal{M}$ is provided with $n$ samples of the target data set $\mathcal{D}^n\_{t, k} = \{(X^i\_{t, k}, Y^i\_{t, k})\}^n\_{i=1}$, and outputs an adapted target model $\mathcal{M}(\mathcal{D}^n\_{t, k})$. Let $\mathcal{E}\_{t,k}$ be the evaluation metric used to assess the performance of the target model; we assume that $\mathcal{E}\_{t,k}$ takes on values in $[0,1]$. The ETAB score for the adaptation model $\mathcal{M}$ is thus defined as: 
 
+$\mathcal{M}$
+
 $\mbox{ETAB}\_k^n(\mathcal{M}) \triangleq \mathbb{E}\_{t \sim P\_{\mathcal{T}\_k}} \mathcal{E}\_{t,k}\left\[\,\mathcal{M}(\mathcal{D}^n\_{t, k})\,\right\]$
 
-$\mbox{ETAB}^n(\mathcal{M}) \triangleq \mathbb{E}\_{k \sim P_\mathcal{K}} \mbox{ETAB}\_k^n(\mathcal{M}).$
+$\mbox{ETAB}^n(\mathcal{M}) \triangleq \mathbb{E}\_{k \sim P\_\mathcal{K}} \mbox{ETAB}\_k^n(\mathcal{M}).$
 
 The score computation procedure is implemented by looping over all the benchmark tasks listed in the previous Section, and then computed a weighted average of the performance of a given backbone representation attached to the task-specific heads. 
 
