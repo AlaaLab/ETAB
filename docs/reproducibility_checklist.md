@@ -8,7 +8,7 @@
     <b> ETAB Reproducibility Checklist </b>
 </h1>
 
-## ETAB Leaderboard
+### Things to check before running your experiment
 
 - [ ] Benchmark task-specific training parameters
 - [ ] Training/validation/testing data split
