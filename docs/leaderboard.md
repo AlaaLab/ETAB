@@ -48,14 +48,40 @@
  </tr>
  
  <tr>
-  <td> <b> <div align="center"> 3 </div> </b> </td>
+  <td> <b> <div align="center"> 4 </div> </b> </td>
   <td> <div align="center"> DenseNet-121 <br> (ImageNet-1K weights) </div> </td>
   <td> <div align="center"> 8M </div> </td>
   <td> <div align="center"> --- </div> </td>
   <td> --- </td> 
   <td> <div align="center"> <a href="https://pytorch.org/vision/stable/models/generated/torchvision.models.densenet121.html#torchvision.models.DenseNet121_Weights">Download</a> </div> </td> 
  </tr> 
+
+ <tr>
+  <td> <b> <div align="center"> 5 </div> </b> </td>
+  <td> <div align="center"> MobileNet-V2 <br> (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> 3.5M </div> </td>
+  <td> <div align="center"> --- </div> </td>
+  <td> --- </td> 
+  <td> <div align="center"> <a href="https://pytorch.org/vision/stable/models/generated/torchvision.models.mobilenet_v2.html#torchvision.models.MobileNet_V2_Weights">Download</a> </div> </td> 
+ </tr>  
   
+ <tr>
+  <td> <b> <div align="center"> 6 </div> </b> </td>
+  <td> <div align="center"> MobileNet-V3-Large <br> (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> 5.5M </div> </td>
+  <td> <div align="center"> --- </div> </td>
+  <td> --- </td> 
+  <td> <div align="center"> <a href="https://pytorch.org/vision/stable/models/generated/torchvision.models.mobilenet_v3_large.html#torchvision.models.MobileNet_V3_Large_Weights">Download</a> </div> </td> 
+ </tr> 
+  
+  <tr>
+  <td> <b> <div align="center"> 6 </div> </b> </td>
+  <td> <div align="center"> ResNeXt-50-32x4d <br> (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> 5.5M </div> </td>
+  <td> <div align="center"> --- </div> </td>
+  <td> --- </td> 
+  <td> <div align="center"> <a href="https://pytorch.org/vision/stable/models/generated/torchvision.models.resnext50_32x4d.html#torchvision.models.ResNeXt50_32X4D_Weights">Download</a> </div> </td> 
+ </tr>  
   
 </table>
 </div>
