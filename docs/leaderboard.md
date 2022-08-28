@@ -19,7 +19,7 @@ The ETAB leaderboard keeps track of the best performing backbone architectures w
   <td> <b> <div align="center"> Backbone                             </div> </b> </td>
   <td> <b> <div align="center"> # Parameters                         </div> </b> </td>
   <td> <b> <div align="center"> ETAB score                           </div> </b> </td>
-  <td> <b> <div align="center"> Task-specific performance break down </div> </b> </td>
+  <td> <b> <div align="center"> Task-specific performance breakdown </div> </b> </td>
   <td> <b> <div align="center"> Pre-trained weights                  </div> </b> </td>
  </tr>
  <tr>
