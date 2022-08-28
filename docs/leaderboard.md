@@ -53,6 +53,29 @@ The ETAB leaderboard keeps track of the best performing backbone architectures w
   <td> <div align="center"> <a href="https://pytorch.org/vision/main/models/generated/torchvision.models.resnet50.html">Download</a> </div> </td> 
  </tr>
 
+  <tr>
+  <td> <b> <div align="center"> 3 </div> </b> </td>
+  <td> <div align="center"> ResNet-18 <br> (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> 11M </div> </td>
+  <td> <div align="center"> 0.702 </div> </td>
+  <td>  <details>
+  <summary><b>Score breakdown</b> (click to expand)</summary>
+  &nbsp;
+  <ul>
+    <li> 🔴 a0-A4-E: 0.776 | weight: 0.2</li> 
+    &nbsp;
+    <li> 🔴 a0-A4-C: 0.764 | weight: 0.2</li>
+    &nbsp;
+    <li> 🔴 a0-A2-C: 0.753 | weight: 0.2</li> 
+    &nbsp;
+    <li> 🔴 a1-A4-C: 0.605 | weight: 0.2</li> 
+    &nbsp;
+    <li> 🔴 a1-A2-C: 0.609 | weight: 0.2</li> 
+  </ul>
+</details> </td> 
+  <td> <div align="center"> <a href="https://pytorch.org/vision/main/models/generated/torchvision.models.resnet18.html">Download</a> </div> </td> 
+ </tr> 
+  
   
  <tr>
   <td> <b> <div align="center"> 2 </div> </b> </td>
@@ -103,28 +126,29 @@ The ETAB leaderboard keeps track of the best performing backbone architectures w
  </tr> 
   
   
- <tr>
-  <td> <b> <div align="center"> 3 </div> </b> </td>
-  <td> <div align="center"> ResNet-18 <br> (ImageNet-1K weights) </div> </td>
-  <td> <div align="center"> 11M </div> </td>
-  <td> <div align="center"> 0.702 </div> </td>
-  <td>  <details>
+  <tr>
+  <td> <b> <div align="center"> 10 </div> </b> </td>
+  <td> <div align="center"> ConvNext-Base <br> (fully tuned) </div> </td>
+  <td> <div align="center"> 8M </div> </td>
+  <td> <div align="center"> 0.647 </div> </td>
+  <td> <details>
   <summary><b>Score breakdown</b> (click to expand)</summary>
   &nbsp;
   <ul>
-    <li> 🔴 a0-A4-E: 0.776 | weight: 0.2</li> 
+    <li> 🔴 a0-A4-E: 0.801 | weight: 0.2</li> 
     &nbsp;
-    <li> 🔴 a0-A4-C: 0.764 | weight: 0.2</li>
+    <li> 🔴 a0-A4-C: 0.647 | weight: 0.2</li>
     &nbsp;
-    <li> 🔴 a0-A2-C: 0.753 | weight: 0.2</li> 
+    <li> 🔴 a0-A2-C: 0.699 | weight: 0.2</li> 
     &nbsp;
-    <li> 🔴 a1-A4-C: 0.605 | weight: 0.2</li> 
+    <li> 🔴 a1-A4-C: 0.550 | weight: 0.2</li> 
     &nbsp;
-    <li> 🔴 a1-A2-C: 0.609 | weight: 0.2</li> 
+    <li> 🔴 a1-A2-C: 0.539 | weight: 0.2</li> 
   </ul>
+
 </details> </td> 
-  <td> <div align="center"> <a href="https://pytorch.org/vision/main/models/generated/torchvision.models.resnet18.html">Download</a> </div> </td> 
- </tr>
+  <td> <div align="center"> <a href="https://pytorch.org/vision/stable/models/generated/torchvision.models.convnext_base.html#torchvision.models.convnext_base">Download</a> </div> </td> 
+</tr>  
  
  <tr>
   <td> <b> <div align="center"> 4 </div> </b> </td>
@@ -180,15 +204,6 @@ The ETAB leaderboard keeps track of the best performing backbone architectures w
   <td> <div align="center"> <a href="https://pytorch.org/vision/stable/models/generated/torchvision.models.inception_v3.html#torchvision.models.Inception_V3_Weights">Download</a> </div> </td> 
 </tr>    
 
- <tr>
-  <td> <b> <div align="center"> 10 </div> </b> </td>
-  <td> <div align="center"> ConvNext-Base <br> (ImageNet-1K weights) </div> </td>
-  <td> <div align="center"> 8M </div> </td>
-  <td> <div align="center"> --- </div> </td>
-  <td> --- </td> 
-  <td> <div align="center"> <a href="https://pytorch.org/vision/stable/models/generated/torchvision.models.convnext_base.html#torchvision.models.convnext_base">Download</a> </div> </td> 
-</tr>  
-  
 <tr>
   <td> <b> <div align="center"> 11 </div> </b> </td>
   <td> <div align="center"> PoolFormer-S24 <br> (ImageNet-1K weights) </div> </td>
