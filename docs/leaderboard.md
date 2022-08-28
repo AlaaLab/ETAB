@@ -101,8 +101,35 @@ The ETAB leaderboard keeps track of the best performing backbone architectures w
   <td> <div align="center"> <a href="https://pytorch.org/vision/main/models/generated/torchvision.models.resnet34.html">Download</a> </div> </td> 
  </tr>
   
-  <tr>
+  
+ <tr>
   <td> <b> <div align="center"> 4 </div> </b> </td>
+  <td> <div align="center"> MiT-B2 <br> (fully tuned) </div> </td>
+  <td> <div align="center"> 25M </div> </td>
+  <td> <div align="center"> 0.691 </div> </td>
+  <td> <details>
+  <summary><b>Score breakdown</b> (click to expand)</summary>
+  &nbsp;
+  <ul>
+    <li> 🔴 a0-A4-E: 0.749 | weight: 0.2</li> 
+    &nbsp;
+    <li> 🔴 a0-A4-C: 0.748 | weight: 0.2</li>
+    &nbsp;
+    <li> 🔴 a0-A2-C: 0.738 | weight: 0.2</li> 
+    &nbsp;
+    <li> 🔴 a1-A4-C: 0.595 | weight: 0.2</li> 
+    &nbsp;
+    <li> 🔴 a1-A2-C: 0.626 | weight: 0.2</li> 
+  </ul>
+
+</details></td> 
+  <td> <div align="center"> <a href="https://huggingface.co/docs/transformers/model_doc/segformer">Download</a> </div> </td> 
+</tr>  
+  
+  
+  
+  <tr>
+  <td> <b> <div align="center"> 5 </div> </b> </td>
   <td> <div align="center"> ResNet-50 <br> (ImageNet-1K weights) </div> </td>
   <td> <div align="center"> 23M </div> </td>
   <td> <div align="center"> 0.689 </div> </td>
@@ -125,9 +152,32 @@ The ETAB leaderboard keeps track of the best performing backbone architectures w
   <td> <div align="center"> <a href="https://pytorch.org/vision/main/models/generated/torchvision.models.resnet50.html">Download</a> </div> </td> 
  </tr> 
   
+ <tr>
+  <td> <b> <div align="center"> 6 </div> </b> </td>
+  <td> <div align="center"> MiT-B2 <br> (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> 25M </div> </td>
+  <td> <div align="center"> 0.653 </div> </td>
+  <td> <details>
+  <summary><b>Score breakdown</b> (click to expand)</summary>
+  &nbsp;
+  <ul>
+    <li> 🔴 a0-A4-E: 0.674 | weight: 0.2</li> 
+    &nbsp;
+    <li> 🔴 a0-A4-C: 0.709 | weight: 0.2</li>
+    &nbsp;
+    <li> 🔴 a0-A2-C: 0.708 | weight: 0.2</li> 
+    &nbsp;
+    <li> 🔴 a1-A4-C: 0.570 | weight: 0.2</li> 
+    &nbsp;
+    <li> 🔴 a1-A2-C: 0.604 | weight: 0.2</li> 
+  </ul>
+
+</details></td> 
+  <td> <div align="center"> <a href="https://huggingface.co/docs/transformers/model_doc/segformer">Download</a> </div> </td> 
+</tr> 
   
   <tr>
-  <td> <b> <div align="center"> 5 </div> </b> </td>
+  <td> <b> <div align="center"> 7 </div> </b> </td>
   <td> <div align="center"> ConvNext-Base <br> (fully tuned) </div> </td>
   <td> <div align="center"> 8M </div> </td>
   <td> <div align="center"> 0.647 </div> </td>
@@ -149,54 +199,7 @@ The ETAB leaderboard keeps track of the best performing backbone architectures w
 </details> </td> 
   <td> <div align="center"> <a href="https://pytorch.org/vision/stable/models/generated/torchvision.models.convnext_base.html#torchvision.models.convnext_base">Download</a> </div> </td> 
 </tr>  
-  
-  <tr>
-  <td> <b> <div align="center"> 6 </div> </b> </td>
-  <td> <div align="center"> MiT-B2 <br> (fully tuned) </div> </td>
-  <td> <div align="center"> 25M </div> </td>
-  <td> <div align="center"> 0.691 </div> </td>
-  <td> <details>
-  <summary><b>Score breakdown</b> (click to expand)</summary>
-  &nbsp;
-  <ul>
-    <li> 🔴 a0-A4-E: 0.749 | weight: 0.2</li> 
-    &nbsp;
-    <li> 🔴 a0-A4-C: 0.748 | weight: 0.2</li>
-    &nbsp;
-    <li> 🔴 a0-A2-C: 0.738 | weight: 0.2</li> 
-    &nbsp;
-    <li> 🔴 a1-A4-C: 0.595 | weight: 0.2</li> 
-    &nbsp;
-    <li> 🔴 a1-A2-C: 0.626 | weight: 0.2</li> 
-  </ul>
-
-</details></td> 
-  <td> <div align="center"> <a href="https://huggingface.co/docs/transformers/model_doc/segformer">Download</a> </div> </td> 
-</tr>    
-  
-  <tr>
-  <td> <b> <div align="center"> 7 </div> </b> </td>
-  <td> <div align="center"> MiT-B2 <br> (ImageNet-1K weights) </div> </td>
-  <td> <div align="center"> 25M </div> </td>
-  <td> <div align="center"> 0.653 </div> </td>
-  <td> <details>
-  <summary><b>Score breakdown</b> (click to expand)</summary>
-  &nbsp;
-  <ul>
-    <li> 🔴 a0-A4-E: 0.674 | weight: 0.2</li> 
-    &nbsp;
-    <li> 🔴 a0-A4-C: 0.709 | weight: 0.2</li>
-    &nbsp;
-    <li> 🔴 a0-A2-C: 0.708 | weight: 0.2</li> 
-    &nbsp;
-    <li> 🔴 a1-A4-C: 0.570 | weight: 0.2</li> 
-    &nbsp;
-    <li> 🔴 a1-A2-C: 0.604 | weight: 0.2</li> 
-  </ul>
-
-</details></td> 
-  <td> <div align="center"> <a href="https://huggingface.co/docs/transformers/model_doc/segformer">Download</a> </div> </td> 
-</tr>    
+    
 
   
  <tr>
