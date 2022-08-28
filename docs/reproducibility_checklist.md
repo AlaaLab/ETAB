@@ -10,12 +10,8 @@
 
 ## ETAB Leaderboard
 
-- [ ] Mercury
-- [x] Venus
-- [x] Earth (Orbit/Moon)
-- [x] Mars
-- [ ] Jupiter
-- [ ] Saturn
-- [ ] Uranus
-- [ ] Neptune
-- [ ] Comet Haley
+- [ ] Benchmark task-specific training parameters
+- [ ] Training/validation/testing data split
+- [ ] Model-specific hyperparameters
+- [ ] ETAB score weights
+- [ ] Random seeds
