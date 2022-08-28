@@ -31,15 +31,15 @@ The ETAB leaderboard keeps track of the best performing backbone architectures w
   <summary><b>Score breakdown</b> (click to expand)</summary>
   &nbsp;
   <ul>
-    <li> 🔴 a0-A4-E: 0.855</li> 
+    <li> 🔴 a0-A4-E: 0.855 | weight: 0.2</li> 
     &nbsp;
-    <li> 🔴 a0-A4-C: 0.820</li>
+    <li> 🔴 a0-A4-C: 0.820 | weight: 0.2</li>
     &nbsp;
-    <li> 🔴 a0-A2-C: 0.822</li> 
+    <li> 🔴 a0-A2-C: 0.822 | weight: 0.2</li> 
     &nbsp;
-    <li> 🔴 a1-A4-C: 0.693</li> 
+    <li> 🔴 a1-A4-C: 0.693 | weight: 0.2</li> 
     &nbsp;
-    <li> 🔴 a1-A2-C: 0.656</li> 
+    <li> 🔴 a1-A2-C: 0.656 | weight: 0.2</li> 
   </ul>
 
 </details> </td> 
