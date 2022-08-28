@@ -108,7 +108,25 @@
   <td> <div align="center"> --- </div> </td>
   <td> --- </td> 
   <td> <div align="center"> <a href="https://pytorch.org/vision/stable/models/generated/torchvision.models.convnext_base.html#torchvision.models.convnext_base">Download</a> </div> </td> 
-</tr>   
+</tr>  
+  
+<tr>
+  <td> <b> <div align="center"> 11 </div> </b> </td>
+  <td> <div align="center"> PoolFormer-S24 <br> (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> 21M </div> </td>
+  <td> <div align="center"> --- </div> </td>
+  <td> --- </td> 
+  <td> <div align="center"> <a href="https://huggingface.co/sail/poolformer_s24">Download</a> </div> </td> 
+</tr>  
+
+<tr>
+  <td> <b> <div align="center"> 12 </div> </b> </td>
+  <td> <div align="center"> MiT-B2 <br> (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> 25M </div> </td>
+  <td> <div align="center"> --- </div> </td>
+  <td> --- </td> 
+  <td> <div align="center"> <a href="https://huggingface.co/docs/transformers/model_doc/segformer">Download</a> </div> </td> 
+</tr>    
   
 </table>
 </div>
