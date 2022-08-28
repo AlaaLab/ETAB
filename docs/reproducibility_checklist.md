@@ -14,4 +14,5 @@
 - [ ] Training/validation/testing data split
 - [ ] Model-specific hyperparameters
 - [ ] ETAB score weights
+- [ ] ETAB score heads
 - [ ] Random seeds
