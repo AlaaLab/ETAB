@@ -5,11 +5,13 @@
 </p>
 
 <h1 align="center">
-    <b> Reproducibility Checklist </b>
+    <b> ETAB Reproducibility Checklist </b>
 </h1>
 
 ## ETAB Leaderboard
 
-    * [ ] foo
-    * [x] bar
-    * [ ] baz
+    <ul>
+    <li><input type="checkbox" disabled> foo</li>
+    <li><input type="checkbox" disabled checked> bar</li>
+    <li><input type="checkbox" disabled> baz</li>
+    </ul>
