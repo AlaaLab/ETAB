@@ -161,7 +161,7 @@ To start using the ETAB library in your research, visit the documentation sectio
 
 </details>
 
-#### [Section 5: Reproducibility Checklist](documentation/leaderboard.md)
+#### [Section 5: Reproducibility Checklist](docs/reproducibility_checklist.md)
 
 ---------------
 
