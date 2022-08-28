@@ -143,7 +143,7 @@ To start using the ETAB library in your research, visit the documentation sectio
     &nbsp;
     <li><a href="docs/etab_protocol.md#computing-the-etab-score">Computing the ETAB Score</a></li>
     &nbsp;
-    <li>Demo Notebooks</li>
+    <li><a href= "https://github.com/ahmedmalaa/ETAB/blob/main/notebooks/Demo%203%20-%20Computing%20the%20ETAB%20score.ipynb">Demo Notebooks</a></li>  
   </ul>
 
 </details>
