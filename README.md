@@ -165,6 +165,11 @@ To start using the ETAB library in your research, visit the documentation sectio
 
 ---------------
 
+## 🏆 ETAB Leaderboard
+
+
+---------------
+
 ## 🤝 Community
 
 Connect with other researchers for questions or discussions by joining the ETAB community on [Slack](https://app.slack.com/client/T040005U9PV/C03VB46GYQM)!
