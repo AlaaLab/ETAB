@@ -10,7 +10,7 @@
 <p align="center"> 
   <a href="#-what-is-etab">What is ETAB?</a> •
   <a href="#-Getting-Started">Getting Started</a> •
-  <a href="#-Using-ETAB">Using ETAB</a> •
+  <a href="#%EF%B8%8F-using-etab">Using ETAB</a> •
   <a href="#-Documentation">Documentation</a> •
   <a href="https://github.com/ahmedmalaa/ETAB/blob/main/docs/leaderboard.md#how-to-contribute">Contributing</a> •
   <a href="#-Community">Community</a> •
