@@ -54,7 +54,7 @@ The ETAB leaderboard keeps track of the best performing backbone architectures w
  </tr>
 
   <tr>
-  <td> <b> <div align="center"> 3 </div> </b> </td>
+  <td> <b> <div align="center"> 2 </div> </b> </td>
   <td> <div align="center"> ResNet-18 <br> (ImageNet-1K weights) </div> </td>
   <td> <div align="center"> 11M </div> </td>
   <td> <div align="center"> 0.702 </div> </td>
@@ -78,7 +78,7 @@ The ETAB leaderboard keeps track of the best performing backbone architectures w
   
   
  <tr>
-  <td> <b> <div align="center"> 2 </div> </b> </td>
+  <td> <b> <div align="center"> 3 </div> </b> </td>
   <td> <div align="center"> ResNet-34 <br> (ImageNet-1K weights) </div> </td>
   <td> <div align="center"> 63M </div> </td>
   <td> <div align="center"> 0.699 </div> </td>
@@ -102,7 +102,7 @@ The ETAB leaderboard keeps track of the best performing backbone architectures w
  </tr>
   
   <tr>
-  <td> <b> <div align="center"> 1 </div> </b> </td>
+  <td> <b> <div align="center"> 4 </div> </b> </td>
   <td> <div align="center"> ResNet-50 <br> (ImageNet-1K weights) </div> </td>
   <td> <div align="center"> 23M </div> </td>
   <td> <div align="center"> 0.689 </div> </td>
@@ -127,7 +127,7 @@ The ETAB leaderboard keeps track of the best performing backbone architectures w
   
   
   <tr>
-  <td> <b> <div align="center"> 10 </div> </b> </td>
+  <td> <b> <div align="center"> 5 </div> </b> </td>
   <td> <div align="center"> ConvNext-Base <br> (fully tuned) </div> </td>
   <td> <div align="center"> 8M </div> </td>
   <td> <div align="center"> 0.647 </div> </td>
@@ -149,9 +149,58 @@ The ETAB leaderboard keeps track of the best performing backbone architectures w
 </details> </td> 
   <td> <div align="center"> <a href="https://pytorch.org/vision/stable/models/generated/torchvision.models.convnext_base.html#torchvision.models.convnext_base">Download</a> </div> </td> 
 </tr>  
- 
+  
+  <tr>
+  <td> <b> <div align="center"> 6 </div> </b> </td>
+  <td> <div align="center"> MiT-B2 <br> (fully tuned) </div> </td>
+  <td> <div align="center"> 25M </div> </td>
+  <td> <div align="center"> 0.691 </div> </td>
+  <td> <details>
+  <summary><b>Score breakdown</b> (click to expand)</summary>
+  &nbsp;
+  <ul>
+    <li> 🔴 a0-A4-E: 0.749 | weight: 0.2</li> 
+    &nbsp;
+    <li> 🔴 a0-A4-C: 0.748 | weight: 0.2</li>
+    &nbsp;
+    <li> 🔴 a0-A2-C: 0.738 | weight: 0.2</li> 
+    &nbsp;
+    <li> 🔴 a1-A4-C: 0.595 | weight: 0.2</li> 
+    &nbsp;
+    <li> 🔴 a1-A2-C: 0.626 | weight: 0.2</li> 
+  </ul>
+
+</details></td> 
+  <td> <div align="center"> <a href="https://huggingface.co/docs/transformers/model_doc/segformer">Download</a> </div> </td> 
+</tr>    
+  
+  <tr>
+  <td> <b> <div align="center"> 7 </div> </b> </td>
+  <td> <div align="center"> MiT-B2 <br> (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> 25M </div> </td>
+  <td> <div align="center"> 0.653 </div> </td>
+  <td> <details>
+  <summary><b>Score breakdown</b> (click to expand)</summary>
+  &nbsp;
+  <ul>
+    <li> 🔴 a0-A4-E: 0.674 | weight: 0.2</li> 
+    &nbsp;
+    <li> 🔴 a0-A4-C: 0.709 | weight: 0.2</li>
+    &nbsp;
+    <li> 🔴 a0-A2-C: 0.708 | weight: 0.2</li> 
+    &nbsp;
+    <li> 🔴 a1-A4-C: 0.570 | weight: 0.2</li> 
+    &nbsp;
+    <li> 🔴 a1-A2-C: 0.604 | weight: 0.2</li> 
+  </ul>
+
+</details></td> 
+  <td> <div align="center"> <a href="https://huggingface.co/docs/transformers/model_doc/segformer">Download</a> </div> </td> 
+</tr>    
+
+  
  <tr>
-  <td> <b> <div align="center"> 4 </div> </b> </td>
+  <td> <b> <div align="center"> 8 </div> </b> </td>
   <td> <div align="center"> DenseNet-121 <br> (ImageNet-1K weights) </div> </td>
   <td> <div align="center"> 8M </div> </td>
   <td> <div align="center"> --- </div> </td>
@@ -160,7 +209,7 @@ The ETAB leaderboard keeps track of the best performing backbone architectures w
  </tr> 
 
  <tr>
-  <td> <b> <div align="center"> 5 </div> </b> </td>
+  <td> <b> <div align="center"> 9 </div> </b> </td>
   <td> <div align="center"> MobileNet-V2 <br> (ImageNet-1K weights) </div> </td>
   <td> <div align="center"> 3.5M </div> </td>
   <td> <div align="center"> --- </div> </td>
@@ -169,7 +218,7 @@ The ETAB leaderboard keeps track of the best performing backbone architectures w
  </tr>  
   
  <tr>
-  <td> <b> <div align="center"> 6 </div> </b> </td>
+  <td> <b> <div align="center"> 10 </div> </b> </td>
   <td> <div align="center"> MobileNet-V3-Large <br> (ImageNet-1K weights) </div> </td>
   <td> <div align="center"> 5.5M </div> </td>
   <td> <div align="center"> --- </div> </td>
@@ -178,7 +227,7 @@ The ETAB leaderboard keeps track of the best performing backbone architectures w
  </tr> 
   
   <tr>
-  <td> <b> <div align="center"> 7 </div> </b> </td>
+  <td> <b> <div align="center"> 11 </div> </b> </td>
   <td> <div align="center"> ResNeXt-50-32x4d <br> (ImageNet-1K weights) </div> </td>
   <td> <div align="center"> 25M </div> </td>
   <td> <div align="center"> --- </div> </td>
@@ -187,7 +236,7 @@ The ETAB leaderboard keeps track of the best performing backbone architectures w
  </tr>  
 
   <tr>
-  <td> <b> <div align="center"> 8 </div> </b> </td>
+  <td> <b> <div align="center"> 12 </div> </b> </td>
   <td> <div align="center"> Inception_V3 <br> (ImageNet-1K weights) </div> </td>
   <td> <div align="center"> 27M </div> </td>
   <td> <div align="center"> --- </div> </td>
@@ -196,7 +245,7 @@ The ETAB leaderboard keeps track of the best performing backbone architectures w
  </tr>   
  
  <tr>
-  <td> <b> <div align="center"> 9 </div> </b> </td>
+  <td> <b> <div align="center"> 13 </div> </b> </td>
   <td> <div align="center"> Inception_V3 <br> (ImageNet-1K weights) </div> </td>
   <td> <div align="center"> 27M </div> </td>
   <td> <div align="center"> --- </div> </td>
@@ -205,7 +254,7 @@ The ETAB leaderboard keeps track of the best performing backbone architectures w
 </tr>    
 
 <tr>
-  <td> <b> <div align="center"> 11 </div> </b> </td>
+  <td> <b> <div align="center"> 14 </div> </b> </td>
   <td> <div align="center"> PoolFormer-S24 <br> (ImageNet-1K weights) </div> </td>
   <td> <div align="center"> 21M </div> </td>
   <td> <div align="center"> --- </div> </td>
@@ -213,15 +262,6 @@ The ETAB leaderboard keeps track of the best performing backbone architectures w
   <td> <div align="center"> <a href="https://huggingface.co/sail/poolformer_s24">Download</a> </div> </td> 
 </tr>  
 
-<tr>
-  <td> <b> <div align="center"> 12 </div> </b> </td>
-  <td> <div align="center"> MiT-B2 <br> (ImageNet-1K weights) </div> </td>
-  <td> <div align="center"> 25M </div> </td>
-  <td> <div align="center"> --- </div> </td>
-  <td> --- </td> 
-  <td> <div align="center"> <a href="https://huggingface.co/docs/transformers/model_doc/segformer">Download</a> </div> </td> 
-</tr>    
-  
 </table>
 </div>
 
