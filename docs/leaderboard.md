@@ -30,7 +30,7 @@
  </tr>
  
  <tr>
-  <td> <b> <div align="center"> 1 </div> </b> </td>
+  <td> <b> <div align="center"> 2 </div> </b> </td>
   <td> <div align="center"> ResNet-34 <br> (ImageNet-1K weights) </div> </td>
   <td> <div align="center"> 23M </div> </td>
   <td> <div align="center"> 0.70 &plusmn; 0.03 </div> </td>
@@ -39,7 +39,7 @@
  </tr>
 
  <tr>
-  <td> <b> <div align="center"> 1 </div> </b> </td>
+  <td> <b> <div align="center"> 3 </div> </b> </td>
   <td> <div align="center"> ResNet-34 <br> (ImageNet-1K weights) </div> </td>
   <td> <div align="center"> 23M </div> </td>
   <td> <div align="center"> 0.70 &plusmn; 0.03 </div> </td>
