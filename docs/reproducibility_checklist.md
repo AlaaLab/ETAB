@@ -12,11 +12,11 @@
 
 To ensure the reproducibility and consistency of benchmarking experiments conducted using ETAB, we recommend that you check and report the following experimental parameters when using ETAB in your research.
 
-- [ ] Benchmark task-specific training parameters ([How do I set the training parameters for each task?](https://github.com/ahmedmalaa/ETAB/blob/main/docs/reproducibility_checklist.md#benchmark-task-specific-training-parameters))
-- [ ] Training/validation/testing data split ([How should I split the data?](https://github.com/ahmedmalaa/ETAB/blob/main/docs/reproducibility_checklist.md#trainingvalidationtesting-data-split))
-- [ ] Model-specific hyperparameters
-- [ ] ETAB score weights
-- [ ] ETAB score heads
+- [ ] Benchmark task-specific training parameters ([Read more](https://github.com/ahmedmalaa/ETAB/blob/main/docs/reproducibility_checklist.md#benchmark-task-specific-training-parameters))
+- [ ] Training/validation/testing data split ([Read more](https://github.com/ahmedmalaa/ETAB/blob/main/docs/reproducibility_checklist.md#trainingvalidationtesting-data-split))
+- [ ] Model-specific hyperparameters ([Read more](https://github.com/ahmedmalaa/ETAB/blob/main/docs/reproducibility_checklist.md#model-specific-hyperparameters))
+- [ ] ETAB score weights ([Read more](https://github.com/ahmedmalaa/ETAB/blob/main/docs/reproducibility_checklist.md#etab-score-weights))
+- [ ] ETAB score heads ([Read more](https://github.com/ahmedmalaa/ETAB/blob/main/docs/reproducibility_checklist.md#etab-score-heads))
 
 #### Benchmark task-specific training parameters
 
