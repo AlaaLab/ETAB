@@ -33,6 +33,31 @@ n_epoch       = 50
 
 ```
 
-% SGD optimizer picking the best model on validation data
+Training is conducted with an SGD optimizer, and the final weights are picked based on best performance on validation data. To change the training parameters, create a dictionary of parameter values as follows:
+
+```python
+
+training_params_dict = dict({"n_train":7000, 
+                             "batch_size":32,
+                             "train_frac":0.6,
+                             "val_frac":0.1,
+                             "learning_rate":0.001,
+                             "n_epoch":50})
+
+```
+
+The parameters dictionary can then be passed to the *ETABScore* function as follows:
+
+```python
+
+ETAB_score, benchmark_scores = ETABscore(backbone_architecture, 
+                                         backbone_model, 
+                                         task_weights=None, 
+                                         verbose=False, 
+                                         finetune=False,
+                                         **training_params_dict)
+
+```
+
 
                              
