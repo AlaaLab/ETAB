@@ -46,6 +46,16 @@
   <td> --- </td> 
   <td> <div align="center"> <a href="https://pytorch.org/vision/main/models/generated/torchvision.models.resnet18.html">Download</a> </div> </td> 
  </tr>
+ 
+ <tr>
+  <td> <b> <div align="center"> 3 </div> </b> </td>
+  <td> <div align="center"> DenseNet-121 <br> (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> 8M </div> </td>
+  <td> <div align="center"> --- </div> </td>
+  <td> --- </td> 
+  <td> <div align="center"> <a href="https://pytorch.org/vision/stable/models/generated/torchvision.models.densenet121.html#torchvision.models.DenseNet121_Weights">Download</a> </div> </td> 
+ </tr> 
+  
   
 </table>
 </div>
