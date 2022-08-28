@@ -107,8 +107,22 @@ The ETAB leaderboard keeps track of the best performing backbone architectures w
   <td> <b> <div align="center"> 3 </div> </b> </td>
   <td> <div align="center"> ResNet-18 <br> (ImageNet-1K weights) </div> </td>
   <td> <div align="center"> 11M </div> </td>
-  <td> <div align="center"> --- </div> </td>
-  <td> --- </td> 
+  <td> <div align="center"> 0.702 </div> </td>
+  <td>  <details>
+  <summary><b>Score breakdown</b> (click to expand)</summary>
+  &nbsp;
+  <ul>
+    <li> 🔴 a0-A4-E: 0.776 | weight: 0.2</li> 
+    &nbsp;
+    <li> 🔴 a0-A4-C: 0.764 | weight: 0.2</li>
+    &nbsp;
+    <li> 🔴 a0-A2-C: 0.753 | weight: 0.2</li> 
+    &nbsp;
+    <li> 🔴 a1-A4-C: 0.605 | weight: 0.2</li> 
+    &nbsp;
+    <li> 🔴 a1-A2-C: 0.609 | weight: 0.2</li> 
+  </ul>
+</details> </td> 
   <td> <div align="center"> <a href="https://pytorch.org/vision/main/models/generated/torchvision.models.resnet18.html">Download</a> </div> </td> 
  </tr>
  
