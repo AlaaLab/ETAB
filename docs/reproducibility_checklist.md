@@ -32,4 +32,7 @@ batch_size    = 32
 n_epoch       = 50
 
 ```
+
+% SGD optimizer picking the best model on validation data
+
                              
