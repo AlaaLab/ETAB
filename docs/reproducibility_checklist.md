@@ -12,7 +12,7 @@
 
 To ensure the reproducibility and consistency of benchmarking experiments conducted using ETAB, we recommend that you check and report the following experimental parameters when using ETAB in your research.
 
-- [ ] Benchmark task-specific training parameters ([Read more about it](https://github.com/ahmedmalaa/ETAB/blob/main/docs/reproducibility_checklist.md#benchmark-task-specific-training-parameters))
+- [ ] Benchmark task-specific training parameters ([How do I set the training parameters for each task?](https://github.com/ahmedmalaa/ETAB/blob/main/docs/reproducibility_checklist.md#benchmark-task-specific-training-parameters))
 - [ ] Training/validation/testing data split
 - [ ] Model-specific hyperparameters
 - [ ] ETAB score weights
