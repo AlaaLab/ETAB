@@ -167,6 +167,12 @@ To start using the ETAB library in your research, visit the documentation sectio
 
 ## 🏆 ETAB Leaderboard
 
+An online leaderboard hosted on this repo keeps track of the best performing backbone architectures with respect to benchmark echocardiographic tasks. Users can contribute new pre-trained backbone models to the ETAB library and submit their models to the leaderboard. Visit this [link](https://github.com/ahmedmalaa/ETAB/blob/main/docs/leaderboard.md#etab-leaderboard) to learn more!
+
+| **Latest update**  | August 28, 2022 |
+| ------------- | ------------- |
+| **Current status**  | ▶ **Running** [🔴 Cardiac structure identification benchmarks](https://github.com/ahmedmalaa/ETAB/blob/main/docs/benchmark_tasks.md#benchmark-task-categorization-and-encoding)  |
+| **Progress** | **5** out of **19** benchmark tasks conducted ![26%](https://progress-bar.dev/26) |
 
 ---------------
 
