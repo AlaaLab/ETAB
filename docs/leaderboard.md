@@ -153,21 +153,12 @@ The ETAB leaderboard keeps track of the best performing backbone architectures w
 </table>
 </div>
 
-Current configuration and hyper-parameters for the ETAB leaderboard:
+Current configuration of the ETAB weights for models reported on the leaderboard:
 
 ```python
 
 weight_dict          = dict({"a0-A4-E": 0.2, "a0-A4-C": 0.2, "a0-A2-C": 0.2,
                              "a1-A4-C": 0.2, "a1-A2-C": 0.2})
-
-echonet_parameters   = dict({"n_train":7000, "batch_size":32, "train_frac":0.6, 
-                             "val_frac":0.1, "learning_rate":0.001, "n_epoch":50})
-
-camus_parameters     = dict({"n_train":450, "batch_size":32, "train_frac":0.6,
-                             "val_frac":0.1, "learning_rate":0.001, "n_epoch":50})
-         
-ETAB_benchmark_tasks = dict({"a0-A4-E": echonet_parameters, "a0-A4-C": camus_parameters, "a0-A2-C": camus_parameters,
-                             "a1-A4-C": camus_parameters, "a1-A2-C": camus_parameters})
 
 ```
 
