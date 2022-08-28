@@ -172,7 +172,7 @@ An online leaderboard hosted on this repo keeps track of the best performing bac
 | **Latest update**  | August 28, 2022 |
 | ------------- | ------------- |
 | **Current status**  | ▶ **Running** [🔴 Cardiac structure identification benchmarks](https://github.com/ahmedmalaa/ETAB/blob/main/docs/benchmark_tasks.md#benchmark-task-categorization-and-encoding)  |
-| **Progress** | **5** out of **19** benchmark tasks completed ![26%](https://progress-bar.dev/26) |
+| **Progress** | **5** out of **19** benchmark tasks completed ![26%](https://progress-bar.dev/26) <br/> **8** out of **14** baseline models evaluated ![57%](https://progress-bar.dev/57)|
 
 ---------------
 
