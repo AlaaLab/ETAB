@@ -75,9 +75,9 @@
  </tr> 
   
   <tr>
-  <td> <b> <div align="center"> 6 </div> </b> </td>
+  <td> <b> <div align="center"> 7 </div> </b> </td>
   <td> <div align="center"> ResNeXt-50-32x4d <br> (ImageNet-1K weights) </div> </td>
-  <td> <div align="center"> 5.5M </div> </td>
+  <td> <div align="center"> 25M </div> </td>
   <td> <div align="center"> --- </div> </td>
   <td> --- </td> 
   <td> <div align="center"> <a href="https://pytorch.org/vision/stable/models/generated/torchvision.models.resnext50_32x4d.html#torchvision.models.ResNeXt50_32X4D_Weights">Download</a> </div> </td> 
