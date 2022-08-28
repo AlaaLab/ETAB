@@ -12,6 +12,10 @@
 
 The ETAB leaderboard keeps track of the best performing backbone architectures with respect to benchmark echocardiographic tasks. 
 
+**Current status**: ▶ Running [🔴 Cardiac structure identification benchmarks](https://github.com/ahmedmalaa/ETAB/blob/main/docs/benchmark_tasks.md#benchmark-task-categorization-and-encoding) 
+
+**Progress**: 5 out of 19 benchmark tasks conducted ![26%](https://progress-bar.dev/26)
+
 <div align="center">
 <table border="1">
  <tr>
