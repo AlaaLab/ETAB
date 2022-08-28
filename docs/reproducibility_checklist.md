@@ -78,7 +78,10 @@ By default, ETAB uses the backbone architectures with their default hyperparamet
 
 #### ETAB score weights
 
+By default, the ETABScore function assigns equal weight to all tasks. To customize the task-specific weights, provide a dictionary of weights with task-scodes as keys to the *task_weights* argument of *ETABScore*.
+
 #### ETAB score heads
 
+The default task-specific heads are a [SegFormer](https://arxiv.org/abs/2105.15203) head for segmentation tasks and an RNN head for video data. To change the heads for any given task, add a "head" key to the training parameter dictionary in the code snippet above.
 
 
