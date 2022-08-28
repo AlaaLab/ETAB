@@ -82,6 +82,33 @@
   <td> --- </td> 
   <td> <div align="center"> <a href="https://pytorch.org/vision/stable/models/generated/torchvision.models.resnext50_32x4d.html#torchvision.models.ResNeXt50_32X4D_Weights">Download</a> </div> </td> 
  </tr>  
+
+  <tr>
+  <td> <b> <div align="center"> 8 </div> </b> </td>
+  <td> <div align="center"> Inception_V3 <br> (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> 27M </div> </td>
+  <td> <div align="center"> --- </div> </td>
+  <td> --- </td> 
+  <td> <div align="center"> <a href="https://pytorch.org/vision/stable/models/generated/torchvision.models.inception_v3.html#torchvision.models.Inception_V3_Weights">Download</a> </div> </td> 
+ </tr>   
+ 
+ <tr>
+  <td> <b> <div align="center"> 9 </div> </b> </td>
+  <td> <div align="center"> Inception_V3 <br> (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> 27M </div> </td>
+  <td> <div align="center"> --- </div> </td>
+  <td> --- </td> 
+  <td> <div align="center"> <a href="https://pytorch.org/vision/stable/models/generated/torchvision.models.inception_v3.html#torchvision.models.Inception_V3_Weights">Download</a> </div> </td> 
+</tr>    
+
+ <tr>
+  <td> <b> <div align="center"> 10 </div> </b> </td>
+  <td> <div align="center"> ConvNext-Base <br> (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> 8M </div> </td>
+  <td> <div align="center"> --- </div> </td>
+  <td> --- </td> 
+  <td> <div align="center"> <a href="https://pytorch.org/vision/stable/models/generated/torchvision.models.convnext_base.html#torchvision.models.convnext_base">Download</a> </div> </td> 
+</tr>   
   
 </table>
 </div>
