@@ -147,3 +147,5 @@ ETAB_benchmark_tasks = dict({"a0-A4-E": echonet_parameters, "a0-A4-C": camus_par
 
 
 ## How to contribute?
+
+Instructions on how to submit your model to the ETAB leaderboard will be posted soon!
