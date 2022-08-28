@@ -10,6 +10,8 @@
 
 ## ETAB Leaderboard
 
+The ETAB leaderboard keeps track of the best performing backbone architectures with respect to benchmark echocardiographic tasks. 
+
 <div align="center">
 <table border="1">
  <tr>
