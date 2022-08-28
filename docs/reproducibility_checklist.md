@@ -1,0 +1,134 @@
+---------------
+
+<p align="center">
+  <img width="280" height="160" src="assets/etab_logo.png" />
+</p>
+
+<h1 align="center">
+    <b> Leaderboard and Benchmark Results </b>
+</h1>
+
+## ETAB Leaderboard
+
+<div align="center">
+<table border="1">
+ <tr>
+  <td> <b> <div align="center"> Ranking                              </div> </b> </td>
+  <td> <b> <div align="center"> Backbone                             </div> </b> </td>
+  <td> <b> <div align="center"> # Parameters                         </div> </b> </td>
+  <td> <b> <div align="center"> ETAB score                           </div> </b> </td>
+  <td> <b> <div align="center"> Task-specific performance break down </div> </b> </td>
+  <td> <b> <div align="center"> Pre-trained weights                  </div> </b> </td>
+ </tr>
+ <tr>
+  <td> <b> <div align="center"> 1 </div> </b> </td>
+  <td> <div align="center"> ResNet-50 <br> (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> 23M </div> </td>
+  <td> <div align="center"> --- </div> </td>
+  <td> --- </td> 
+  <td> <div align="center"> <a href="https://pytorch.org/vision/main/models/generated/torchvision.models.resnet50.html">Download</a> </div> </td> 
+ </tr>
+ 
+ <tr>
+  <td> <b> <div align="center"> 2 </div> </b> </td>
+  <td> <div align="center"> ResNet-34 <br> (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> 63M </div> </td>
+  <td> <div align="center"> --- </div> </td>
+  <td> --- </td> 
+  <td> <div align="center"> <a href="https://pytorch.org/vision/main/models/generated/torchvision.models.resnet34.html">Download</a> </div> </td> 
+ </tr>
+
+ <tr>
+  <td> <b> <div align="center"> 3 </div> </b> </td>
+  <td> <div align="center"> ResNet-18 <br> (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> 11M </div> </td>
+  <td> <div align="center"> --- </div> </td>
+  <td> --- </td> 
+  <td> <div align="center"> <a href="https://pytorch.org/vision/main/models/generated/torchvision.models.resnet18.html">Download</a> </div> </td> 
+ </tr>
+ 
+ <tr>
+  <td> <b> <div align="center"> 4 </div> </b> </td>
+  <td> <div align="center"> DenseNet-121 <br> (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> 8M </div> </td>
+  <td> <div align="center"> --- </div> </td>
+  <td> --- </td> 
+  <td> <div align="center"> <a href="https://pytorch.org/vision/stable/models/generated/torchvision.models.densenet121.html#torchvision.models.DenseNet121_Weights">Download</a> </div> </td> 
+ </tr> 
+
+ <tr>
+  <td> <b> <div align="center"> 5 </div> </b> </td>
+  <td> <div align="center"> MobileNet-V2 <br> (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> 3.5M </div> </td>
+  <td> <div align="center"> --- </div> </td>
+  <td> --- </td> 
+  <td> <div align="center"> <a href="https://pytorch.org/vision/stable/models/generated/torchvision.models.mobilenet_v2.html#torchvision.models.MobileNet_V2_Weights">Download</a> </div> </td> 
+ </tr>  
+  
+ <tr>
+  <td> <b> <div align="center"> 6 </div> </b> </td>
+  <td> <div align="center"> MobileNet-V3-Large <br> (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> 5.5M </div> </td>
+  <td> <div align="center"> --- </div> </td>
+  <td> --- </td> 
+  <td> <div align="center"> <a href="https://pytorch.org/vision/stable/models/generated/torchvision.models.mobilenet_v3_large.html#torchvision.models.MobileNet_V3_Large_Weights">Download</a> </div> </td> 
+ </tr> 
+  
+  <tr>
+  <td> <b> <div align="center"> 7 </div> </b> </td>
+  <td> <div align="center"> ResNeXt-50-32x4d <br> (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> 25M </div> </td>
+  <td> <div align="center"> --- </div> </td>
+  <td> --- </td> 
+  <td> <div align="center"> <a href="https://pytorch.org/vision/stable/models/generated/torchvision.models.resnext50_32x4d.html#torchvision.models.ResNeXt50_32X4D_Weights">Download</a> </div> </td> 
+ </tr>  
+
+  <tr>
+  <td> <b> <div align="center"> 8 </div> </b> </td>
+  <td> <div align="center"> Inception_V3 <br> (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> 27M </div> </td>
+  <td> <div align="center"> --- </div> </td>
+  <td> --- </td> 
+  <td> <div align="center"> <a href="https://pytorch.org/vision/stable/models/generated/torchvision.models.inception_v3.html#torchvision.models.Inception_V3_Weights">Download</a> </div> </td> 
+ </tr>   
+ 
+ <tr>
+  <td> <b> <div align="center"> 9 </div> </b> </td>
+  <td> <div align="center"> Inception_V3 <br> (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> 27M </div> </td>
+  <td> <div align="center"> --- </div> </td>
+  <td> --- </td> 
+  <td> <div align="center"> <a href="https://pytorch.org/vision/stable/models/generated/torchvision.models.inception_v3.html#torchvision.models.Inception_V3_Weights">Download</a> </div> </td> 
+</tr>    
+
+ <tr>
+  <td> <b> <div align="center"> 10 </div> </b> </td>
+  <td> <div align="center"> ConvNext-Base <br> (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> 8M </div> </td>
+  <td> <div align="center"> --- </div> </td>
+  <td> --- </td> 
+  <td> <div align="center"> <a href="https://pytorch.org/vision/stable/models/generated/torchvision.models.convnext_base.html#torchvision.models.convnext_base">Download</a> </div> </td> 
+</tr>  
+  
+<tr>
+  <td> <b> <div align="center"> 11 </div> </b> </td>
+  <td> <div align="center"> PoolFormer-S24 <br> (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> 21M </div> </td>
+  <td> <div align="center"> --- </div> </td>
+  <td> --- </td> 
+  <td> <div align="center"> <a href="https://huggingface.co/sail/poolformer_s24">Download</a> </div> </td> 
+</tr>  
+
+<tr>
+  <td> <b> <div align="center"> 12 </div> </b> </td>
+  <td> <div align="center"> MiT-B2 <br> (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> 25M </div> </td>
+  <td> <div align="center"> --- </div> </td>
+  <td> --- </td> 
+  <td> <div align="center"> <a href="https://huggingface.co/docs/transformers/model_doc/segformer">Download</a> </div> </td> 
+</tr>    
+  
+</table>
+</div>
+
+## How to contribute?
