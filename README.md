@@ -89,7 +89,7 @@ from torchvision.models import resnet50
                    
 backbone    = resnet50(weights="IMAGENET1K_V1")
 
-etab_score  = ETABscore(backbone=backbone)
+etab_score  = ETABscore(backbone_architecture="ResNet-50", backbone_model=backbone)
 ```
 The ETAB library provides a succint API for echocardiographic datasets, models, and benchmark tasks that enables writing more sophisticated programs within your research project. Details of the ETAB API along with usage examples and demo notebooks are provided in the documentation below. 
 
