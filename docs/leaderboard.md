@@ -131,4 +131,19 @@
 </table>
 </div>
 
+Current configuration and hyper-parameters for the ETAB leaderboard:
+
+```python
+echonet_parameters   = dict({"n_train":700, "batch_size":32, "train_frac":0.6, 
+                             "val_frac":0.1, "learning_rate":0.001, "n_epoch":10})
+
+camus_parameters     = dict({"n_train":450, "batch_size":32, "train_frac":0.6,
+                             "val_frac":0.1, "learning_rate":0.001, "n_epoch":10})
+         
+ETAB_benchmark_tasks = dict({"a0-A4-E": echonet_parameters, "a0-A4-C": camus_parameters, "a0-A2-C": camus_parameters,
+                             "a1-A4-C": camus_parameters, "a1-A2-C": camus_parameters})
+
+```
+
+
 ## How to contribute?
