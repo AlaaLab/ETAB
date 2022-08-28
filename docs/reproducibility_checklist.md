@@ -70,8 +70,11 @@ ETAB_score, benchmark_scores = ETABscore(backbone_architecture,
 
 #### Training/validation/testing data split
 
+The default split ratios for all datasets in ETAB is to sample a subset of 60% for training, 10% for validation and 40% for testing. When computing the ETAB score you can change the split ratios through the parameter dictionary as shown above. You can also use split the data in your customized program using the *training_data_split* function in the *utils.data_tools* module.
 
 #### Model-specific hyperparameters
+
+By default, ETAB uses the backbone architectures with their default hyperparameters as specified in the [torchvision](https://pytorch.org/vision/stable/models.html) library. Links to the pre-trained weights for all backbones supported by ETAB are provided in the online [leaderboard](https://github.com/ahmedmalaa/ETAB/blob/main/docs/leaderboard.md#etab-leaderboard).
 
 #### ETAB score weights
 
