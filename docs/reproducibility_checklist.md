@@ -12,7 +12,7 @@
 
 To ensure the reproducibility and consistency of benchmarking experiments conducted using ETAB, we recommend that you check and report the following experimental parameters when using ETAB in your research.
 
-- [ ] Benchmark task-specific training parameters
+- [ ] Benchmark task-specific training parameters ([Read more about it](https://github.com/ahmedmalaa/ETAB/blob/main/docs/reproducibility_checklist.md#benchmark-task-specific-training-parameters))
 - [ ] Training/validation/testing data split
 - [ ] Model-specific hyperparameters
 - [ ] ETAB score weights
@@ -37,8 +37,7 @@ Training is conducted with an SGD optimizer, and the final weights are picked ba
 
 ```python
 
-training_params_dict = dict({"n_train":7000, 
-                             "batch_size":32,
+training_params_dict = dict({"batch_size":32,
                              "train_frac":0.6,
                              "val_frac":0.1,
                              "learning_rate":0.001,
