@@ -45,7 +45,18 @@ training_params_dict = dict({"batch_size":32,
 
 ```
 
-The parameters dictionary can then be passed to the *ETABScore* function as follows:
+In the example below, we create a dictionary of task-specific training parameters with the task codes as the keys. You can also customize the training parameters for each task by feeding in a different parameters' dictionary for each task.
+
+```
+ETAB_benchmark_tasks = dict({"a0-A4-E": training_params_dict,
+                             "a0-A4-C": training_params_dict,
+                             "a0-A2-C": training_params_dict,
+                             "a1-A4-C": training_params_dict,
+                             "a1-A2-C": training_params_dict})
+
+```
+
+The parameters' dictionary can then be passed to the *ETABScore* function as follows:
 
 ```python
 
@@ -54,7 +65,7 @@ ETAB_score, benchmark_scores = ETABscore(backbone_architecture,
                                          task_weights=None, 
                                          verbose=False, 
                                          finetune=False,
-                                         **training_params_dict)
+                                         **ETAB_benchmark_tasks)
 
 ```
 
