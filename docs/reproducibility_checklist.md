@@ -22,3 +22,14 @@ To ensure the reproducibility and consistency of benchmarking experiments conduc
 #### Benchmark task-specific training parameters
 
 The default optimization and training parameters in the ETAB software are:
+
+```python
+
+train_frac    = 0.6
+val_frac      = 0.1
+learning_rate = 0.001
+batch_size    = 32
+n_epoch       = 50
+
+```
+                             
