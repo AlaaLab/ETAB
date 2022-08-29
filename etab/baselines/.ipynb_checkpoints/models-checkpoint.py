@@ -67,7 +67,8 @@ class ETABmodel(BaseModel):
             n_epoch=50,
             learning_rate=1e-2,
             ckpt_dir=None,
-            device="cpu"):
+            device="cpu",
+            verbose=True):
         
         
         callbacks   = init_callbacks(ckpt_dir)
@@ -106,7 +107,8 @@ class ETABmodel(BaseModel):
         self.model.fit_generator(train_loader, 
                                  valid_loader, 
                                  epochs=n_epoch, 
-                                 callbacks=callbacks)
+                                 callbacks=callbacks, 
+                                 verbose=verbose)
     
     def predict(self, X):
         
