@@ -79,7 +79,7 @@ The ETAB leaderboard keeps track of the best performing backbone architectures w
 
    <tr>
   <td> <b> <div align="center"> 3 </div> </b> </td>
-  <td> <div align="center"> MobileNet-V3-Large <br> (ImageNet-1K weights) </div> </td>
+  <td> <div align="center"> MobileNet-V3-Large <br> (Fully finetuned) </div> </td>
   <td> <div align="center"> 5.5M </div> </td>
   <td> <div align="center"> 0.749 </div> </td>
   <td> <details>
