@@ -15,7 +15,7 @@ The ETAB leaderboard keeps track of the best performing backbone architectures w
 | **Latest update**  | August 28, 2022 |
 | ------------- | ------------- |
 | **Current status**  | ▶ **Running** [🔴 Cardiac structure identification benchmarks](https://github.com/ahmedmalaa/ETAB/blob/main/docs/benchmark_tasks.md#benchmark-task-categorization-and-encoding)  |
-| **Progress** | **5** out of **19** benchmark tasks completed ![26%](https://progress-bar.dev/26) <br/> **8** out of **14** baseline models evaluated ![57%](https://progress-bar.dev/57)|
+| **Progress** | **5** out of **19** benchmark tasks completed ![26%](https://progress-bar.dev/26) <br/> **10** out of **14** baseline models evaluated ![71%](https://progress-bar.dev/71)|
 
 <div align="center">
 <table border="1">
